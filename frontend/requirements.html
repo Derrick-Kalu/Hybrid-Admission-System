@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Requirements — Bingham University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .req-container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .req-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--gold-light);
+        }
+        .req-header h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--navy);
+            font-size: 2.2rem;
+        }
+        .req-section {
+            margin-bottom: 2.5rem;
+        }
+        .req-section h2 {
+            font-size: 1.4rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .req-card {
+            background: var(--gray-100);
+            border-left: 4px solid var(--navy);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1rem;
+        }
+        .req-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .req-table th, .req-table td {
+            padding: 12px 15px;
+            border: 1px solid var(--gray-200);
+            text-align: left;
+        }
+        .req-table th {
+            background-color: var(--navy);
+            color: white;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+        .req-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .req-table tr:hover {
+            background-color: #e9ecef;
+        }
+        .faculty-row {
+            background-color: var(--gold-light) !important;
+            color: var(--navy);
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.2rem;
+            background: var(--navy);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .back-btn:hover {
+            background: var(--gold);
+        }
+    </style>
+</head>
+<body class="formal-bg">
+
+    <div class="req-container">
+        <div class="req-header">
+            <img src="img/bingham_seal.png" alt="Bingham University" style="width: 80px; margin-bottom: 1rem;">
+            <h1>Bingham University Admission Criteria</h1>
+            <p style="color: var(--gray-600)">Comprehensive guide to Institutional and Departmental requirements for the 2025/2026 Academic Session.</p>
+        </div>
+
+        <!-- Institutional Requirements -->
+        <div class="req-section">
+            <h2><span style="font-size: 1.5rem;">🏛️</span> Institutional Minimum Requirements</h2>
+            <div class="req-card">
+                <ul style="margin-left: 1.5rem; color: var(--gray-800); line-height: 1.6;">
+                    <li><strong>O'Level Credits:</strong> Candidates must possess a minimum of five (5) O'Level credit passes (WAEC, NECO, NABTEB, or IGCSE) obtained at not more than two (2) sittings.</li>
+                    <li><strong>Mandatory Subjects:</strong> Mathematics and English Language are compulsory for ALL courses.</li>
+                    <li><strong>JAMB UTME:</strong> Candidates must have written the 2025/2026 JAMB UTME. The general university cut-off mark is <strong>150</strong> (Note: Medicine & Surgery, Nursing, and Law require a higher cut-off of <strong>190+</strong>).</li>
+                    <li><strong>Age Requirement:</strong> Candidates must be at least 16 years of age by October 31st of the admission year.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Departmental Requirements Table -->
+        <div class="req-section">
+            <h2><span style="font-size: 1.5rem;">📚</span> Departmental Subject Combinations</h2>
+            <p style="font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1rem;">Below is the comprehensive list of faculties, courses, and their specific O'Level and JAMB subject combinations.</p>
+            
+            <div style="overflow-x: auto;">
+                <table class="req-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Programme / Course</th>
+                            <th style="width: 40%;">O'Level Requirements (5 Credits)</th>
+                            <th style="width: 40%;">JAMB UTME Subject Combination</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Medicine & Health Sciences -->
+                        <tr class="faculty-row"><td colspan="3">College of Medicine & Health Sciences</td></tr>
+                        <tr>
+                            <td><strong>Medicine & Surgery (MBBS)</strong></td>
+                            <td>English, Mathematics, Biology, Chemistry, and Physics (at ONE sitting)</td>
+                            <td>English, Biology, Chemistry, and Physics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nursing / Anatomy / Physiology / Public Health</strong></td>
+                            <td>English, Mathematics, Biology, Chemistry, and Physics</td>
+                            <td>English, Biology, Chemistry, and Physics</td>
+                        </tr>
+
+                        <!-- Science & Technology -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Science & Technology</td></tr>
+                        <tr>
+                            <td><strong>Computer Science / Cyber Security / Info Tech</strong></td>
+                            <td>English, Mathematics, Physics, and two of Chemistry, Biology, or Computer Studies</td>
+                            <td>English, Mathematics, Physics, and one of Chemistry or Biology</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Industrial Chemistry / Physics</strong></td>
+                            <td>English, Mathematics, Physics, Chemistry, and one other Science subject</td>
+                            <td>English, Physics, Chemistry, and Mathematics/Biology</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Biochemistry / Microbiology</strong></td>
+                            <td>English, Mathematics, Biology, Chemistry, and Physics</td>
+                            <td>English, Biology, Chemistry, and Physics/Mathematics</td>
+                        </tr>
+
+                        <!-- Social Sciences -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Social Sciences</td></tr>
+                        <tr>
+                            <td><strong>Mass Communication</strong></td>
+                            <td>English, Mathematics, Literature in English, and two Arts/Social Science subjects</td>
+                            <td>English, Literature in English, and any two Arts/Social Science subjects</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Economics</strong></td>
+                            <td>English, Mathematics, Economics, and two other Social Science/Arts subjects</td>
+                            <td>English, Mathematics, Economics, and any other Social Science subject</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Political Science / Sociology</strong></td>
+                            <td>English, Mathematics, Government/History, and two other relevant subjects</td>
+                            <td>English, Government/History, and two other Arts/Social Science subjects</td>
+                        </tr>
+
+                        <!-- Administration -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Administration</td></tr>
+                        <tr>
+                            <td><strong>Accounting / Business Administration</strong></td>
+                            <td>English, Mathematics, Economics, and two other Commercial/Social Science subjects</td>
+                            <td>English, Mathematics, Economics, and one Commercial subject</td>
+                        </tr>
+
+                        <!-- Law -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Law</td></tr>
+                        <tr>
+                            <td><strong>Law (LLB)</strong></td>
+                            <td>English, Mathematics, Literature in English, and two other Arts/Social Science subjects</td>
+                            <td>English, Literature in English, and any two Arts/Social Science subjects</td>
+                        </tr>
+
+                        <!-- Arts -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Arts</td></tr>
+                        <tr>
+                            <td><strong>English Language</strong></td>
+                            <td>English, Mathematics, Literature in English, and two other Arts subjects</td>
+                            <td>English, Literature in English, and any two Arts subjects</td>
+                        </tr>
+
+                        <!-- Environmental Sciences -->
+                        <tr class="faculty-row"><td colspan="3">Faculty of Environmental Sciences</td></tr>
+                        <tr>
+                            <td><strong>Architecture / Estate Management</strong></td>
+                            <td>English, Mathematics, Physics, and two of Geography, Tech Drawing, Fine Art, or Economics</td>
+                            <td>English, Mathematics, Physics, and one of Geography or Economics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="back-btn">← Back to Admission Portal</a>
+        </div>
+    </div>
+
+</body>
+</html>

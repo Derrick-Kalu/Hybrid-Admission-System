@@ -1,0 +1,1001 @@
+applicant_name,jamb_reg_number,utme_score,olevel_math,olevel_english,olevel_subject_1,olevel_grade_1,olevel_subject_2,olevel_grade_2,olevel_subject_3,olevel_grade_3,olevel_avg_score,course_applied,departmental_cutoff,outcome
+Aisha Adeyemi,202596001338CF,227,A1,B3,Biology,B2,Chemistry,C5,Further Mathematics,C5,3.8,Medicine and Surgery,280,BORDERLINE
+Emmanuel Anyanwu,202526542351CF,205,B2,C5,Mathematics,C4,Economics,B2,Further Mathematics,C4,3.4,Economics,190,QUALIFIED
+Aisha Adeyemi,202561849593CF,232,A1,C6,English Language,C5,Literature,C6,Further Mathematics,C5,3.4,Mass Communication,180,QUALIFIED
+Solomon Eze,202575255341EG,263,C5,C6,Mathematics,F9,Physics,D7,Further Mathematics,D7,2.0,Computer Science,200,REJECTED
+Aisha Bello,202550305641EG,201,C5,B2,Mathematics,B3,Economics,F9,Further Mathematics,C5,2.8,Economics,190,ALTERNATIVE_COURSE
+Tunde Nwosu,202542388496HJ,201,D7,B3,Mathematics,C5,Fine Art,B3,Further Mathematics,D7,3.0,Architecture,200,REJECTED
+Amaka Nwosu,202526916697FG,265,B2,F9,Biology,C4,Chemistry,A1,Further Mathematics,A1,3.4,Nursing Science,200,ALTERNATIVE_COURSE
+Daniel Anyanwu,202551462704EG,236,D7,A1,Mathematics,C5,Economics,C5,Further Mathematics,C4,3.2,Economics,190,ALTERNATIVE_COURSE
+Oluwaseun Abubakar,202528809570CF,193,D7,D7,Mathematics,B3,Economics,C5,Further Mathematics,C5,2.8,Economics,190,REJECTED
+Chukwuemeka Adeyemi,202571822782FG,228,D7,C6,Biology,B3,Chemistry,A1,Further Mathematics,D7,3.2,Nursing Science,200,REJECTED
+Ibrahim Musa,202546578713EG,193,D7,C4,Mathematics,B2,Economics,C4,Further Mathematics,C5,3.0,Economics,190,ALTERNATIVE_COURSE
+Blessing Bello,202510518347EG,193,B3,C4,Biology,B2,Chemistry,B2,Further Mathematics,A1,4.0,Medicine and Surgery,280,BORDERLINE
+Adaeze Bello,202511656670CF,218,B2,E8,Mathematics,C4,Economics,C4,Further Mathematics,C6,2.8,Economics,190,ALTERNATIVE_COURSE
+Tunde Nwosu,202562473178CF,143,C4,B3,Mathematics,D7,Physics,B2,Further Mathematics,B2,3.4,Computer Science,200,REJECTED
+Grace Nwosu,202567736026CF,149,C5,C4,Mathematics,A1,Physics,A1,Further Mathematics,C6,3.8,Computer Science,200,REJECTED
+Aisha Ogundele,202572343098CF,190,B3,C6,English Language,C4,Literature,C4,Further Mathematics,E8,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Kelvin Adeyemi,202521913619EG,174,A1,C4,Biology,C4,Chemistry,D7,Further Mathematics,B2,3.4,Nursing Science,200,REJECTED
+Daniel Bello,202553462475CF,220,C4,C5,Mathematics,C4,Fine Art,C4,Further Mathematics,C4,3.0,Architecture,200,QUALIFIED
+Daniel Nwosu,202551354278FG,178,C4,F9,Mathematics,F9,Physics,A1,Further Mathematics,B2,2.4,Computer Science,200,REJECTED
+Amaka Nzekwe,202524118244EG,160,F9,C6,Mathematics,C4,Fine Art,C5,Further Mathematics,C4,2.4,Architecture,200,REJECTED
+Blessing Adeyemi,202564005242HJ,261,B2,C5,Biology,B3,Chemistry,C4,Further Mathematics,D7,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Oluwaseun Chukwu,202505982620FG,202,C5,C4,Mathematics,B2,Economics,E8,Further Mathematics,C5,2.8,Economics,190,ALTERNATIVE_COURSE
+Grace Ogundele,202515869232EG,212,D7,C6,Biology,D7,Chemistry,D7,Further Mathematics,B2,2.6,Nursing Science,200,REJECTED
+Grace Eze,202521607337FG,160,A1,C5,English Language,B3,Literature,E8,Further Mathematics,C6,3.2,Mass Communication,180,REJECTED
+Daniel Olawale,202514586850CF,190,C6,D7,Mathematics,B2,Physics,C5,Further Mathematics,B3,3.2,Civil Engineering,210,ALTERNATIVE_COURSE
+Victor Okonkwo,202598169340HJ,213,B2,E8,Mathematics,B3,Physics,B2,Further Mathematics,C4,3.2,Civil Engineering,210,ALTERNATIVE_COURSE
+Ibrahim Abubakar,202561595148FG,169,C4,C6,Mathematics,C5,Physics,E8,Further Mathematics,C5,2.6,Computer Science,200,REJECTED
+Solomon Ogundele,202529946804FG,223,B3,C5,English Language,C4,Literature,B2,Further Mathematics,C5,3.4,Mass Communication,180,QUALIFIED
+Ibrahim Chukwu,202572148951EG,188,C4,C4,Mathematics,C5,Economics,C4,Further Mathematics,C4,3.0,Accounting,200,BORDERLINE
+Chukwuemeka Ibrahim,202569367632CF,199,B2,B2,Mathematics,A1,Physics,B2,Further Mathematics,C4,4.0,Civil Engineering,210,BORDERLINE
+Aisha Bello,202517278895HJ,188,C6,B2,Biology,C6,Chemistry,C5,Further Mathematics,C4,3.2,Medicine and Surgery,280,BORDERLINE
+Fatima Musa,202577434873FG,274,C6,D7,Mathematics,C4,Fine Art,D7,Further Mathematics,C4,2.6,Architecture,200,REJECTED
+Oluwaseun Nwosu,202536231665HJ,209,A1,B3,Economics,B3,Commerce,B3,Further Mathematics,C4,4.0,Business Administration,180,QUALIFIED
+Emmanuel Olawale,202596705466EG,172,A1,C6,English Language,B3,Literature,C6,Further Mathematics,E8,3.2,Mass Communication,180,REJECTED
+Solomon Musa,202527298069CF,238,B2,C4,Economics,A1,Commerce,B3,Further Mathematics,C5,3.8,Business Administration,180,QUALIFIED
+Ibrahim Ibrahim,202555646417CF,167,C5,B2,Biology,C4,Chemistry,A1,Further Mathematics,B3,3.8,Medicine and Surgery,280,REJECTED
+Blessing Anyanwu,202503309232HJ,217,A1,E8,Mathematics,B2,Economics,A1,Further Mathematics,E8,3.2,Economics,190,REJECTED
+Funmilayo Musa,202512419049HJ,141,C4,B2,Biology,C5,Chemistry,C6,Further Mathematics,B2,3.4,Medicine and Surgery,280,REJECTED
+Josephine Olawale,202591905865CF,163,E8,B2,English Language,C4,Literature,C6,Further Mathematics,B2,3.0,Mass Communication,180,REJECTED
+Ngozi Ogundele,202572628498HJ,216,C5,A1,Mathematics,C4,Economics,C4,Further Mathematics,C4,3.4,Economics,190,QUALIFIED
+Chukwuemeka Eze,202573799650HJ,235,C4,C5,Economics,B3,Commerce,D7,Further Mathematics,C6,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Daniel Chukwu,202508313678EG,215,B2,B2,Biology,C6,Chemistry,B3,Further Mathematics,D7,3.4,Nursing Science,200,ALTERNATIVE_COURSE
+Grace Eze,202595788568FG,205,C5,C4,Economics,C6,Commerce,A1,Further Mathematics,B2,3.6,Business Administration,180,QUALIFIED
+Amaka Musa,202582337498FG,199,C5,B3,Biology,B3,Chemistry,B2,Further Mathematics,B2,3.8,Nursing Science,200,BORDERLINE
+Oluwaseun Eze,202500842710FG,158,C6,B3,Biology,B3,Chemistry,B3,Further Mathematics,C5,3.6,Medicine and Surgery,280,REJECTED
+Amaka Olawale,202516719022FG,184,C4,B3,Economics,E8,Commerce,B3,Further Mathematics,D7,2.8,Business Administration,180,REJECTED
+Grace Anyanwu,202586774964CF,193,F9,B2,Biology,C6,Chemistry,C5,Further Mathematics,C6,2.6,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Chukwuemeka Nwosu,202532812067HJ,246,E8,A1,Mathematics,C6,Fine Art,C5,Further Mathematics,B3,3.2,Architecture,200,ALTERNATIVE_COURSE
+Grace Nzekwe,202549361832FG,222,A1,B3,Mathematics,B3,Physics,D7,Further Mathematics,A1,4.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Josephine Ibrahim,202517464887HJ,148,A1,B2,Literature,B3,Government,C5,Further Mathematics,C4,3.8,Law,220,REJECTED
+Grace Ogundele,202599049027HJ,221,C4,D7,Biology,C5,Chemistry,C5,Further Mathematics,A1,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ngozi Okonkwo,202555125674HJ,196,B2,C4,Mathematics,C5,Physics,C4,Further Mathematics,A1,3.6,Civil Engineering,210,BORDERLINE
+Kelvin Olawale,202508760385HJ,186,A1,A1,Mathematics,B3,Economics,B2,Further Mathematics,C6,4.2,Economics,190,BORDERLINE
+Chioma Adeyemi,202509324808HJ,231,C6,B2,Economics,C4,Commerce,E8,Further Mathematics,C4,2.8,Business Administration,180,ALTERNATIVE_COURSE
+Oluwaseun Ibrahim,202548467737EG,246,B2,C6,Biology,B2,Chemistry,E8,Further Mathematics,C5,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Adaeze Abubakar,202584044997EG,242,B2,C4,English Language,C5,Literature,B2,Further Mathematics,A1,3.8,Mass Communication,180,QUALIFIED
+Victor Olawale,202533963605HJ,180,C4,B3,Economics,C4,Commerce,C4,Further Mathematics,C4,3.2,Business Administration,180,QUALIFIED
+Blessing Nwosu,202589517187CF,199,B3,C5,English Language,C6,Literature,F9,Further Mathematics,C4,2.6,Mass Communication,180,ALTERNATIVE_COURSE
+Victor Adeleke,202561586578CF,221,C4,C5,Literature,B2,Government,C4,Further Mathematics,E8,2.8,Law,220,ALTERNATIVE_COURSE
+Adaeze Adeyemi,202517240050FG,244,A1,C5,Mathematics,E8,Fine Art,F9,Further Mathematics,C5,2.4,Architecture,200,REJECTED
+Fatima Nwosu,202519693792EG,193,B3,B2,Biology,C4,Chemistry,C4,Further Mathematics,C6,3.4,Nursing Science,200,BORDERLINE
+Josephine Ogundele,202582175946FG,203,C5,C4,Economics,C5,Commerce,D7,Further Mathematics,C4,2.8,Business Administration,180,ALTERNATIVE_COURSE
+Peter Abubakar,202594406409CF,171,C6,B2,Economics,B3,Commerce,C4,Further Mathematics,B2,3.6,Business Administration,180,REJECTED
+Ngozi Bello,202539421047CF,168,C5,C6,Mathematics,D7,Fine Art,C6,Further Mathematics,B2,3.0,Architecture,200,REJECTED
+Ibrahim Nwosu,202585884247FG,238,B3,B2,Mathematics,D7,Fine Art,B3,Further Mathematics,C4,3.4,Architecture,200,ALTERNATIVE_COURSE
+Solomon Olawale,202585160481HJ,257,C6,C4,Biology,A1,Chemistry,C6,Further Mathematics,B2,3.6,Nursing Science,200,QUALIFIED
+Amaka Ogundele,202537098593CF,207,C5,C5,Biology,C4,Chemistry,C6,Further Mathematics,E8,2.6,Nursing Science,200,ALTERNATIVE_COURSE
+Josephine Ibrahim,202511382675HJ,245,D7,B3,Economics,C4,Commerce,B2,Further Mathematics,E8,2.8,Business Administration,180,REJECTED
+Adaeze Eze,202505377351FG,222,C5,B2,Mathematics,C4,Fine Art,A1,Further Mathematics,C4,3.6,Architecture,200,QUALIFIED
+Tunde Adeyemi,202539005329EG,187,D7,C5,Mathematics,A1,Economics,B3,Further Mathematics,E8,3.0,Economics,190,REJECTED
+Oluwaseun Anyanwu,202590422842CF,222,C6,C4,Biology,C4,Chemistry,C6,Further Mathematics,B2,3.2,Medicine and Surgery,280,BORDERLINE
+Daniel Okafor,202526811775CF,263,B2,B3,Mathematics,C6,Physics,C4,Further Mathematics,A1,3.8,Computer Science,200,QUALIFIED
+Kelvin Eze,202570076617HJ,208,C4,E8,Economics,A1,Commerce,C6,Further Mathematics,D7,2.8,Business Administration,180,REJECTED
+Peter Chukwu,202556984789HJ,264,D7,B3,Biology,B2,Chemistry,B2,Further Mathematics,C5,3.4,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Okonkwo,202573657661FG,120,C6,B2,Biology,C5,Chemistry,D7,Further Mathematics,C4,3.0,Medicine and Surgery,280,REJECTED
+Chukwuemeka Olawale,202511615280FG,238,B3,B3,English Language,E8,Literature,C5,Further Mathematics,C4,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Blessing Eze,202594519832HJ,213,C4,D7,Biology,E8,Chemistry,C4,Further Mathematics,D7,2.2,Medicine and Surgery,280,REJECTED
+Grace Anyanwu,202568998094CF,199,C6,B3,Mathematics,C4,Economics,B2,Further Mathematics,B3,3.6,Accounting,200,BORDERLINE
+Oluwaseun Adeleke,202561201836HJ,213,B3,C6,Literature,E8,Government,B3,Further Mathematics,B2,3.2,Law,220,ALTERNATIVE_COURSE
+Chukwuemeka Nzekwe,202502290147HJ,140,B3,B3,Economics,C5,Commerce,C6,Further Mathematics,C4,3.4,Business Administration,180,REJECTED
+Amaka Eze,202597840369CF,202,C5,C4,Economics,B2,Commerce,C4,Further Mathematics,B3,3.4,Business Administration,180,QUALIFIED
+Amaka Okafor,202576226838FG,222,B2,E8,Mathematics,C6,Physics,C6,Further Mathematics,B3,3.0,Computer Science,200,ALTERNATIVE_COURSE
+Victor Adeleke,202569664160FG,261,B3,C5,Biology,C4,Chemistry,C4,Further Mathematics,A1,3.6,Medicine and Surgery,280,BORDERLINE
+Amaka Bello,202569681645EG,191,C6,C5,Literature,C6,Government,D7,Further Mathematics,A1,3.2,Law,220,ALTERNATIVE_COURSE
+Ngozi Abubakar,202523124329EG,181,C6,A1,Biology,C5,Chemistry,C4,Further Mathematics,B2,3.6,Nursing Science,200,BORDERLINE
+Tunde Ogundele,202599552717HJ,192,B2,C6,Biology,C4,Chemistry,C6,Further Mathematics,C6,3.2,Medicine and Surgery,280,BORDERLINE
+Blessing Okafor,202554119986HJ,242,C6,C4,Mathematics,B3,Physics,A1,Further Mathematics,C4,3.6,Civil Engineering,210,QUALIFIED
+Ibrahim Abubakar,202597820715CF,221,C4,C6,Mathematics,D7,Fine Art,C4,Further Mathematics,C6,2.8,Architecture,200,ALTERNATIVE_COURSE
+Funmilayo Nwosu,202555466590FG,191,C5,A1,Mathematics,C5,Economics,F9,Further Mathematics,C4,2.8,Economics,190,ALTERNATIVE_COURSE
+Funmilayo Olawale,202525192546EG,227,B3,C4,Biology,B3,Chemistry,B3,Further Mathematics,D7,3.4,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Oluwaseun Ogundele,202581685054EG,213,C5,A1,Mathematics,C4,Fine Art,C5,Further Mathematics,B3,3.6,Architecture,200,QUALIFIED
+Josephine Olawale,202518880592HJ,243,B3,C6,Mathematics,B2,Economics,F9,Further Mathematics,B2,3.0,Accounting,200,ALTERNATIVE_COURSE
+Tunde Okafor,202565379473EG,185,B2,C6,Literature,C6,Government,C6,Further Mathematics,B2,3.4,Law,220,BORDERLINE
+Peter Ibrahim,202574688623EG,198,E8,C6,Mathematics,D7,Physics,B2,Further Mathematics,C5,2.6,Civil Engineering,210,REJECTED
+Kelvin Olawale,202514124782HJ,196,A1,C4,Mathematics,B3,Physics,E8,Further Mathematics,C5,3.2,Civil Engineering,210,ALTERNATIVE_COURSE
+Blessing Okonkwo,202585361530FG,158,E8,B2,Biology,C4,Chemistry,B3,Further Mathematics,A1,3.4,Medicine and Surgery,280,REJECTED
+Chioma Musa,202527790104EG,220,C6,C5,Biology,C6,Chemistry,B2,Further Mathematics,B3,3.4,Medicine and Surgery,280,BORDERLINE
+Josephine Adeyemi,202503697117CF,219,C4,C5,Literature,C4,Government,B2,Further Mathematics,B3,3.4,Law,220,BORDERLINE
+Peter Okonkwo,202521851888CF,210,C4,C5,Mathematics,B3,Economics,A1,Further Mathematics,B3,3.8,Economics,190,QUALIFIED
+Ngozi Anyanwu,202515319520FG,201,D7,A1,English Language,B3,Literature,B3,Further Mathematics,C5,3.6,Mass Communication,180,ALTERNATIVE_COURSE
+Chioma Ogundele,202522170430EG,160,B3,C5,Mathematics,C6,Economics,C5,Further Mathematics,F9,2.6,Economics,190,REJECTED
+Blessing Anyanwu,202534505415HJ,195,B3,B3,Mathematics,B3,Physics,C6,Further Mathematics,C4,3.6,Computer Science,200,BORDERLINE
+Chioma Abubakar,202584161692FG,198,C5,D7,English Language,B3,Literature,F9,Further Mathematics,C4,2.4,Mass Communication,180,REJECTED
+Fatima Musa,202575705964CF,181,B2,B3,Biology,B3,Chemistry,C4,Further Mathematics,C5,3.6,Nursing Science,200,BORDERLINE
+Emmanuel Nwosu,202597021355HJ,204,C5,C4,Biology,C4,Chemistry,C5,Further Mathematics,B2,3.2,Medicine and Surgery,280,BORDERLINE
+Chukwuemeka Adeleke,202528565431CF,224,A1,B2,Mathematics,C4,Fine Art,B3,Further Mathematics,C4,3.8,Architecture,200,QUALIFIED
+Tunde Bello,202594731217EG,276,C4,B3,Literature,C4,Government,B3,Further Mathematics,B3,3.6,Law,220,QUALIFIED
+Chukwuemeka Chukwu,202584422583CF,216,F9,C6,Economics,E8,Commerce,F9,Further Mathematics,C5,1.4,Business Administration,180,REJECTED
+Tunde Anyanwu,202582911467HJ,219,C6,B2,Mathematics,C4,Economics,B3,Further Mathematics,C4,3.4,Accounting,200,QUALIFIED
+Kelvin Abubakar,202528922680CF,207,C6,A1,English Language,F9,Literature,C5,Further Mathematics,C4,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Kelvin Nzekwe,202541438424CF,142,B2,B2,Mathematics,B3,Economics,C5,Further Mathematics,B3,3.8,Economics,190,REJECTED
+Funmilayo Abubakar,202590010943HJ,209,C5,C4,Mathematics,C4,Economics,B2,Further Mathematics,C5,3.2,Economics,190,QUALIFIED
+Chioma Bello,202564710276HJ,212,C5,C4,Mathematics,C5,Fine Art,B3,Further Mathematics,E8,2.8,Architecture,200,ALTERNATIVE_COURSE
+Ngozi Okonkwo,202525881537CF,296,B2,C5,Economics,B3,Commerce,C5,Further Mathematics,C5,3.4,Business Administration,180,QUALIFIED
+Adaeze Bello,202525953278HJ,203,C4,B2,Mathematics,A1,Physics,E8,Further Mathematics,D7,3.0,Civil Engineering,210,REJECTED
+Grace Bello,202595004797FG,220,D7,C4,Economics,A1,Commerce,B3,Further Mathematics,C4,3.4,Business Administration,180,ALTERNATIVE_COURSE
+Solomon Abubakar,202506098358FG,208,A1,B2,Mathematics,B2,Economics,B3,Further Mathematics,B3,4.2,Economics,190,QUALIFIED
+Funmilayo Adeyemi,202521655852EG,169,B3,C4,Biology,C4,Chemistry,C6,Further Mathematics,C5,3.2,Medicine and Surgery,280,REJECTED
+Chioma Chukwu,202572982595EG,249,C4,C4,Mathematics,A1,Fine Art,B2,Further Mathematics,B3,3.8,Architecture,200,QUALIFIED
+Aisha Ibrahim,202594705516FG,236,F9,C5,English Language,B3,Literature,B3,Further Mathematics,C6,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Grace Musa,202509728962EG,237,C4,B3,Mathematics,C5,Physics,F9,Further Mathematics,C4,2.6,Computer Science,200,ALTERNATIVE_COURSE
+Adaeze Musa,202536897028EG,178,C4,C5,Mathematics,B2,Physics,C4,Further Mathematics,C4,3.2,Computer Science,200,REJECTED
+Aisha Abubakar,202585497334FG,259,B3,C5,Mathematics,C4,Economics,B3,Further Mathematics,B2,3.6,Economics,190,QUALIFIED
+Chioma Abubakar,202575844198HJ,160,E8,F9,Mathematics,C6,Economics,C5,Further Mathematics,C5,2.0,Accounting,200,REJECTED
+Chukwuemeka Abubakar,202574733848FG,230,C6,E8,English Language,C6,Literature,B3,Further Mathematics,B3,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Grace Ogundele,202530165712CF,286,B2,C5,Literature,B2,Government,A1,Further Mathematics,D7,3.6,Law,220,ALTERNATIVE_COURSE
+Ibrahim Anyanwu,202545401938CF,175,F9,B2,Mathematics,C5,Economics,D7,Further Mathematics,C4,2.4,Economics,190,REJECTED
+Chioma Nwosu,202540049915FG,190,C4,C6,Literature,E8,Government,A1,Further Mathematics,C6,3.0,Law,220,ALTERNATIVE_COURSE
+Tunde Eze,202531527420FG,213,F9,C4,Economics,C4,Commerce,E8,Further Mathematics,D7,1.8,Business Administration,180,REJECTED
+Adaeze Chukwu,202551612275EG,192,C4,C6,Mathematics,B2,Physics,D7,Further Mathematics,D7,2.8,Civil Engineering,210,REJECTED
+Peter Okafor,202545301742HJ,155,B3,B2,Mathematics,C6,Physics,E8,Further Mathematics,B3,3.2,Computer Science,200,REJECTED
+Josephine Abubakar,202593327279FG,212,E8,D7,Mathematics,C6,Economics,C5,Further Mathematics,C5,2.4,Economics,190,REJECTED
+Grace Ogundele,202591878519CF,172,C5,D7,English Language,C6,Literature,C6,Further Mathematics,C6,2.8,Mass Communication,180,REJECTED
+Kelvin Ibrahim,202513971870HJ,226,C6,D7,Mathematics,B2,Physics,C4,Further Mathematics,B2,3.2,Computer Science,200,ALTERNATIVE_COURSE
+Emmanuel Okonkwo,202540391065CF,177,C4,C4,Literature,A1,Government,C4,Further Mathematics,C6,3.4,Law,220,REJECTED
+Adaeze Nwosu,202526567661EG,264,F9,E8,Mathematics,A1,Economics,E8,Further Mathematics,A1,2.4,Economics,190,REJECTED
+Emmanuel Anyanwu,202504786863EG,182,B2,F9,Biology,B3,Chemistry,B2,Further Mathematics,F9,2.4,Nursing Science,200,REJECTED
+Adaeze Adeleke,202503311907CF,198,B3,B3,Economics,E8,Commerce,C5,Further Mathematics,B2,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Blessing Nwosu,202584395995EG,238,C5,C4,Mathematics,B2,Economics,B2,Further Mathematics,D7,3.2,Accounting,200,ALTERNATIVE_COURSE
+Aisha Adeleke,202526870568FG,166,D7,F9,Mathematics,C4,Physics,C4,Further Mathematics,B3,2.4,Civil Engineering,210,REJECTED
+Grace Eze,202527086688EG,217,C4,B3,English Language,B2,Literature,C4,Further Mathematics,B2,3.6,Mass Communication,180,QUALIFIED
+Chukwuemeka Chukwu,202530469901EG,255,B2,B2,English Language,C5,Literature,E8,Further Mathematics,C6,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Emmanuel Bello,202531739363FG,153,C5,C4,Mathematics,C4,Fine Art,D7,Further Mathematics,B3,3.0,Architecture,200,REJECTED
+Chioma Ibrahim,202517535560EG,216,B3,C4,Mathematics,B3,Physics,B3,Further Mathematics,C4,3.6,Civil Engineering,210,QUALIFIED
+Ibrahim Abubakar,202536937854HJ,219,A1,C4,Literature,C4,Government,C5,Further Mathematics,B3,3.6,Law,220,BORDERLINE
+Fatima Nzekwe,202580801006EG,237,C4,C5,Economics,B3,Commerce,B2,Further Mathematics,C4,3.4,Business Administration,180,QUALIFIED
+Funmilayo Nzekwe,202577008860CF,166,A1,B2,Mathematics,B2,Economics,C4,Further Mathematics,A1,4.2,Accounting,200,REJECTED
+Adaeze Anyanwu,202521182339FG,163,C5,C4,Mathematics,B3,Economics,C4,Further Mathematics,C5,3.2,Economics,190,REJECTED
+Grace Eze,202510166687CF,228,B3,B3,Biology,B3,Chemistry,C4,Further Mathematics,C4,3.6,Nursing Science,200,QUALIFIED
+Amaka Nzekwe,202580339740CF,220,C5,A1,Mathematics,C6,Physics,C5,Further Mathematics,B3,3.6,Computer Science,200,QUALIFIED
+Ibrahim Adeleke,202526142939HJ,218,D7,C4,Mathematics,A1,Physics,E8,Further Mathematics,B3,3.0,Civil Engineering,210,REJECTED
+Kelvin Musa,202550163159HJ,222,B3,C6,Mathematics,B2,Economics,F9,Further Mathematics,C5,2.8,Economics,190,ALTERNATIVE_COURSE
+Solomon Okonkwo,202529619431CF,186,A1,B3,Biology,F9,Chemistry,C4,Further Mathematics,B3,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Amaka Adeyemi,202504754121EG,218,B2,C5,Mathematics,C5,Physics,C5,Further Mathematics,B3,3.4,Civil Engineering,210,QUALIFIED
+Chukwuemeka Adeleke,202595604661EG,220,C4,C4,English Language,C4,Literature,A1,Further Mathematics,B3,3.6,Mass Communication,180,QUALIFIED
+Oluwaseun Adeyemi,202526464715FG,184,C4,C5,Mathematics,B2,Fine Art,B3,Further Mathematics,B3,3.6,Architecture,200,BORDERLINE
+Emmanuel Okonkwo,202559657569EG,275,C5,C4,Mathematics,C5,Economics,C4,Further Mathematics,B2,3.2,Accounting,200,QUALIFIED
+Victor Eze,202579356465CF,226,B3,E8,Mathematics,B2,Physics,B3,Further Mathematics,E8,2.8,Civil Engineering,210,REJECTED
+Tunde Musa,202537416724EG,168,B2,F9,Mathematics,B2,Fine Art,C6,Further Mathematics,A1,3.2,Architecture,200,REJECTED
+Chioma Adeleke,202568868058CF,232,C5,C5,Mathematics,C6,Physics,A1,Further Mathematics,F9,2.8,Civil Engineering,210,ALTERNATIVE_COURSE
+Solomon Anyanwu,202556101438EG,175,C6,C5,Biology,B3,Chemistry,C5,Further Mathematics,A1,3.6,Medicine and Surgery,280,REJECTED
+Emmanuel Ibrahim,202514611254FG,237,B3,C4,Economics,C5,Commerce,C5,Further Mathematics,B2,3.4,Business Administration,180,QUALIFIED
+Tunde Abubakar,202514010512EG,250,C6,C4,Economics,B3,Commerce,A1,Further Mathematics,C5,3.6,Business Administration,180,QUALIFIED
+Solomon Ogundele,202522660937HJ,181,B2,B2,Mathematics,C4,Economics,E8,Further Mathematics,B2,3.2,Economics,190,ALTERNATIVE_COURSE
+Peter Adeyemi,202582553714HJ,243,A1,B2,English Language,B3,Literature,C5,Further Mathematics,C6,3.8,Mass Communication,180,QUALIFIED
+Ngozi Olawale,202579249912FG,224,E8,B3,Mathematics,B3,Economics,B3,Further Mathematics,B2,3.4,Economics,190,ALTERNATIVE_COURSE
+Funmilayo Nwosu,202596627828EG,238,B2,B2,Biology,B3,Chemistry,B2,Further Mathematics,B3,4.0,Medicine and Surgery,280,BORDERLINE
+Emmanuel Ibrahim,202523688767HJ,276,B3,B2,Economics,C6,Commerce,C5,Further Mathematics,D7,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Daniel Bello,202584279788CF,201,C4,A1,Economics,A1,Commerce,C6,Further Mathematics,B3,4.0,Business Administration,180,QUALIFIED
+Blessing Anyanwu,202578361340HJ,183,B2,C6,Mathematics,C6,Fine Art,B3,Further Mathematics,C6,3.4,Architecture,200,BORDERLINE
+Grace Bello,202595962923EG,178,B3,C6,Mathematics,C4,Physics,F9,Further Mathematics,C6,2.6,Civil Engineering,210,REJECTED
+Josephine Eze,202594812604EG,181,C4,C4,Mathematics,C4,Physics,B2,Further Mathematics,F9,2.6,Computer Science,200,ALTERNATIVE_COURSE
+Chioma Nwosu,202594667116FG,207,B2,C5,Literature,C6,Government,C6,Further Mathematics,C5,3.2,Law,220,BORDERLINE
+Chukwuemeka Musa,202575186363HJ,221,C4,C4,Biology,C4,Chemistry,D7,Further Mathematics,C6,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Victor Nzekwe,202500170127HJ,219,B3,B3,Mathematics,C4,Physics,B2,Further Mathematics,D7,3.4,Civil Engineering,210,ALTERNATIVE_COURSE
+Josephine Nwosu,202541541520HJ,238,F9,C4,Mathematics,F9,Physics,D7,Further Mathematics,D7,1.4,Computer Science,200,REJECTED
+Ibrahim Ibrahim,202512938700FG,210,C5,C6,Mathematics,C4,Physics,A1,Further Mathematics,A1,3.8,Civil Engineering,210,QUALIFIED
+Amaka Adeyemi,202555426221CF,260,F9,C4,Biology,B2,Chemistry,A1,Further Mathematics,B3,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Adaeze Adeleke,202573112196FG,200,C5,C4,Mathematics,C5,Fine Art,C5,Further Mathematics,B2,3.2,Architecture,200,QUALIFIED
+Funmilayo Musa,202594043898EG,305,B3,B2,English Language,B3,Literature,A1,Further Mathematics,C4,4.0,Mass Communication,180,QUALIFIED
+Amaka Bello,202579180552HJ,231,B3,A1,English Language,D7,Literature,E8,Further Mathematics,C4,3.0,Mass Communication,180,REJECTED
+Chukwuemeka Okafor,202591043006FG,179,C4,C4,Mathematics,B2,Fine Art,C4,Further Mathematics,F9,2.6,Architecture,200,REJECTED
+Oluwaseun Eze,202514183285HJ,172,C6,C4,Mathematics,C4,Economics,C5,Further Mathematics,C4,3.0,Economics,190,REJECTED
+Grace Okafor,202531617990FG,226,C5,C6,Mathematics,C5,Fine Art,A1,Further Mathematics,C5,3.4,Architecture,200,QUALIFIED
+Kelvin Chukwu,202542524105HJ,202,B2,C5,Literature,C5,Government,B2,Further Mathematics,E8,3.0,Law,220,ALTERNATIVE_COURSE
+Kelvin Abubakar,202507925241CF,234,C4,B3,Mathematics,F9,Physics,C5,Further Mathematics,C4,2.6,Civil Engineering,210,ALTERNATIVE_COURSE
+Ngozi Okonkwo,202522086353HJ,226,C5,A1,Mathematics,D7,Economics,A1,Further Mathematics,A1,4.0,Accounting,200,ALTERNATIVE_COURSE
+Fatima Bello,202580617445CF,207,B3,A1,Biology,B3,Chemistry,C4,Further Mathematics,D7,3.6,Nursing Science,200,ALTERNATIVE_COURSE
+Grace Ibrahim,202559738320HJ,180,C4,B3,Mathematics,B3,Economics,C6,Further Mathematics,C5,3.4,Economics,190,BORDERLINE
+Emmanuel Anyanwu,202564138367CF,156,B2,B3,Mathematics,C6,Physics,D7,Further Mathematics,E8,2.8,Computer Science,200,REJECTED
+Ngozi Ibrahim,202519182619CF,194,C5,A1,Literature,E8,Government,D7,Further Mathematics,C4,2.8,Law,220,REJECTED
+Solomon Musa,202555743132CF,239,C5,B2,English Language,B3,Literature,D7,Further Mathematics,E8,2.8,Mass Communication,180,REJECTED
+Ibrahim Ibrahim,202547411249CF,217,B2,C4,Literature,B3,Government,B2,Further Mathematics,B3,3.8,Law,220,BORDERLINE
+Kelvin Okafor,202544206788EG,166,C6,B3,Mathematics,A1,Economics,B2,Further Mathematics,B3,4.0,Accounting,200,REJECTED
+Grace Nwosu,202536519941CF,216,C4,C6,Biology,B2,Chemistry,A1,Further Mathematics,C6,3.6,Medicine and Surgery,280,BORDERLINE
+Victor Adeyemi,202507029667CF,223,B2,C5,Biology,C6,Chemistry,A1,Further Mathematics,C6,3.6,Medicine and Surgery,280,BORDERLINE
+Oluwaseun Okafor,202599934768HJ,179,C5,B2,English Language,B2,Literature,B2,Further Mathematics,B3,3.8,Mass Communication,180,REJECTED
+Grace Ogundele,202580657875FG,215,A1,B3,Mathematics,C4,Physics,C5,Further Mathematics,C6,3.6,Computer Science,200,QUALIFIED
+Daniel Okafor,202578593213EG,212,B3,A1,English Language,C4,Literature,A1,Further Mathematics,C6,4.0,Mass Communication,180,QUALIFIED
+Peter Olawale,202565223955CF,169,C4,C6,Mathematics,C5,Physics,C6,Further Mathematics,E8,2.6,Civil Engineering,210,REJECTED
+Chioma Chukwu,202542701039EG,222,E8,C4,Biology,C4,Chemistry,B2,Further Mathematics,F9,2.2,Nursing Science,200,REJECTED
+Fatima Nzekwe,202550029218FG,229,C4,A1,Mathematics,D7,Physics,B2,Further Mathematics,B2,3.6,Computer Science,200,ALTERNATIVE_COURSE
+Oluwaseun Nwosu,202567528953EG,247,B3,E8,Biology,B3,Chemistry,B2,Further Mathematics,B3,3.4,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Peter Okonkwo,202590295939CF,246,B3,C5,English Language,B2,Literature,C5,Further Mathematics,E8,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Chukwuemeka Olawale,202557043315FG,161,B2,C5,Economics,B2,Commerce,F9,Further Mathematics,B2,3.0,Business Administration,180,REJECTED
+Adaeze Ibrahim,202565861793EG,177,C5,A1,Biology,C4,Chemistry,C4,Further Mathematics,B2,3.6,Medicine and Surgery,280,REJECTED
+Chukwuemeka Abubakar,202526218159HJ,228,A1,C6,Economics,B3,Commerce,B3,Further Mathematics,E8,3.4,Business Administration,180,ALTERNATIVE_COURSE
+Victor Bello,202536884443CF,227,C4,C5,Mathematics,C5,Physics,C4,Further Mathematics,A1,3.4,Computer Science,200,QUALIFIED
+Chukwuemeka Eze,202597310324CF,228,B3,C4,Mathematics,C4,Physics,A1,Further Mathematics,A1,4.0,Computer Science,200,QUALIFIED
+Chukwuemeka Ogundele,202586256527CF,320,C6,B3,Economics,B3,Commerce,C4,Further Mathematics,C5,3.4,Business Administration,180,QUALIFIED
+Amaka Adeyemi,202558693806HJ,229,C4,B3,Mathematics,C6,Physics,C4,Further Mathematics,B2,3.4,Civil Engineering,210,QUALIFIED
+Solomon Nzekwe,202508989921HJ,249,C5,E8,Mathematics,C4,Economics,B2,Further Mathematics,B3,3.0,Economics,190,ALTERNATIVE_COURSE
+Chukwuemeka Ogundele,202563294511HJ,243,E8,B2,Literature,B2,Government,B2,Further Mathematics,A1,3.6,Law,220,ALTERNATIVE_COURSE
+Funmilayo Adeleke,202586162299CF,232,B3,B3,Mathematics,B3,Economics,C4,Further Mathematics,D7,3.4,Economics,190,ALTERNATIVE_COURSE
+Adaeze Eze,202567997024HJ,198,C4,B2,Biology,B3,Chemistry,C4,Further Mathematics,B3,3.6,Medicine and Surgery,280,BORDERLINE
+Grace Okafor,202574505444HJ,236,C5,C5,Literature,C4,Government,B3,Further Mathematics,D7,3.0,Law,220,ALTERNATIVE_COURSE
+Victor Eze,202569137367FG,182,F9,B2,Biology,B3,Chemistry,C5,Further Mathematics,C6,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Kelvin Nzekwe,202590233030HJ,201,C4,B2,Mathematics,B3,Physics,C4,Further Mathematics,B2,3.6,Computer Science,200,QUALIFIED
+Amaka Ogundele,202503579727FG,193,D7,C5,Mathematics,B3,Physics,C6,Further Mathematics,C4,3.0,Computer Science,200,ALTERNATIVE_COURSE
+Solomon Okafor,202529333346CF,212,B2,D7,Biology,C5,Chemistry,C5,Further Mathematics,B3,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Funmilayo Anyanwu,202544665743HJ,291,C4,B2,Mathematics,B2,Physics,C6,Further Mathematics,B2,3.6,Computer Science,200,QUALIFIED
+Ngozi Chukwu,202599441715FG,144,C5,C6,Mathematics,B3,Physics,B2,Further Mathematics,C4,3.4,Civil Engineering,210,REJECTED
+Oluwaseun Chukwu,202530965207FG,234,D7,B3,Biology,C5,Chemistry,D7,Further Mathematics,B3,3.0,Nursing Science,200,REJECTED
+Ibrahim Abubakar,202538758428EG,153,D7,C4,Mathematics,C5,Physics,C4,Further Mathematics,F9,2.2,Civil Engineering,210,REJECTED
+Fatima Ogundele,202551353465FG,193,A1,B2,Mathematics,B3,Physics,C6,Further Mathematics,C6,3.8,Civil Engineering,210,BORDERLINE
+Peter Adeleke,202517381684HJ,248,C4,C4,Mathematics,B2,Physics,A1,Further Mathematics,C5,3.6,Civil Engineering,210,QUALIFIED
+Tunde Nwosu,202552175250CF,212,D7,B2,Mathematics,F9,Physics,B3,Further Mathematics,F9,2.0,Computer Science,200,REJECTED
+Chukwuemeka Nwosu,202596666760CF,172,B3,C6,Economics,B2,Commerce,C6,Further Mathematics,C4,3.4,Business Administration,180,REJECTED
+Ibrahim Okafor,202503354216FG,184,B2,B3,Mathematics,A1,Economics,B3,Further Mathematics,C6,4.0,Economics,190,BORDERLINE
+Kelvin Abubakar,202562575326CF,233,A1,A1,Literature,E8,Government,C4,Further Mathematics,C4,3.4,Law,220,ALTERNATIVE_COURSE
+Amaka Abubakar,202506489090CF,184,B2,F9,Mathematics,B2,Economics,A1,Further Mathematics,C4,3.2,Accounting,200,ALTERNATIVE_COURSE
+Oluwaseun Bello,202504618499EG,217,A1,B2,Mathematics,C4,Physics,B2,Further Mathematics,B3,4.0,Computer Science,200,QUALIFIED
+Amaka Ibrahim,202539348356FG,211,C6,B2,English Language,C5,Literature,B2,Further Mathematics,B2,3.6,Mass Communication,180,QUALIFIED
+Emmanuel Okafor,202511972181CF,187,A1,C4,Literature,B2,Government,E8,Further Mathematics,B3,3.4,Law,220,ALTERNATIVE_COURSE
+Fatima Olawale,202504556110CF,285,C5,C4,Mathematics,F9,Physics,B3,Further Mathematics,A1,3.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Chukwuemeka Abubakar,202552166746HJ,232,C5,B2,Literature,B3,Government,C4,Further Mathematics,C5,3.4,Law,220,QUALIFIED
+Fatima Adeyemi,202569797296FG,139,C5,C6,English Language,B2,Literature,C5,Further Mathematics,A1,3.6,Mass Communication,180,REJECTED
+Chioma Adeyemi,202567014508EG,216,A1,C5,Mathematics,C6,Fine Art,F9,Further Mathematics,B2,3.0,Architecture,200,ALTERNATIVE_COURSE
+Chioma Abubakar,202562890028HJ,186,C4,C5,Biology,C5,Chemistry,C4,Further Mathematics,C5,3.0,Nursing Science,200,BORDERLINE
+Blessing Chukwu,202538663177HJ,239,D7,A1,Economics,C4,Commerce,B2,Further Mathematics,F9,2.8,Business Administration,180,REJECTED
+Amaka Okonkwo,202560880199FG,182,D7,C4,Biology,B2,Chemistry,C4,Further Mathematics,C5,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Grace Olawale,202575899757CF,205,C4,C5,Mathematics,C4,Economics,B3,Further Mathematics,C6,3.2,Economics,190,QUALIFIED
+Josephine Chukwu,202585102726CF,227,C6,B2,Biology,B3,Chemistry,C6,Further Mathematics,E8,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Musa,202551609177EG,240,C5,B2,Mathematics,E8,Physics,B3,Further Mathematics,C4,3.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Kelvin Anyanwu,202529221699FG,167,A1,C5,Economics,C4,Commerce,C4,Further Mathematics,C4,3.4,Business Administration,180,REJECTED
+Solomon Abubakar,202547226984FG,198,D7,C4,Mathematics,C5,Economics,C5,Further Mathematics,B2,3.0,Economics,190,ALTERNATIVE_COURSE
+Oluwaseun Musa,202528851587HJ,193,C5,B2,Mathematics,C5,Economics,B3,Further Mathematics,B3,3.6,Economics,190,QUALIFIED
+Oluwaseun Okafor,202503424420FG,187,B3,C6,Mathematics,C6,Economics,C4,Further Mathematics,A1,3.6,Economics,190,BORDERLINE
+Aisha Olawale,202538638406HJ,271,C6,A1,Mathematics,C6,Economics,B2,Further Mathematics,D7,3.4,Accounting,200,ALTERNATIVE_COURSE
+Daniel Bello,202597359893EG,224,E8,F9,English Language,B3,Literature,C4,Further Mathematics,A1,2.6,Mass Communication,180,REJECTED
+Amaka Okonkwo,202506484229FG,165,C4,F9,Mathematics,A1,Physics,E8,Further Mathematics,C5,2.4,Civil Engineering,210,REJECTED
+Blessing Anyanwu,202594798515EG,242,B3,C5,Mathematics,B2,Physics,B2,Further Mathematics,B3,3.8,Computer Science,200,QUALIFIED
+Ngozi Bello,202535554398HJ,284,C4,C6,Literature,B2,Government,C4,Further Mathematics,C4,3.2,Law,220,QUALIFIED
+Funmilayo Nzekwe,202593056164FG,246,C6,F9,Mathematics,A1,Economics,C5,Further Mathematics,C4,2.8,Economics,190,ALTERNATIVE_COURSE
+Blessing Eze,202535811288CF,156,D7,C6,Mathematics,B3,Physics,C6,Further Mathematics,C4,3.0,Computer Science,200,REJECTED
+Ibrahim Chukwu,202561207501CF,193,B2,C5,Biology,B2,Chemistry,C5,Further Mathematics,C6,3.4,Medicine and Surgery,280,BORDERLINE
+Adaeze Okonkwo,202576650618CF,254,B2,B3,Mathematics,A1,Physics,C6,Further Mathematics,D7,3.6,Computer Science,200,ALTERNATIVE_COURSE
+Kelvin Adeyemi,202544914766CF,185,A1,C5,Mathematics,A1,Fine Art,C6,Further Mathematics,B3,4.0,Architecture,200,BORDERLINE
+Josephine Ogundele,202524508821CF,225,B2,B2,Economics,C5,Commerce,C6,Further Mathematics,C6,3.4,Business Administration,180,QUALIFIED
+Ngozi Bello,202568222394EG,237,C4,B3,Mathematics,C4,Physics,A1,Further Mathematics,B2,3.8,Computer Science,200,QUALIFIED
+Aisha Ibrahim,202581414139HJ,177,B2,C6,Biology,D7,Chemistry,D7,Further Mathematics,E8,2.4,Medicine and Surgery,280,REJECTED
+Ibrahim Abubakar,202577594929FG,207,B3,C5,Biology,B2,Chemistry,B3,Further Mathematics,A1,4.0,Nursing Science,200,QUALIFIED
+Adaeze Eze,202552577754HJ,120,E8,B2,Biology,B3,Chemistry,C6,Further Mathematics,C5,3.0,Nursing Science,200,REJECTED
+Aisha Bello,202541108099HJ,174,B2,C5,Mathematics,A1,Economics,B3,Further Mathematics,C6,3.8,Economics,190,REJECTED
+Oluwaseun Abubakar,202563942788CF,201,B2,A1,Mathematics,B3,Fine Art,D7,Further Mathematics,C4,3.6,Architecture,200,ALTERNATIVE_COURSE
+Fatima Anyanwu,202582722992HJ,166,B3,A1,English Language,B2,Literature,E8,Further Mathematics,F9,2.8,Mass Communication,180,REJECTED
+Ibrahim Chukwu,202556770051FG,267,A1,C6,Biology,B2,Chemistry,B3,Further Mathematics,B2,4.0,Nursing Science,200,QUALIFIED
+Chukwuemeka Chukwu,202546386557HJ,159,C4,C4,Mathematics,B3,Physics,B3,Further Mathematics,C4,3.4,Civil Engineering,210,REJECTED
+Daniel Bello,202522259136FG,194,A1,D7,Mathematics,C4,Fine Art,B2,Further Mathematics,C4,3.4,Architecture,200,ALTERNATIVE_COURSE
+Emmanuel Bello,202502992280EG,214,C4,C4,Biology,B2,Chemistry,B2,Further Mathematics,C6,3.4,Medicine and Surgery,280,BORDERLINE
+Emmanuel Nzekwe,202541379772EG,260,B2,E8,Mathematics,C4,Physics,C4,Further Mathematics,E8,2.4,Computer Science,200,REJECTED
+Daniel Nwosu,202557991366EG,159,C5,C6,English Language,C6,Literature,B2,Further Mathematics,C5,3.2,Mass Communication,180,REJECTED
+Funmilayo Adeyemi,202527990881CF,250,A1,C4,Biology,D7,Chemistry,C5,Further Mathematics,C6,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Adaeze Chukwu,202565086376FG,210,C5,D7,Economics,C4,Commerce,A1,Further Mathematics,E8,2.8,Business Administration,180,REJECTED
+Daniel Ibrahim,202531498643CF,175,C6,D7,Mathematics,C6,Fine Art,C4,Further Mathematics,C4,2.8,Architecture,200,REJECTED
+Victor Okonkwo,202551269448HJ,226,C4,B2,Mathematics,A1,Physics,C5,Further Mathematics,C5,3.6,Computer Science,200,QUALIFIED
+Aisha Ibrahim,202525887449FG,216,B3,B3,Mathematics,C5,Fine Art,C6,Further Mathematics,C4,3.4,Architecture,200,QUALIFIED
+Fatima Adeyemi,202538658902HJ,188,C5,D7,English Language,C5,Literature,C5,Further Mathematics,C4,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Daniel Bello,202551906698FG,212,C6,C6,Mathematics,C4,Physics,C5,Further Mathematics,A1,3.4,Computer Science,200,QUALIFIED
+Kelvin Eze,202530988392CF,196,A1,C6,Mathematics,B2,Fine Art,C4,Further Mathematics,A1,4.0,Architecture,200,BORDERLINE
+Ngozi Ogundele,202566938011FG,213,B2,A1,Biology,B2,Chemistry,F9,Further Mathematics,C6,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Ibrahim Ibrahim,202569042681CF,233,D7,B3,Mathematics,E8,Economics,B3,Further Mathematics,C5,2.8,Economics,190,REJECTED
+Peter Eze,202576973577CF,265,B3,E8,Mathematics,C6,Economics,E8,Further Mathematics,D7,2.2,Economics,190,REJECTED
+Grace Anyanwu,202556588043FG,166,B2,A1,Economics,C5,Commerce,F9,Further Mathematics,C5,3.0,Business Administration,180,REJECTED
+Victor Abubakar,202539423733EG,284,B3,C5,Biology,B3,Chemistry,C4,Further Mathematics,B2,3.6,Medicine and Surgery,280,QUALIFIED
+Amaka Adeyemi,202517908075FG,141,B2,B2,Mathematics,B2,Physics,C5,Further Mathematics,B2,3.8,Civil Engineering,210,REJECTED
+Kelvin Eze,202563920867CF,204,D7,D7,Economics,C4,Commerce,B3,Further Mathematics,B2,3.0,Business Administration,180,REJECTED
+Kelvin Ibrahim,202550036915FG,230,B3,D7,Mathematics,C6,Economics,C4,Further Mathematics,B2,3.2,Economics,190,ALTERNATIVE_COURSE
+Victor Abubakar,202527636556FG,219,D7,B2,Mathematics,B3,Fine Art,B3,Further Mathematics,E8,3.0,Architecture,200,REJECTED
+Daniel Anyanwu,202538663227CF,188,B2,B2,Economics,C4,Commerce,B2,Further Mathematics,A1,4.0,Business Administration,180,QUALIFIED
+Victor Anyanwu,202574489061EG,202,C4,B2,Literature,D7,Government,C5,Further Mathematics,C4,3.0,Law,220,ALTERNATIVE_COURSE
+Daniel Abubakar,202558845061FG,192,B2,B3,Mathematics,C6,Physics,A1,Further Mathematics,C5,3.8,Computer Science,200,BORDERLINE
+Ngozi Abubakar,202587716947EG,189,B2,C4,Mathematics,C5,Fine Art,B2,Further Mathematics,C6,3.4,Architecture,200,BORDERLINE
+Chukwuemeka Adeyemi,202525355449HJ,239,C5,E8,Literature,C4,Government,C5,Further Mathematics,C4,2.6,Law,220,ALTERNATIVE_COURSE
+Tunde Okonkwo,202522023413EG,222,D7,C6,Mathematics,E8,Physics,C5,Further Mathematics,C4,2.4,Civil Engineering,210,REJECTED
+Solomon Chukwu,202511492164EG,185,B2,A1,English Language,D7,Literature,C4,Further Mathematics,A1,3.8,Mass Communication,180,ALTERNATIVE_COURSE
+Blessing Ogundele,202555778487EG,241,C5,C4,Mathematics,B2,Economics,C4,Further Mathematics,B2,3.4,Accounting,200,QUALIFIED
+Kelvin Ogundele,202584578317FG,220,B2,C4,Mathematics,C5,Economics,C5,Further Mathematics,C4,3.2,Economics,190,QUALIFIED
+Oluwaseun Abubakar,202547807740HJ,238,C4,B2,Biology,A1,Chemistry,C4,Further Mathematics,C6,3.6,Nursing Science,200,QUALIFIED
+Adaeze Okonkwo,202532663416EG,232,C4,C6,Mathematics,C4,Physics,B2,Further Mathematics,D7,3.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Aisha Anyanwu,202546312241HJ,180,C6,D7,Mathematics,C6,Economics,C5,Further Mathematics,B3,3.0,Economics,190,ALTERNATIVE_COURSE
+Aisha Okafor,202521442703CF,190,C4,C5,Mathematics,C4,Fine Art,B3,Further Mathematics,B2,3.4,Architecture,200,BORDERLINE
+Ngozi Ibrahim,202505120461HJ,236,A1,B2,Literature,C4,Government,C6,Further Mathematics,C4,3.6,Law,220,QUALIFIED
+Grace Okonkwo,202573037183HJ,231,B2,C6,Literature,C6,Government,C6,Further Mathematics,B2,3.4,Law,220,QUALIFIED
+Aisha Chukwu,202514743503CF,209,C5,B3,English Language,B3,Literature,C5,Further Mathematics,A1,3.8,Mass Communication,180,QUALIFIED
+Grace Okafor,202509792513EG,214,C5,B3,Mathematics,B2,Economics,B3,Further Mathematics,B2,3.8,Accounting,200,QUALIFIED
+Blessing Abubakar,202528127358FG,254,A1,C5,Economics,E8,Commerce,F9,Further Mathematics,C5,2.4,Business Administration,180,REJECTED
+Blessing Ibrahim,202578487392FG,189,C5,A1,Economics,B3,Commerce,C5,Further Mathematics,B3,3.8,Business Administration,180,QUALIFIED
+Chukwuemeka Chukwu,202527448570HJ,229,C5,B3,Biology,C6,Chemistry,D7,Further Mathematics,C4,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Chukwuemeka Ogundele,202586387829FG,202,D7,C5,Literature,B3,Government,C5,Further Mathematics,B3,3.2,Law,220,ALTERNATIVE_COURSE
+Oluwaseun Nwosu,202503173109HJ,202,C4,B3,Biology,A1,Chemistry,C5,Further Mathematics,A1,4.0,Nursing Science,200,QUALIFIED
+Chukwuemeka Okafor,202537170586FG,248,C4,C5,Economics,B3,Commerce,B3,Further Mathematics,C5,3.4,Business Administration,180,QUALIFIED
+Ibrahim Chukwu,202511386338EG,238,C6,B3,Mathematics,A1,Physics,A1,Further Mathematics,B3,4.2,Computer Science,200,QUALIFIED
+Peter Abubakar,202576122868FG,238,C5,B2,Mathematics,C5,Fine Art,C4,Further Mathematics,B2,3.4,Architecture,200,QUALIFIED
+Victor Olawale,202556659398EG,255,C4,C4,Literature,E8,Government,D7,Further Mathematics,C4,2.4,Law,220,REJECTED
+Solomon Okafor,202504908240FG,210,C6,E8,English Language,B3,Literature,E8,Further Mathematics,C4,2.4,Mass Communication,180,REJECTED
+Aisha Chukwu,202589921075EG,233,B2,B3,Mathematics,C6,Economics,E8,Further Mathematics,C6,3.0,Accounting,200,ALTERNATIVE_COURSE
+Peter Okonkwo,202593157279CF,199,B3,D7,Literature,B2,Government,B3,Further Mathematics,B3,3.6,Law,220,ALTERNATIVE_COURSE
+Victor Abubakar,202566139060FG,221,C5,A1,Mathematics,C6,Fine Art,B3,Further Mathematics,C6,3.6,Architecture,200,QUALIFIED
+Blessing Ogundele,202567998136FG,205,A1,C4,Mathematics,B2,Economics,C4,Further Mathematics,B2,3.8,Economics,190,QUALIFIED
+Daniel Adeyemi,202568622783HJ,213,B2,B3,English Language,C4,Literature,C5,Further Mathematics,C4,3.4,Mass Communication,180,QUALIFIED
+Chukwuemeka Eze,202565911665FG,230,C5,B2,English Language,C5,Literature,C5,Further Mathematics,B2,3.4,Mass Communication,180,QUALIFIED
+Funmilayo Olawale,202579270335EG,181,B3,C4,Mathematics,A1,Economics,B3,Further Mathematics,F9,3.2,Accounting,200,ALTERNATIVE_COURSE
+Josephine Okafor,202551477053EG,283,B2,A1,Biology,E8,Chemistry,E8,Further Mathematics,D7,2.6,Medicine and Surgery,280,REJECTED
+Emmanuel Okonkwo,202598042043FG,174,C4,C6,Mathematics,C4,Economics,C5,Further Mathematics,F9,2.4,Accounting,200,REJECTED
+Ngozi Olawale,202510463681FG,167,C4,E8,Mathematics,A1,Physics,C5,Further Mathematics,C5,3.0,Computer Science,200,REJECTED
+Emmanuel Okafor,202538457620FG,250,D7,C4,Economics,B2,Commerce,C4,Further Mathematics,C4,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Blessing Ogundele,202546084325HJ,237,B3,B3,Biology,F9,Chemistry,F9,Further Mathematics,B3,2.4,Nursing Science,200,REJECTED
+Grace Okonkwo,202539264957EG,231,A1,B3,Literature,E8,Government,C5,Further Mathematics,C5,3.2,Law,220,ALTERNATIVE_COURSE
+Kelvin Nzekwe,202526292518CF,231,C5,C4,Mathematics,C5,Economics,B2,Further Mathematics,B2,3.4,Accounting,200,QUALIFIED
+Adaeze Okonkwo,202547423122CF,209,B3,D7,Literature,C5,Government,C6,Further Mathematics,D7,2.8,Law,220,REJECTED
+Emmanuel Abubakar,202517289752HJ,178,C5,C5,Mathematics,C5,Fine Art,C4,Further Mathematics,B2,3.2,Architecture,200,REJECTED
+Daniel Okonkwo,202533312797FG,212,C4,B2,Economics,B2,Commerce,C4,Further Mathematics,E8,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Victor Okonkwo,202599988081HJ,186,D7,C4,Economics,C6,Commerce,C5,Further Mathematics,C6,2.8,Business Administration,180,ALTERNATIVE_COURSE
+Blessing Chukwu,202568034764FG,244,C6,A1,Economics,F9,Commerce,C4,Further Mathematics,B3,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Tunde Olawale,202571812982HJ,204,B2,B3,Economics,D7,Commerce,C5,Further Mathematics,D7,3.0,Business Administration,180,REJECTED
+Tunde Adeyemi,202545211175CF,181,B3,A1,English Language,C4,Literature,D7,Further Mathematics,D7,3.2,Mass Communication,180,REJECTED
+Aisha Okonkwo,202502592222CF,198,C5,C5,Mathematics,F9,Economics,C5,Further Mathematics,B2,2.6,Economics,190,ALTERNATIVE_COURSE
+Oluwaseun Bello,202509407778CF,224,B3,C5,English Language,E8,Literature,B3,Further Mathematics,B2,3.2,Mass Communication,180,ALTERNATIVE_COURSE
+Chukwuemeka Adeleke,202590384983CF,190,D7,B2,Mathematics,C4,Fine Art,C4,Further Mathematics,C4,3.0,Architecture,200,ALTERNATIVE_COURSE
+Funmilayo Eze,202551016224EG,181,B2,C5,Literature,A1,Government,D7,Further Mathematics,C5,3.4,Law,220,ALTERNATIVE_COURSE
+Solomon Olawale,202516814721FG,218,C5,B3,Economics,A1,Commerce,C6,Further Mathematics,B3,3.8,Business Administration,180,QUALIFIED
+Kelvin Adeyemi,202579469548FG,218,C4,C4,Biology,C5,Chemistry,C5,Further Mathematics,B2,3.2,Nursing Science,200,QUALIFIED
+Funmilayo Bello,202543010713HJ,192,C5,C4,Literature,C5,Government,C4,Further Mathematics,C6,3.0,Law,220,BORDERLINE
+Josephine Eze,202514488501FG,193,A1,B3,English Language,C6,Literature,B2,Further Mathematics,C5,3.8,Mass Communication,180,QUALIFIED
+Victor Nzekwe,202577027278FG,218,B3,C4,Biology,E8,Chemistry,C6,Further Mathematics,B2,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Victor Chukwu,202580395512FG,159,C6,C4,Economics,C5,Commerce,C6,Further Mathematics,B3,3.2,Business Administration,180,REJECTED
+Fatima Adeleke,202514504617EG,160,B3,B3,Mathematics,C4,Physics,B2,Further Mathematics,C5,3.6,Computer Science,200,REJECTED
+Blessing Anyanwu,202531780782EG,184,C4,E8,Biology,B2,Chemistry,B3,Further Mathematics,B2,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Amaka Olawale,202582307681CF,202,E8,C5,Biology,C4,Chemistry,C6,Further Mathematics,B2,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Blessing Adeyemi,202584094353EG,220,E8,C5,Mathematics,C4,Physics,A1,Further Mathematics,C4,3.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Daniel Adeyemi,202509881385FG,261,B3,B3,Mathematics,C4,Physics,B2,Further Mathematics,B2,3.8,Civil Engineering,210,QUALIFIED
+Funmilayo Nzekwe,202558702070CF,240,B2,C5,Mathematics,B3,Physics,B2,Further Mathematics,A1,4.0,Civil Engineering,210,QUALIFIED
+Tunde Adeleke,202554538179EG,204,A1,C4,English Language,B2,Literature,C4,Further Mathematics,C4,3.6,Mass Communication,180,QUALIFIED
+Tunde Ibrahim,202533294562FG,209,C6,D7,Biology,C4,Chemistry,C4,Further Mathematics,C5,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Fatima Eze,202559928161FG,174,C4,A1,Biology,C4,Chemistry,B3,Further Mathematics,C4,3.6,Nursing Science,200,REJECTED
+Funmilayo Bello,202582761539HJ,209,C5,C6,Mathematics,C4,Economics,C4,Further Mathematics,C4,3.0,Economics,190,QUALIFIED
+Peter Olawale,202571997581HJ,199,C4,B3,English Language,C5,Literature,B2,Further Mathematics,C5,3.4,Mass Communication,180,QUALIFIED
+Solomon Abubakar,202570132902EG,221,B3,C4,Literature,C4,Government,C5,Further Mathematics,C4,3.2,Law,220,QUALIFIED
+Victor Eze,202594651909HJ,181,C4,B3,Economics,C4,Commerce,B2,Further Mathematics,C5,3.4,Business Administration,180,QUALIFIED
+Aisha Olawale,202551403696FG,228,D7,A1,Literature,D7,Government,E8,Further Mathematics,A1,3.0,Law,220,REJECTED
+Aisha Okonkwo,202556242201CF,263,C4,C4,English Language,B2,Literature,B2,Further Mathematics,B2,3.6,Mass Communication,180,QUALIFIED
+Adaeze Olawale,202579692786HJ,206,C5,C4,Literature,C4,Government,F9,Further Mathematics,A1,2.8,Law,220,ALTERNATIVE_COURSE
+Grace Musa,202584689500HJ,224,B3,B2,English Language,C5,Literature,C4,Further Mathematics,C6,3.4,Mass Communication,180,QUALIFIED
+Daniel Ibrahim,202581891371FG,234,B2,C4,Biology,C5,Chemistry,B2,Further Mathematics,C5,3.4,Nursing Science,200,QUALIFIED
+Chioma Adeleke,202556544209FG,195,A1,B3,Mathematics,C6,Fine Art,C4,Further Mathematics,C4,3.6,Architecture,200,BORDERLINE
+Josephine Anyanwu,202590471281FG,217,B3,C5,Mathematics,C4,Fine Art,C4,Further Mathematics,C5,3.2,Architecture,200,QUALIFIED
+Fatima Nzekwe,202592752437EG,210,B2,B3,Mathematics,D7,Physics,A1,Further Mathematics,B2,3.8,Civil Engineering,210,ALTERNATIVE_COURSE
+Oluwaseun Olawale,202576637239FG,213,D7,B3,Mathematics,A1,Economics,B2,Further Mathematics,E8,3.2,Economics,190,REJECTED
+Josephine Ibrahim,202583667428HJ,182,C5,C6,Mathematics,B2,Physics,B2,Further Mathematics,B3,3.6,Computer Science,200,BORDERLINE
+Blessing Adeyemi,202585694544CF,210,B3,C6,Mathematics,B3,Physics,B3,Further Mathematics,C4,3.6,Computer Science,200,QUALIFIED
+Peter Anyanwu,202538525800CF,227,C5,B3,Mathematics,C6,Physics,C5,Further Mathematics,C5,3.2,Civil Engineering,210,QUALIFIED
+Daniel Bello,202500910939CF,260,C4,C4,Mathematics,C5,Physics,B3,Further Mathematics,C5,3.2,Computer Science,200,QUALIFIED
+Fatima Nzekwe,202512447174HJ,243,A1,C5,Biology,B3,Chemistry,C6,Further Mathematics,C5,3.6,Medicine and Surgery,280,BORDERLINE
+Blessing Eze,202542717396EG,285,B3,C6,Biology,B3,Chemistry,A1,Further Mathematics,B3,4.0,Nursing Science,200,QUALIFIED
+Tunde Musa,202541011947CF,183,B2,C4,Economics,C4,Commerce,C5,Further Mathematics,B2,3.4,Business Administration,180,QUALIFIED
+Victor Nzekwe,202569087766CF,240,B2,C5,Economics,E8,Commerce,C5,Further Mathematics,B3,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Aisha Nzekwe,202555460158FG,216,B2,B3,Mathematics,C5,Economics,C6,Further Mathematics,B2,3.6,Economics,190,QUALIFIED
+Solomon Ogundele,202534615717EG,286,C6,C6,Biology,B3,Chemistry,B2,Further Mathematics,C4,3.4,Medicine and Surgery,280,QUALIFIED
+Aisha Ogundele,202547870050FG,181,A1,A1,Literature,F9,Government,B2,Further Mathematics,B3,3.6,Law,220,ALTERNATIVE_COURSE
+Aisha Nwosu,202593102707CF,180,C4,B2,Mathematics,C5,Physics,C4,Further Mathematics,E8,2.8,Computer Science,200,ALTERNATIVE_COURSE
+Amaka Ibrahim,202592911179EG,189,C5,B2,Mathematics,B2,Economics,A1,Further Mathematics,B3,4.0,Accounting,200,BORDERLINE
+Victor Adeyemi,202598253092FG,135,C6,C4,Biology,C6,Chemistry,F9,Further Mathematics,C5,2.4,Medicine and Surgery,280,REJECTED
+Tunde Bello,202590219620HJ,191,B2,B2,Biology,C4,Chemistry,C5,Further Mathematics,C4,3.4,Medicine and Surgery,280,BORDERLINE
+Adaeze Musa,202572324876EG,183,A1,B2,Biology,A1,Chemistry,C5,Further Mathematics,D7,3.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Josephine Abubakar,202560833181FG,215,C5,A1,Literature,B2,Government,C4,Further Mathematics,E8,3.2,Law,220,ALTERNATIVE_COURSE
+Amaka Anyanwu,202527722005FG,221,C4,C4,Mathematics,C5,Economics,B2,Further Mathematics,A1,3.6,Economics,190,QUALIFIED
+Blessing Nzekwe,202582207811EG,275,C4,B3,Mathematics,C6,Economics,C6,Further Mathematics,A1,3.6,Accounting,200,QUALIFIED
+Amaka Abubakar,202531363631HJ,243,C4,B3,Economics,B2,Commerce,C5,Further Mathematics,B3,3.6,Business Administration,180,QUALIFIED
+Solomon Abubakar,202527354352CF,189,C4,D7,Mathematics,B2,Fine Art,E8,Further Mathematics,C4,2.6,Architecture,200,REJECTED
+Victor Bello,202549292983CF,178,A1,B2,Mathematics,D7,Fine Art,C4,Further Mathematics,B2,3.6,Architecture,200,REJECTED
+Daniel Okafor,202563356939EG,227,D7,C4,English Language,F9,Literature,C4,Further Mathematics,C6,2.2,Mass Communication,180,REJECTED
+Kelvin Okafor,202568671773CF,163,D7,C4,Mathematics,A1,Fine Art,F9,Further Mathematics,C5,2.6,Architecture,200,REJECTED
+Grace Ogundele,202510742799CF,274,C6,C5,Mathematics,C4,Economics,B2,Further Mathematics,B3,3.4,Economics,190,QUALIFIED
+Tunde Musa,202501658046FG,251,C4,B2,Economics,C5,Commerce,B2,Further Mathematics,D7,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Blessing Chukwu,202550165790FG,193,C4,C6,Mathematics,C6,Fine Art,A1,Further Mathematics,D7,3.2,Architecture,200,ALTERNATIVE_COURSE
+Victor Bello,202581793355FG,150,B2,C4,Biology,A1,Chemistry,C5,Further Mathematics,B2,3.8,Nursing Science,200,REJECTED
+Kelvin Olawale,202517884795CF,257,C5,B3,Mathematics,A1,Economics,B3,Further Mathematics,C4,3.8,Economics,190,QUALIFIED
+Chukwuemeka Adeyemi,202524127238CF,205,D7,C4,Mathematics,A1,Economics,D7,Further Mathematics,B3,3.2,Accounting,200,REJECTED
+Emmanuel Eze,202531038569FG,253,C4,C5,Mathematics,E8,Physics,C4,Further Mathematics,C4,2.6,Civil Engineering,210,ALTERNATIVE_COURSE
+Peter Nwosu,202542437540EG,154,C4,C5,Biology,C4,Chemistry,C4,Further Mathematics,C4,3.0,Nursing Science,200,REJECTED
+Fatima Nwosu,202522310592HJ,189,B3,E8,Biology,C5,Chemistry,B2,Further Mathematics,C4,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Oluwaseun Abubakar,202578284106HJ,210,B3,B2,Mathematics,C5,Physics,C5,Further Mathematics,F9,2.8,Civil Engineering,210,ALTERNATIVE_COURSE
+Kelvin Abubakar,202547492975CF,211,E8,E8,Literature,B2,Government,F9,Further Mathematics,C4,1.8,Law,220,REJECTED
+Grace Ibrahim,202551509398EG,194,D7,B2,Economics,C4,Commerce,B3,Further Mathematics,C4,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Kelvin Okonkwo,202537599805HJ,231,B2,A1,Mathematics,C6,Physics,C5,Further Mathematics,E8,3.2,Civil Engineering,210,ALTERNATIVE_COURSE
+Josephine Ibrahim,202581376742HJ,172,C5,C4,Literature,B3,Government,A1,Further Mathematics,B3,3.8,Law,220,REJECTED
+Kelvin Abubakar,202519610646EG,205,B2,C4,English Language,A1,Literature,B2,Further Mathematics,C4,3.8,Mass Communication,180,QUALIFIED
+Josephine Chukwu,202570494787EG,214,C4,C4,Mathematics,D7,Economics,B2,Further Mathematics,C6,3.0,Economics,190,ALTERNATIVE_COURSE
+Amaka Ogundele,202546273014HJ,228,C6,B2,Mathematics,B3,Physics,C5,Further Mathematics,C5,3.4,Computer Science,200,QUALIFIED
+Chioma Musa,202515890429CF,234,C4,B3,Biology,C4,Chemistry,C4,Further Mathematics,B3,3.4,Medicine and Surgery,280,BORDERLINE
+Adaeze Ogundele,202550448183EG,170,B3,D7,Literature,B2,Government,B2,Further Mathematics,B3,3.6,Law,220,REJECTED
+Josephine Eze,202551895202FG,156,C4,B2,Biology,B3,Chemistry,B3,Further Mathematics,C6,3.6,Medicine and Surgery,280,REJECTED
+Kelvin Bello,202538988816HJ,254,C6,C4,Biology,E8,Chemistry,B2,Further Mathematics,B2,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Oluwaseun Olawale,202579852401EG,221,B2,B2,Biology,A1,Chemistry,B3,Further Mathematics,C5,4.0,Medicine and Surgery,280,BORDERLINE
+Chukwuemeka Okonkwo,202511076031CF,183,D7,B2,Literature,B2,Government,B2,Further Mathematics,B2,3.6,Law,220,ALTERNATIVE_COURSE
+Emmanuel Anyanwu,202511939325CF,264,C4,C4,Mathematics,D7,Economics,A1,Further Mathematics,B3,3.4,Economics,190,ALTERNATIVE_COURSE
+Kelvin Anyanwu,202593891190EG,214,B2,C5,Biology,B3,Chemistry,C4,Further Mathematics,B3,3.6,Medicine and Surgery,280,BORDERLINE
+Ibrahim Nzekwe,202587592712FG,251,E8,B2,Mathematics,C6,Economics,A1,Further Mathematics,C5,3.2,Accounting,200,ALTERNATIVE_COURSE
+Tunde Adeyemi,202582754801FG,212,C4,C4,English Language,C4,Literature,C6,Further Mathematics,B3,3.2,Mass Communication,180,QUALIFIED
+Tunde Bello,202586463175EG,282,B2,B3,Economics,C5,Commerce,B3,Further Mathematics,F9,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Chukwuemeka Adeyemi,202526691215EG,271,F9,C4,Mathematics,B2,Physics,C4,Further Mathematics,C5,2.6,Computer Science,200,ALTERNATIVE_COURSE
+Chioma Eze,202599465796HJ,201,B2,C6,Biology,C4,Chemistry,B2,Further Mathematics,C4,3.4,Nursing Science,200,QUALIFIED
+Oluwaseun Okafor,202510170269FG,244,B3,C6,Mathematics,B2,Economics,B3,Further Mathematics,C4,3.6,Economics,190,QUALIFIED
+Chioma Anyanwu,202573477848FG,232,B3,C5,Literature,C6,Government,C5,Further Mathematics,C4,3.2,Law,220,QUALIFIED
+Solomon Ibrahim,202556770028FG,257,C4,E8,Mathematics,A1,Economics,C4,Further Mathematics,D7,2.8,Economics,190,REJECTED
+Chioma Ogundele,202588977828CF,176,C4,B2,Literature,C5,Government,C4,Further Mathematics,B2,3.4,Law,220,REJECTED
+Josephine Abubakar,202500902559CF,234,B3,C4,English Language,B3,Literature,C5,Further Mathematics,C6,3.4,Mass Communication,180,QUALIFIED
+Grace Bello,202534911415EG,247,B3,C4,Biology,F9,Chemistry,C4,Further Mathematics,A1,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Adaeze Eze,202507905696FG,148,C4,A1,Mathematics,C5,Physics,C4,Further Mathematics,C4,3.4,Computer Science,200,REJECTED
+Victor Nwosu,202594563718EG,168,A1,C4,Mathematics,C5,Fine Art,B2,Further Mathematics,C4,3.6,Architecture,200,REJECTED
+Chukwuemeka Musa,202591954198HJ,138,B3,B3,Mathematics,C4,Physics,C6,Further Mathematics,C5,3.4,Civil Engineering,210,REJECTED
+Adaeze Ogundele,202585366498HJ,200,B2,C6,English Language,C5,Literature,B3,Further Mathematics,C6,3.4,Mass Communication,180,QUALIFIED
+Ibrahim Ogundele,202574896908EG,235,B2,A1,Mathematics,C5,Economics,D7,Further Mathematics,C4,3.4,Economics,190,ALTERNATIVE_COURSE
+Adaeze Abubakar,202513644249EG,262,C4,B2,Biology,C5,Chemistry,C6,Further Mathematics,C6,3.2,Nursing Science,200,QUALIFIED
+Chioma Chukwu,202566032420FG,212,B2,B2,English Language,A1,Literature,C6,Further Mathematics,B3,4.0,Mass Communication,180,QUALIFIED
+Emmanuel Okafor,202515941651HJ,267,C5,B2,Mathematics,D7,Physics,E8,Further Mathematics,C4,2.6,Civil Engineering,210,REJECTED
+Peter Anyanwu,202584713915FG,161,B2,C4,Literature,C4,Government,B2,Further Mathematics,C5,3.4,Law,220,REJECTED
+Amaka Nwosu,202534764907FG,150,C5,C6,Mathematics,C5,Fine Art,E8,Further Mathematics,B2,2.8,Architecture,200,REJECTED
+Oluwaseun Abubakar,202575409003FG,208,B3,C4,Biology,C5,Chemistry,E8,Further Mathematics,D7,2.6,Medicine and Surgery,280,REJECTED
+Aisha Olawale,202537606441EG,223,B3,C5,Mathematics,C5,Economics,D7,Further Mathematics,C5,3.0,Economics,190,ALTERNATIVE_COURSE
+Adaeze Anyanwu,202504177656CF,208,B2,D7,Mathematics,D7,Physics,C5,Further Mathematics,D7,2.6,Civil Engineering,210,REJECTED
+Victor Ibrahim,202500272063FG,137,C5,C4,Literature,B3,Government,C5,Further Mathematics,C6,3.2,Law,220,REJECTED
+Oluwaseun Olawale,202596577242FG,206,C4,B2,Biology,B2,Chemistry,C5,Further Mathematics,C6,3.4,Nursing Science,200,QUALIFIED
+Peter Bello,202500893173FG,164,B2,C4,Mathematics,B2,Physics,D7,Further Mathematics,E8,2.8,Civil Engineering,210,REJECTED
+Fatima Adeleke,202510867713EG,233,A1,C5,Literature,C5,Government,B2,Further Mathematics,E8,3.2,Law,220,ALTERNATIVE_COURSE
+Adaeze Olawale,202539343626EG,222,E8,C6,Mathematics,B3,Economics,C5,Further Mathematics,B3,3.0,Accounting,200,ALTERNATIVE_COURSE
+Tunde Adeyemi,202507256366FG,177,B3,B3,Mathematics,C5,Physics,D7,Further Mathematics,B3,3.4,Computer Science,200,REJECTED
+Funmilayo Ogundele,202590048964HJ,192,A1,A1,Biology,B3,Chemistry,B2,Further Mathematics,D7,4.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Chioma Nzekwe,202557215862FG,172,B2,D7,Biology,A1,Chemistry,B2,Further Mathematics,B2,3.8,Nursing Science,200,REJECTED
+Ngozi Nzekwe,202564494856EG,207,B3,F9,Biology,C4,Chemistry,F9,Further Mathematics,B3,2.2,Medicine and Surgery,280,REJECTED
+Tunde Okafor,202532032074EG,243,C5,C4,Biology,E8,Chemistry,C4,Further Mathematics,E8,2.2,Nursing Science,200,REJECTED
+Aisha Ibrahim,202577121513FG,175,C4,F9,Economics,E8,Commerce,A1,Further Mathematics,B3,2.6,Business Administration,180,REJECTED
+Ibrahim Adeleke,202508926137CF,227,C6,C5,Literature,C6,Government,C4,Further Mathematics,C5,3.0,Law,220,QUALIFIED
+Amaka Olawale,202552017774CF,191,A1,C5,Biology,C5,Chemistry,B3,Further Mathematics,C4,3.6,Nursing Science,200,BORDERLINE
+Peter Nwosu,202530450189HJ,182,E8,C5,Biology,E8,Chemistry,B3,Further Mathematics,C5,2.4,Nursing Science,200,REJECTED
+Ibrahim Nwosu,202566421476FG,206,B3,B2,Biology,E8,Chemistry,D7,Further Mathematics,A1,3.2,Medicine and Surgery,280,REJECTED
+Solomon Ibrahim,202549961659EG,173,B2,C5,Mathematics,C6,Fine Art,C4,Further Mathematics,C4,3.2,Architecture,200,REJECTED
+Oluwaseun Nzekwe,202578814761HJ,190,C5,A1,English Language,C4,Literature,F9,Further Mathematics,C5,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Josephine Adeleke,202508108186HJ,168,B2,B2,Mathematics,D7,Physics,C6,Further Mathematics,C4,3.2,Civil Engineering,210,REJECTED
+Kelvin Okafor,202517226016FG,278,C4,C5,Biology,C6,Chemistry,B3,Further Mathematics,C4,3.2,Medicine and Surgery,280,BORDERLINE
+Fatima Bello,202521941680CF,211,C4,C4,Biology,C5,Chemistry,C5,Further Mathematics,B3,3.2,Nursing Science,200,QUALIFIED
+Funmilayo Musa,202574995641EG,185,B2,B2,English Language,C4,Literature,C5,Further Mathematics,D7,3.2,Mass Communication,180,ALTERNATIVE_COURSE
+Ibrahim Ibrahim,202523683147EG,217,A1,B2,Literature,A1,Government,F9,Further Mathematics,D7,3.2,Law,220,REJECTED
+Chioma Ibrahim,202507933496CF,206,C4,B2,Economics,D7,Commerce,C5,Further Mathematics,C4,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Peter Adeleke,202584076789HJ,202,A1,C5,Biology,C5,Chemistry,F9,Further Mathematics,C6,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Adaeze Nzekwe,202571795760EG,231,C5,C4,Mathematics,C4,Economics,B3,Further Mathematics,A1,3.6,Accounting,200,QUALIFIED
+Victor Nzekwe,202597246657EG,236,C5,C4,Mathematics,C4,Physics,C4,Further Mathematics,C4,3.0,Civil Engineering,210,QUALIFIED
+Fatima Adeleke,202571674338CF,191,B2,C5,Mathematics,A1,Fine Art,C4,Further Mathematics,B2,3.8,Architecture,200,BORDERLINE
+Kelvin Okafor,202515619318EG,189,B3,B3,Mathematics,C5,Physics,B2,Further Mathematics,D7,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Daniel Nzekwe,202528910771CF,200,B3,B3,Economics,B3,Commerce,A1,Further Mathematics,D7,3.8,Business Administration,180,ALTERNATIVE_COURSE
+Fatima Ogundele,202513524787CF,129,C5,D7,Mathematics,B2,Fine Art,C4,Further Mathematics,C4,3.0,Architecture,200,REJECTED
+Adaeze Anyanwu,202503754821FG,156,C5,B3,Literature,B2,Government,C6,Further Mathematics,C4,3.4,Law,220,REJECTED
+Kelvin Okonkwo,202532666785CF,257,C5,C4,Biology,C5,Chemistry,B2,Further Mathematics,C6,3.2,Nursing Science,200,QUALIFIED
+Victor Okonkwo,202526060290FG,267,B2,A1,Economics,C6,Commerce,E8,Further Mathematics,A1,3.6,Business Administration,180,ALTERNATIVE_COURSE
+Ngozi Okafor,202548926738HJ,201,C4,C5,English Language,C4,Literature,B3,Further Mathematics,C5,3.2,Mass Communication,180,QUALIFIED
+Blessing Chukwu,202556288431FG,230,D7,C6,Biology,C4,Chemistry,B2,Further Mathematics,B3,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Daniel Bello,202546810548FG,220,B3,C5,Mathematics,A1,Economics,D7,Further Mathematics,C4,3.4,Economics,190,ALTERNATIVE_COURSE
+Tunde Abubakar,202539989354FG,317,A1,C5,Biology,B2,Chemistry,B3,Further Mathematics,C5,3.8,Medicine and Surgery,280,QUALIFIED
+Peter Bello,202557126611CF,249,C5,C5,Mathematics,C4,Fine Art,B2,Further Mathematics,B3,3.4,Architecture,200,QUALIFIED
+Peter Chukwu,202586497677HJ,205,D7,C4,English Language,C4,Literature,B3,Further Mathematics,C4,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Kelvin Adeyemi,202537702851HJ,176,B2,B2,Literature,C5,Government,B2,Further Mathematics,C5,3.6,Law,220,REJECTED
+Ngozi Eze,202547022960FG,153,B2,C4,Biology,A1,Chemistry,B2,Further Mathematics,B3,4.0,Medicine and Surgery,280,REJECTED
+Blessing Okonkwo,202579497567EG,217,B2,C6,Mathematics,C4,Physics,B2,Further Mathematics,B3,3.6,Civil Engineering,210,QUALIFIED
+Victor Adeyemi,202599663658CF,183,C4,C4,Literature,C4,Government,C4,Further Mathematics,D7,2.8,Law,220,ALTERNATIVE_COURSE
+Josephine Chukwu,202518139890EG,160,C5,C5,Economics,D7,Commerce,C5,Further Mathematics,C4,2.8,Business Administration,180,REJECTED
+Daniel Anyanwu,202533971895HJ,187,C4,A1,Economics,C5,Commerce,C4,Further Mathematics,E8,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Kelvin Abubakar,202564111824EG,172,A1,D7,Mathematics,A1,Fine Art,C4,Further Mathematics,C4,3.6,Architecture,200,REJECTED
+Funmilayo Abubakar,202520046152HJ,269,B3,A1,Literature,B3,Government,C4,Further Mathematics,B2,4.0,Law,220,QUALIFIED
+Funmilayo Adeleke,202537886140FG,240,B3,E8,Biology,D7,Chemistry,A1,Further Mathematics,B2,3.2,Nursing Science,200,REJECTED
+Emmanuel Eze,202589138249HJ,209,C4,A1,Economics,A1,Commerce,C5,Further Mathematics,D7,3.6,Business Administration,180,ALTERNATIVE_COURSE
+Fatima Anyanwu,202538687007FG,261,A1,C5,Economics,B2,Commerce,E8,Further Mathematics,B3,3.4,Business Administration,180,ALTERNATIVE_COURSE
+Solomon Abubakar,202539840289CF,212,A1,E8,Literature,C4,Government,C4,Further Mathematics,C6,3.0,Law,220,ALTERNATIVE_COURSE
+Adaeze Bello,202598554743FG,179,A1,C5,Mathematics,C6,Physics,C5,Further Mathematics,F9,2.8,Civil Engineering,210,REJECTED
+Emmanuel Adeleke,202570026876CF,263,B2,E8,Biology,B3,Chemistry,D7,Further Mathematics,B2,3.0,Nursing Science,200,REJECTED
+Solomon Olawale,202595620175EG,228,C4,D7,Biology,C6,Chemistry,C4,Further Mathematics,B2,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Adeyemi,202594337504HJ,173,A1,C5,Economics,C6,Commerce,C5,Further Mathematics,C5,3.4,Business Administration,180,REJECTED
+Peter Chukwu,202572839992CF,203,B2,B2,Mathematics,C6,Fine Art,B3,Further Mathematics,D7,3.4,Architecture,200,ALTERNATIVE_COURSE
+Kelvin Musa,202543089487CF,179,B2,A1,Mathematics,B3,Fine Art,C4,Further Mathematics,B2,4.0,Architecture,200,REJECTED
+Adaeze Eze,202518775803CF,161,C5,E8,English Language,A1,Literature,E8,Further Mathematics,C4,2.6,Mass Communication,180,REJECTED
+Peter Anyanwu,202503613325FG,242,D7,C4,Mathematics,B3,Physics,B3,Further Mathematics,B3,3.4,Civil Engineering,210,ALTERNATIVE_COURSE
+Victor Olawale,202543173505EG,276,C5,A1,Biology,C4,Chemistry,C6,Further Mathematics,C4,3.4,Medicine and Surgery,280,BORDERLINE
+Chukwuemeka Okafor,202506512070FG,161,C6,C5,Biology,C6,Chemistry,C5,Further Mathematics,C4,3.0,Medicine and Surgery,280,REJECTED
+Solomon Okonkwo,202519639907HJ,229,C5,A1,Mathematics,C5,Fine Art,C4,Further Mathematics,B3,3.6,Architecture,200,QUALIFIED
+Emmanuel Ibrahim,202585931109CF,187,C6,D7,Economics,C5,Commerce,B3,Further Mathematics,E8,2.6,Business Administration,180,REJECTED
+Adaeze Ibrahim,202597232002FG,192,C6,B2,Mathematics,C4,Fine Art,C5,Further Mathematics,B3,3.4,Architecture,200,BORDERLINE
+Oluwaseun Nwosu,202574954508EG,189,C4,E8,Mathematics,C6,Fine Art,B3,Further Mathematics,D7,2.6,Architecture,200,REJECTED
+Ibrahim Ogundele,202531537795FG,179,B2,C6,Mathematics,C4,Physics,A1,Further Mathematics,B3,3.8,Computer Science,200,REJECTED
+Chioma Bello,202503379337FG,211,B3,B3,Mathematics,B2,Fine Art,D7,Further Mathematics,D7,3.2,Architecture,200,REJECTED
+Emmanuel Chukwu,202512473950CF,180,B2,B2,English Language,F9,Literature,B3,Further Mathematics,A1,3.4,Mass Communication,180,ALTERNATIVE_COURSE
+Aisha Bello,202523024102HJ,219,B2,B2,Mathematics,D7,Economics,C5,Further Mathematics,B3,3.4,Accounting,200,ALTERNATIVE_COURSE
+Fatima Chukwu,202596112233HJ,208,B3,B2,Biology,C4,Chemistry,B3,Further Mathematics,B3,3.8,Medicine and Surgery,280,BORDERLINE
+Peter Bello,202584253042HJ,201,B3,C4,Biology,C5,Chemistry,E8,Further Mathematics,C6,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Solomon Anyanwu,202585787255HJ,178,C5,C6,Mathematics,C6,Economics,C5,Further Mathematics,B2,3.2,Accounting,200,REJECTED
+Ibrahim Bello,202537363466EG,189,C4,C4,Economics,C5,Commerce,C6,Further Mathematics,C5,3.0,Business Administration,180,QUALIFIED
+Grace Adeleke,202507895677HJ,236,B3,A1,Biology,C6,Chemistry,B3,Further Mathematics,C4,3.8,Nursing Science,200,QUALIFIED
+Daniel Ogundele,202515148881FG,227,B3,C4,English Language,B3,Literature,A1,Further Mathematics,C4,3.8,Mass Communication,180,QUALIFIED
+Victor Eze,202544392840FG,175,A1,A1,Mathematics,A1,Economics,B2,Further Mathematics,B2,4.6,Accounting,200,REJECTED
+Emmanuel Ibrahim,202582633373HJ,213,C6,C6,Mathematics,C4,Physics,C4,Further Mathematics,C4,3.0,Civil Engineering,210,QUALIFIED
+Adaeze Bello,202577805292FG,236,B3,A1,Economics,C6,Commerce,C4,Further Mathematics,E8,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Solomon Anyanwu,202584590902EG,151,C4,C5,Mathematics,B3,Physics,B2,Further Mathematics,C4,3.4,Computer Science,200,REJECTED
+Solomon Bello,202561863715HJ,229,C4,C6,Biology,D7,Chemistry,C4,Further Mathematics,B3,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Chioma Okafor,202523164334CF,186,A1,B2,Mathematics,C4,Physics,A1,Further Mathematics,C5,4.0,Civil Engineering,210,BORDERLINE
+Fatima Adeyemi,202528671632EG,229,A1,C4,Economics,B2,Commerce,D7,Further Mathematics,C4,3.4,Business Administration,180,ALTERNATIVE_COURSE
+Peter Bello,202587430271HJ,183,C4,C5,Mathematics,C4,Physics,C5,Further Mathematics,E8,2.6,Civil Engineering,210,ALTERNATIVE_COURSE
+Peter Okafor,202514754692HJ,146,C6,C4,Mathematics,D7,Fine Art,D7,Further Mathematics,C4,2.6,Architecture,200,REJECTED
+Peter Adeyemi,202560324841EG,153,B2,C5,Mathematics,C4,Economics,B3,Further Mathematics,C5,3.4,Accounting,200,REJECTED
+Kelvin Anyanwu,202556724380HJ,211,C4,C6,Economics,B2,Commerce,B3,Further Mathematics,C6,3.4,Business Administration,180,QUALIFIED
+Ibrahim Okonkwo,202500412577HJ,219,A1,C5,Mathematics,C5,Physics,B3,Further Mathematics,C5,3.6,Computer Science,200,QUALIFIED
+Daniel Olawale,202522091241HJ,178,A1,C5,Biology,C5,Chemistry,C4,Further Mathematics,C4,3.4,Medicine and Surgery,280,REJECTED
+Ibrahim Musa,202508370816FG,232,A1,C6,Literature,C5,Government,B2,Further Mathematics,B3,3.8,Law,220,QUALIFIED
+Ngozi Nzekwe,202533106005EG,151,A1,A1,Economics,C6,Commerce,C6,Further Mathematics,E8,3.4,Business Administration,180,REJECTED
+Fatima Okafor,202568155839EG,207,B2,D7,Biology,C6,Chemistry,C6,Further Mathematics,B2,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Emmanuel Okonkwo,202550637314FG,167,B3,C4,Mathematics,B2,Economics,B2,Further Mathematics,B3,3.8,Economics,190,REJECTED
+Amaka Musa,202589241956EG,187,A1,B2,Mathematics,B3,Physics,C4,Further Mathematics,F9,3.2,Computer Science,200,ALTERNATIVE_COURSE
+Chukwuemeka Abubakar,202509976838CF,211,B2,C6,Biology,C5,Chemistry,F9,Further Mathematics,C5,2.6,Nursing Science,200,ALTERNATIVE_COURSE
+Grace Adeleke,202510257432HJ,179,A1,C6,Mathematics,B2,Economics,B2,Further Mathematics,C4,3.8,Accounting,200,REJECTED
+Victor Nwosu,202545086403FG,196,C5,B2,Mathematics,C5,Economics,F9,Further Mathematics,C4,2.6,Accounting,200,ALTERNATIVE_COURSE
+Grace Adeleke,202568527017CF,245,B2,C4,Biology,D7,Chemistry,C5,Further Mathematics,B2,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Aisha Olawale,202533816742EG,189,A1,F9,Mathematics,E8,Economics,B2,Further Mathematics,B2,2.8,Accounting,200,REJECTED
+Ibrahim Eze,202571566277HJ,239,C4,C5,Mathematics,B3,Economics,C4,Further Mathematics,E8,2.8,Accounting,200,ALTERNATIVE_COURSE
+Solomon Okonkwo,202514982824HJ,170,C5,C4,Mathematics,B2,Economics,E8,Further Mathematics,C4,2.8,Economics,190,REJECTED
+Chioma Bello,202523008576HJ,228,B3,B3,Economics,C4,Commerce,C4,Further Mathematics,B3,3.6,Business Administration,180,QUALIFIED
+Adaeze Nzekwe,202501692364FG,260,F9,B3,English Language,C4,Literature,C5,Further Mathematics,C4,2.6,Mass Communication,180,ALTERNATIVE_COURSE
+Adaeze Musa,202533705024HJ,123,C5,C5,Mathematics,B3,Economics,A1,Further Mathematics,B3,3.8,Economics,190,REJECTED
+Chukwuemeka Ogundele,202566918362HJ,182,B3,C5,Literature,E8,Government,C6,Further Mathematics,A1,3.2,Law,220,ALTERNATIVE_COURSE
+Adaeze Anyanwu,202511952436FG,230,C5,C4,Mathematics,C4,Physics,D7,Further Mathematics,C4,2.8,Civil Engineering,210,ALTERNATIVE_COURSE
+Kelvin Okonkwo,202546225223HJ,202,F9,C6,Mathematics,A1,Physics,A1,Further Mathematics,C5,3.2,Computer Science,200,ALTERNATIVE_COURSE
+Fatima Anyanwu,202534679121FG,222,C4,B2,Literature,C4,Government,B2,Further Mathematics,B2,3.6,Law,220,QUALIFIED
+Amaka Okafor,202504090138CF,188,B3,B3,Biology,B3,Chemistry,C4,Further Mathematics,C4,3.6,Medicine and Surgery,280,BORDERLINE
+Victor Adeleke,202565555356HJ,213,C5,F9,English Language,C6,Literature,E8,Further Mathematics,C4,2.0,Mass Communication,180,REJECTED
+Solomon Musa,202520918435HJ,204,A1,B3,Mathematics,B3,Fine Art,B2,Further Mathematics,C4,4.0,Architecture,200,QUALIFIED
+Victor Okafor,202550573976CF,250,C5,D7,Mathematics,C4,Fine Art,C5,Further Mathematics,A1,3.2,Architecture,200,ALTERNATIVE_COURSE
+Amaka Musa,202564932898CF,218,C4,E8,Biology,E8,Chemistry,F9,Further Mathematics,D7,1.4,Nursing Science,200,REJECTED
+Tunde Nwosu,202571783332CF,221,C4,A1,Literature,C6,Government,F9,Further Mathematics,F9,2.2,Law,220,REJECTED
+Daniel Bello,202547128715EG,195,C4,C5,Biology,B2,Chemistry,E8,Further Mathematics,D7,2.6,Medicine and Surgery,280,REJECTED
+Solomon Ogundele,202586334141CF,192,C6,C5,Mathematics,C5,Fine Art,B3,Further Mathematics,C5,3.2,Architecture,200,BORDERLINE
+Oluwaseun Olawale,202556904098EG,194,B3,C4,Biology,B2,Chemistry,E8,Further Mathematics,C4,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Kelvin Ogundele,202599316087FG,223,F9,B3,English Language,B3,Literature,C5,Further Mathematics,C6,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Josephine Nwosu,202509548149HJ,195,C6,B3,Literature,B2,Government,C5,Further Mathematics,B2,3.6,Law,220,BORDERLINE
+Ibrahim Olawale,202530276420HJ,220,C4,C5,Mathematics,B3,Economics,F9,Further Mathematics,B3,2.8,Accounting,200,ALTERNATIVE_COURSE
+Josephine Eze,202538612590FG,282,C4,C4,Biology,B3,Chemistry,B3,Further Mathematics,A1,3.8,Nursing Science,200,QUALIFIED
+Ibrahim Bello,202530591266EG,240,C5,C4,Economics,C4,Commerce,C4,Further Mathematics,D7,2.8,Business Administration,180,ALTERNATIVE_COURSE
+Victor Adeleke,202562630136HJ,198,A1,F9,Mathematics,B2,Physics,A1,Further Mathematics,F9,2.8,Computer Science,200,REJECTED
+Chukwuemeka Anyanwu,202576475011CF,252,C5,E8,Mathematics,C5,Physics,B3,Further Mathematics,C5,2.8,Civil Engineering,210,ALTERNATIVE_COURSE
+Peter Ibrahim,202541926764EG,195,C4,C5,Biology,C4,Chemistry,A1,Further Mathematics,C4,3.4,Medicine and Surgery,280,BORDERLINE
+Emmanuel Okonkwo,202588871898CF,138,B3,C5,Biology,D7,Chemistry,C4,Further Mathematics,C4,3.0,Medicine and Surgery,280,REJECTED
+Aisha Ibrahim,202551029321FG,174,E8,D7,Mathematics,B2,Economics,C4,Further Mathematics,B2,2.8,Accounting,200,REJECTED
+Emmanuel Bello,202540848729HJ,144,A1,B2,Mathematics,B3,Physics,E8,Further Mathematics,B2,3.6,Computer Science,200,REJECTED
+Amaka Ogundele,202503032432EG,197,C4,F9,Biology,B3,Chemistry,C4,Further Mathematics,B2,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Solomon Ogundele,202526714628EG,210,B3,B2,Mathematics,C5,Fine Art,A1,Further Mathematics,B3,4.0,Architecture,200,QUALIFIED
+Peter Ogundele,202589262566CF,268,C5,B3,Biology,C5,Chemistry,C5,Further Mathematics,C5,3.2,Medicine and Surgery,280,BORDERLINE
+Victor Ogundele,202515542340CF,221,B2,B3,Mathematics,C4,Fine Art,C5,Further Mathematics,C4,3.4,Architecture,200,QUALIFIED
+Kelvin Musa,202549718594FG,202,F9,B2,English Language,E8,Literature,C6,Further Mathematics,B2,2.4,Mass Communication,180,REJECTED
+Aisha Chukwu,202596792408EG,239,A1,A1,Mathematics,B3,Fine Art,C6,Further Mathematics,B2,4.2,Architecture,200,QUALIFIED
+Ngozi Musa,202539672757FG,132,B2,C4,Literature,B3,Government,D7,Further Mathematics,C5,3.2,Law,220,REJECTED
+Chukwuemeka Eze,202565111312CF,218,E8,C4,Mathematics,C5,Physics,E8,Further Mathematics,B2,2.4,Civil Engineering,210,REJECTED
+Adaeze Ogundele,202582778816CF,236,C5,C4,Biology,C4,Chemistry,D7,Further Mathematics,E8,2.4,Medicine and Surgery,280,REJECTED
+Ngozi Bello,202589097283EG,158,B2,C6,Mathematics,A1,Fine Art,C4,Further Mathematics,C4,3.6,Architecture,200,REJECTED
+Fatima Abubakar,202515381447FG,250,B3,B2,Biology,B3,Chemistry,A1,Further Mathematics,C4,4.0,Medicine and Surgery,280,BORDERLINE
+Kelvin Olawale,202507970509HJ,221,B2,C5,Mathematics,C4,Physics,B2,Further Mathematics,B3,3.6,Civil Engineering,210,QUALIFIED
+Emmanuel Adeyemi,202567318826CF,195,B3,B2,Biology,B3,Chemistry,C5,Further Mathematics,C4,3.6,Nursing Science,200,BORDERLINE
+Ngozi Okonkwo,202528417722FG,232,A1,C6,Economics,B3,Commerce,C4,Further Mathematics,B3,3.8,Business Administration,180,QUALIFIED
+Oluwaseun Okonkwo,202565023741HJ,289,A1,D7,English Language,C5,Literature,B2,Further Mathematics,B3,3.6,Mass Communication,180,ALTERNATIVE_COURSE
+Solomon Chukwu,202562110225CF,216,C4,C6,Economics,C5,Commerce,B3,Further Mathematics,C6,3.2,Business Administration,180,QUALIFIED
+Chioma Eze,202547163928EG,218,A1,C6,Mathematics,C4,Economics,C4,Further Mathematics,A1,3.8,Accounting,200,QUALIFIED
+Adaeze Bello,202571892392EG,193,B3,B2,Mathematics,B3,Economics,C5,Further Mathematics,C5,3.6,Accounting,200,BORDERLINE
+Funmilayo Bello,202510668433FG,180,B2,A1,Biology,F9,Chemistry,E8,Further Mathematics,C4,2.6,Medicine and Surgery,280,REJECTED
+Daniel Abubakar,202563502000FG,239,C4,C4,English Language,C5,Literature,B3,Further Mathematics,B3,3.4,Mass Communication,180,QUALIFIED
+Chioma Abubakar,202554110825FG,180,B3,B3,Mathematics,C5,Economics,C4,Further Mathematics,B3,3.6,Accounting,200,BORDERLINE
+Peter Okonkwo,202511291093EG,212,C5,C4,Biology,C5,Chemistry,B2,Further Mathematics,B3,3.4,Nursing Science,200,QUALIFIED
+Ibrahim Chukwu,202520236848FG,193,E8,A1,Economics,C4,Commerce,B3,Further Mathematics,C5,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Kelvin Anyanwu,202502942409CF,226,C4,C5,Biology,D7,Chemistry,A1,Further Mathematics,C4,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Fatima Ibrahim,202586866943EG,221,C5,B3,Mathematics,C5,Economics,D7,Further Mathematics,F9,2.4,Accounting,200,REJECTED
+Tunde Chukwu,202584434481EG,246,B2,B2,Mathematics,C5,Physics,D7,Further Mathematics,C6,3.2,Computer Science,200,ALTERNATIVE_COURSE
+Oluwaseun Eze,202503381059FG,192,A1,B2,Mathematics,A1,Economics,B2,Further Mathematics,D7,4.0,Accounting,200,ALTERNATIVE_COURSE
+Funmilayo Eze,202550053424CF,200,A1,C5,Biology,C4,Chemistry,C5,Further Mathematics,C4,3.4,Nursing Science,200,QUALIFIED
+Solomon Ogundele,202549837354EG,175,C5,D7,Mathematics,E8,Economics,C4,Further Mathematics,C5,2.4,Economics,190,REJECTED
+Adaeze Abubakar,202527172722EG,194,C5,D7,Mathematics,B3,Fine Art,C4,Further Mathematics,C5,3.0,Architecture,200,ALTERNATIVE_COURSE
+Fatima Olawale,202569312163HJ,223,C4,C5,Mathematics,C5,Fine Art,A1,Further Mathematics,B2,3.6,Architecture,200,QUALIFIED
+Solomon Okonkwo,202501002314EG,236,B2,C4,English Language,C5,Literature,C6,Further Mathematics,C5,3.2,Mass Communication,180,QUALIFIED
+Victor Olawale,202513279724FG,177,A1,E8,Mathematics,E8,Fine Art,B2,Further Mathematics,C5,2.8,Architecture,200,REJECTED
+Blessing Adeyemi,202584186203CF,240,B2,A1,Economics,C5,Commerce,C5,Further Mathematics,B2,3.8,Business Administration,180,QUALIFIED
+Solomon Ogundele,202517213145CF,257,C4,B2,Mathematics,C5,Economics,B2,Further Mathematics,D7,3.2,Accounting,200,ALTERNATIVE_COURSE
+Oluwaseun Nwosu,202568592624FG,224,B3,B3,Mathematics,E8,Fine Art,A1,Further Mathematics,A1,3.8,Architecture,200,ALTERNATIVE_COURSE
+Chukwuemeka Anyanwu,202502252677CF,275,D7,B3,Biology,C4,Chemistry,B3,Further Mathematics,B3,3.4,Nursing Science,200,ALTERNATIVE_COURSE
+Fatima Anyanwu,202565576769FG,182,C4,E8,Biology,B3,Chemistry,A1,Further Mathematics,F9,2.6,Medicine and Surgery,280,REJECTED
+Aisha Ibrahim,202588361968EG,166,C6,C5,Literature,B2,Government,C4,Further Mathematics,C4,3.2,Law,220,REJECTED
+Oluwaseun Nzekwe,202510552472HJ,147,B2,A1,Biology,F9,Chemistry,A1,Further Mathematics,C4,3.4,Medicine and Surgery,280,REJECTED
+Oluwaseun Okonkwo,202506501917EG,262,B2,B2,Mathematics,C5,Economics,B2,Further Mathematics,C5,3.6,Accounting,200,QUALIFIED
+Adaeze Nwosu,202527284765HJ,232,B2,B2,Mathematics,B2,Physics,A1,Further Mathematics,C6,4.0,Computer Science,200,QUALIFIED
+Kelvin Nwosu,202506678498FG,208,B3,B2,Mathematics,D7,Physics,A1,Further Mathematics,C6,3.6,Computer Science,200,ALTERNATIVE_COURSE
+Oluwaseun Musa,202536903628CF,219,C4,B2,Mathematics,F9,Economics,C4,Further Mathematics,F9,2.0,Accounting,200,REJECTED
+Ngozi Ogundele,202563411159FG,170,C4,C5,Economics,C4,Commerce,B3,Further Mathematics,A1,3.6,Business Administration,180,REJECTED
+Josephine Bello,202583034199CF,295,B2,B2,Mathematics,B2,Physics,B2,Further Mathematics,A1,4.2,Computer Science,200,QUALIFIED
+Ngozi Anyanwu,202546835652CF,214,F9,C4,Mathematics,A1,Fine Art,A1,Further Mathematics,B3,3.4,Architecture,200,ALTERNATIVE_COURSE
+Peter Anyanwu,202567904227CF,213,C4,C5,Biology,B2,Chemistry,C6,Further Mathematics,B2,3.4,Nursing Science,200,QUALIFIED
+Fatima Chukwu,202589857254FG,235,E8,B2,Biology,B2,Chemistry,C5,Further Mathematics,B2,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Adeleke,202591297102FG,226,D7,C4,Mathematics,D7,Fine Art,C6,Further Mathematics,B3,2.8,Architecture,200,REJECTED
+Fatima Nzekwe,202542149551CF,217,D7,C6,Mathematics,D7,Economics,C4,Further Mathematics,C4,2.6,Economics,190,REJECTED
+Tunde Ogundele,202521970546HJ,182,C5,C4,Literature,F9,Government,F9,Further Mathematics,C6,1.8,Law,220,REJECTED
+Ngozi Adeyemi,202568740903CF,226,D7,B2,Mathematics,B3,Fine Art,C6,Further Mathematics,E8,2.8,Architecture,200,REJECTED
+Solomon Olawale,202571577871CF,275,D7,B3,Literature,B2,Government,B3,Further Mathematics,A1,3.8,Law,220,ALTERNATIVE_COURSE
+Victor Adeyemi,202555973714HJ,257,C5,D7,Literature,E8,Government,C6,Further Mathematics,B2,2.6,Law,220,REJECTED
+Funmilayo Anyanwu,202560567303CF,265,C4,E8,Mathematics,B2,Physics,B2,Further Mathematics,C4,3.0,Computer Science,200,ALTERNATIVE_COURSE
+Josephine Olawale,202576834201HJ,192,B3,C5,English Language,A1,Literature,A1,Further Mathematics,C4,4.0,Mass Communication,180,QUALIFIED
+Aisha Musa,202526596089EG,175,E8,B3,Biology,B2,Chemistry,E8,Further Mathematics,C4,2.6,Nursing Science,200,REJECTED
+Victor Okafor,202527275164CF,205,C5,C4,Biology,B2,Chemistry,C5,Further Mathematics,C6,3.2,Medicine and Surgery,280,BORDERLINE
+Blessing Bello,202536829635EG,211,E8,D7,Economics,C5,Commerce,C5,Further Mathematics,C4,2.4,Business Administration,180,REJECTED
+Josephine Chukwu,202517766558HJ,248,F9,C4,Mathematics,A1,Economics,C6,Further Mathematics,A1,3.2,Accounting,200,ALTERNATIVE_COURSE
+Aisha Adeleke,202528664649CF,150,F9,B3,Mathematics,E8,Economics,C4,Further Mathematics,B3,2.4,Economics,190,REJECTED
+Chioma Musa,202598178904HJ,263,C6,B2,Biology,C5,Chemistry,C5,Further Mathematics,C4,3.2,Medicine and Surgery,280,BORDERLINE
+Amaka Abubakar,202576605384FG,204,B2,C4,Mathematics,B3,Economics,B2,Further Mathematics,C4,3.6,Accounting,200,QUALIFIED
+Adaeze Okafor,202500258955EG,195,B3,D7,Mathematics,D7,Physics,C5,Further Mathematics,A1,3.2,Civil Engineering,210,REJECTED
+Blessing Anyanwu,202596262658EG,174,F9,B2,Mathematics,F9,Fine Art,B2,Further Mathematics,C5,2.2,Architecture,200,REJECTED
+Solomon Olawale,202548253110HJ,152,B2,C5,English Language,B2,Literature,B2,Further Mathematics,C4,3.6,Mass Communication,180,REJECTED
+Chukwuemeka Adeleke,202560275233FG,238,C5,C4,Mathematics,A1,Physics,C5,Further Mathematics,E8,3.0,Computer Science,200,ALTERNATIVE_COURSE
+Blessing Eze,202512091179CF,212,C4,B2,Mathematics,C6,Economics,C6,Further Mathematics,C6,3.2,Accounting,200,QUALIFIED
+Ibrahim Okonkwo,202517061713HJ,164,B2,B3,Biology,B2,Chemistry,A1,Further Mathematics,C6,4.0,Medicine and Surgery,280,REJECTED
+Fatima Ogundele,202599015579CF,164,D7,C5,English Language,C4,Literature,B2,Further Mathematics,B3,3.2,Mass Communication,180,REJECTED
+Kelvin Chukwu,202523513052EG,198,C4,B3,Literature,B2,Government,C5,Further Mathematics,C4,3.4,Law,220,BORDERLINE
+Ngozi Musa,202584776863FG,268,C5,E8,Biology,B3,Chemistry,C4,Further Mathematics,E8,2.4,Medicine and Surgery,280,REJECTED
+Peter Eze,202523767694FG,200,B2,C6,Literature,C5,Government,E8,Further Mathematics,B2,3.0,Law,220,ALTERNATIVE_COURSE
+Chukwuemeka Ibrahim,202520849649FG,157,B2,B3,Mathematics,B2,Fine Art,B3,Further Mathematics,D7,3.6,Architecture,200,REJECTED
+Chukwuemeka Bello,202555251050FG,201,A1,B2,English Language,B3,Literature,C6,Further Mathematics,B3,4.0,Mass Communication,180,QUALIFIED
+Funmilayo Bello,202583184919HJ,200,C4,C6,Mathematics,D7,Economics,C4,Further Mathematics,B3,3.0,Accounting,200,ALTERNATIVE_COURSE
+Daniel Okonkwo,202511729596EG,120,B3,B3,English Language,B2,Literature,C6,Further Mathematics,C4,3.6,Mass Communication,180,REJECTED
+Tunde Eze,202526088050CF,208,A1,A1,Mathematics,C6,Fine Art,C4,Further Mathematics,A1,4.2,Architecture,200,QUALIFIED
+Solomon Adeyemi,202585790647HJ,201,A1,C6,Economics,C5,Commerce,B3,Further Mathematics,C6,3.6,Business Administration,180,QUALIFIED
+Oluwaseun Adeyemi,202556321358CF,234,C6,E8,Biology,B2,Chemistry,B2,Further Mathematics,C6,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Victor Musa,202596422971EG,274,B3,C6,Mathematics,B2,Physics,E8,Further Mathematics,A1,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Tunde Ogundele,202518839774FG,249,D7,C6,Biology,D7,Chemistry,E8,Further Mathematics,C4,2.2,Nursing Science,200,REJECTED
+Grace Ogundele,202531170303HJ,200,B2,B3,Economics,B3,Commerce,A1,Further Mathematics,C4,4.0,Business Administration,180,QUALIFIED
+Victor Anyanwu,202547281235HJ,171,B2,B2,English Language,B2,Literature,C4,Further Mathematics,C4,3.6,Mass Communication,180,REJECTED
+Fatima Ogundele,202549127113CF,300,D7,C4,Economics,C6,Commerce,B2,Further Mathematics,B3,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Aisha Adeyemi,202556326868FG,212,B2,A1,Economics,C5,Commerce,C4,Further Mathematics,B3,3.8,Business Administration,180,QUALIFIED
+Ibrahim Eze,202536294897HJ,210,C4,B3,Mathematics,A1,Physics,B3,Further Mathematics,E8,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Blessing Adeleke,202543181439HJ,209,C5,C5,Biology,E8,Chemistry,B2,Further Mathematics,A1,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Fatima Anyanwu,202535494012HJ,216,B3,B2,English Language,C6,Literature,C5,Further Mathematics,C4,3.4,Mass Communication,180,QUALIFIED
+Victor Nzekwe,202572076502FG,204,D7,C5,Mathematics,B2,Physics,C5,Further Mathematics,B2,3.2,Civil Engineering,210,ALTERNATIVE_COURSE
+Emmanuel Ibrahim,202537100943EG,189,B2,C6,Biology,A1,Chemistry,B3,Further Mathematics,C4,3.8,Medicine and Surgery,280,BORDERLINE
+Ngozi Chukwu,202547457054FG,190,C6,A1,Literature,C6,Government,B3,Further Mathematics,C4,3.6,Law,220,BORDERLINE
+Kelvin Musa,202502632570EG,208,C6,D7,Mathematics,D7,Economics,C4,Further Mathematics,B2,2.8,Economics,190,REJECTED
+Solomon Ogundele,202514878245FG,190,C5,F9,Mathematics,B3,Fine Art,C5,Further Mathematics,B2,2.8,Architecture,200,ALTERNATIVE_COURSE
+Victor Olawale,202591679541CF,185,C4,E8,English Language,B3,Literature,B2,Further Mathematics,C4,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Aisha Ogundele,202524741407CF,213,E8,B2,Economics,C5,Commerce,C4,Further Mathematics,B3,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Emmanuel Okafor,202542548821FG,201,B3,C4,Mathematics,A1,Economics,B3,Further Mathematics,C4,3.8,Accounting,200,QUALIFIED
+Chioma Nzekwe,202553666144FG,262,F9,B2,Literature,C4,Government,A1,Further Mathematics,B2,3.2,Law,220,ALTERNATIVE_COURSE
+Ibrahim Eze,202526834414HJ,120,C4,C5,Literature,B3,Government,C4,Further Mathematics,C5,3.2,Law,220,REJECTED
+Victor Chukwu,202557567667CF,248,B2,C6,Mathematics,C6,Economics,A1,Further Mathematics,C4,3.6,Economics,190,QUALIFIED
+Grace Adeleke,202585298940HJ,253,A1,C6,Mathematics,A1,Economics,B2,Further Mathematics,D7,3.8,Economics,190,ALTERNATIVE_COURSE
+Blessing Adeyemi,202504159149HJ,137,C4,A1,Literature,C6,Government,D7,Further Mathematics,C4,3.2,Law,220,REJECTED
+Ibrahim Chukwu,202528723244CF,198,D7,B2,Biology,C4,Chemistry,C4,Further Mathematics,C5,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Kelvin Adeyemi,202533170876CF,196,C5,B2,Economics,A1,Commerce,B2,Further Mathematics,D7,3.6,Business Administration,180,ALTERNATIVE_COURSE
+Daniel Olawale,202597916202EG,160,B3,C4,Biology,B2,Chemistry,B2,Further Mathematics,C6,3.6,Medicine and Surgery,280,REJECTED
+Amaka Adeleke,202575466176HJ,182,B2,C5,Mathematics,C4,Economics,C4,Further Mathematics,B3,3.4,Accounting,200,BORDERLINE
+Funmilayo Ibrahim,202505277402FG,171,A1,C4,Literature,C4,Government,A1,Further Mathematics,B3,4.0,Law,220,REJECTED
+Chukwuemeka Nwosu,202525957244HJ,271,D7,C4,Mathematics,B3,Economics,C5,Further Mathematics,B3,3.2,Economics,190,ALTERNATIVE_COURSE
+Peter Musa,202588425995HJ,242,D7,C5,Biology,B3,Chemistry,C4,Further Mathematics,C5,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Chioma Abubakar,202533126610FG,254,A1,D7,Biology,B2,Chemistry,A1,Further Mathematics,B2,4.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Emmanuel Nzekwe,202525176298EG,235,A1,C5,Biology,C4,Chemistry,B3,Further Mathematics,C5,3.6,Medicine and Surgery,280,BORDERLINE
+Kelvin Anyanwu,202531901302CF,170,B3,C4,Mathematics,B3,Economics,B2,Further Mathematics,B2,3.8,Accounting,200,REJECTED
+Kelvin Ibrahim,202533978559EG,191,C6,C4,Biology,D7,Chemistry,B3,Further Mathematics,C5,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Kelvin Eze,202511730985CF,227,C4,C5,Biology,D7,Chemistry,C4,Further Mathematics,B2,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Fatima Eze,202518938984HJ,167,C6,B3,Mathematics,C6,Economics,B3,Further Mathematics,B3,3.6,Accounting,200,REJECTED
+Daniel Ogundele,202500564350EG,234,A1,C5,Mathematics,B2,Fine Art,C4,Further Mathematics,D7,3.4,Architecture,200,ALTERNATIVE_COURSE
+Grace Ibrahim,202519905169CF,201,C4,C5,Mathematics,E8,Economics,C5,Further Mathematics,D7,2.4,Accounting,200,REJECTED
+Grace Ogundele,202556743000EG,196,C4,B2,Mathematics,C5,Economics,B2,Further Mathematics,C4,3.4,Economics,190,QUALIFIED
+Solomon Anyanwu,202562668217CF,234,C5,B3,Mathematics,C5,Economics,A1,Further Mathematics,C4,3.6,Economics,190,QUALIFIED
+Grace Adeyemi,202590368900EG,225,F9,B3,Mathematics,B2,Fine Art,C4,Further Mathematics,A1,3.2,Architecture,200,ALTERNATIVE_COURSE
+Grace Eze,202529671114EG,197,A1,B2,Mathematics,B2,Physics,A1,Further Mathematics,B3,4.4,Computer Science,200,BORDERLINE
+Josephine Abubakar,202584384588CF,250,C5,C6,Economics,D7,Commerce,D7,Further Mathematics,C4,2.6,Business Administration,180,REJECTED
+Oluwaseun Olawale,202583483152CF,172,B3,C4,Mathematics,E8,Physics,C4,Further Mathematics,A1,3.2,Computer Science,200,REJECTED
+Blessing Eze,202549641049HJ,231,C5,C5,Mathematics,C4,Economics,B2,Further Mathematics,C4,3.2,Accounting,200,QUALIFIED
+Adaeze Chukwu,202504085095FG,230,A1,B3,Economics,C4,Commerce,B2,Further Mathematics,B3,4.0,Business Administration,180,QUALIFIED
+Blessing Anyanwu,202518648769FG,199,B2,A1,Mathematics,C5,Fine Art,C5,Further Mathematics,D7,3.4,Architecture,200,ALTERNATIVE_COURSE
+Daniel Anyanwu,202541384596CF,221,E8,C4,Literature,F9,Government,B2,Further Mathematics,D7,2.0,Law,220,REJECTED
+Emmanuel Adeyemi,202549542770HJ,166,B3,B3,Mathematics,B3,Fine Art,C5,Further Mathematics,C6,3.6,Architecture,200,REJECTED
+Blessing Adeleke,202514985172FG,242,C4,E8,Mathematics,C4,Physics,C6,Further Mathematics,B2,2.8,Computer Science,200,ALTERNATIVE_COURSE
+Blessing Bello,202510287950EG,203,B3,C4,Mathematics,B2,Physics,B2,Further Mathematics,D7,3.4,Civil Engineering,210,ALTERNATIVE_COURSE
+Ngozi Chukwu,202509351187CF,191,E8,F9,Mathematics,F9,Physics,A1,Further Mathematics,C6,1.8,Computer Science,200,REJECTED
+Chukwuemeka Ogundele,202564205955HJ,246,A1,B2,Mathematics,C4,Economics,C6,Further Mathematics,C5,3.6,Economics,190,QUALIFIED
+Oluwaseun Nzekwe,202590193588FG,185,C4,F9,Biology,C5,Chemistry,B2,Further Mathematics,A1,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Chukwuemeka Adeyemi,202539898681CF,160,B3,C4,Mathematics,C5,Economics,B2,Further Mathematics,C6,3.4,Accounting,200,REJECTED
+Josephine Nzekwe,202535353751EG,155,C4,C4,Mathematics,C4,Fine Art,B3,Further Mathematics,C6,3.2,Architecture,200,REJECTED
+Ngozi Ogundele,202579376392EG,231,C5,D7,Economics,B3,Commerce,B3,Further Mathematics,C4,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Amaka Adeyemi,202566829732HJ,165,C5,C5,English Language,C5,Literature,C6,Further Mathematics,B3,3.2,Mass Communication,180,REJECTED
+Amaka Nwosu,202506021288HJ,271,B2,C4,Mathematics,C6,Physics,C5,Further Mathematics,C4,3.2,Computer Science,200,QUALIFIED
+Victor Adeleke,202599101576HJ,137,B3,C4,English Language,C4,Literature,C5,Further Mathematics,B2,3.4,Mass Communication,180,REJECTED
+Kelvin Adeyemi,202520995765HJ,269,B3,C4,English Language,B2,Literature,B2,Further Mathematics,C6,3.6,Mass Communication,180,QUALIFIED
+Victor Okafor,202598898645HJ,217,C4,C4,Literature,E8,Government,A1,Further Mathematics,B3,3.2,Law,220,ALTERNATIVE_COURSE
+Ibrahim Okonkwo,202584995154EG,206,C6,E8,Biology,A1,Chemistry,E8,Further Mathematics,D7,2.4,Nursing Science,200,REJECTED
+Daniel Adeleke,202513421388EG,190,B3,C4,Biology,B2,Chemistry,B2,Further Mathematics,E8,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Chioma Olawale,202505349678EG,223,C4,A1,Mathematics,D7,Physics,C4,Further Mathematics,B2,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Adaeze Ibrahim,202541241513CF,208,B3,B2,Economics,C5,Commerce,C6,Further Mathematics,C4,3.4,Business Administration,180,QUALIFIED
+Chukwuemeka Musa,202550618538CF,248,B2,B3,Biology,C4,Chemistry,C5,Further Mathematics,C5,3.4,Nursing Science,200,QUALIFIED
+Chioma Nwosu,202572742318EG,213,B2,C4,Mathematics,D7,Physics,B2,Further Mathematics,B2,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Daniel Adeleke,202569357824EG,215,C4,C4,Mathematics,C5,Physics,C5,Further Mathematics,A1,3.4,Computer Science,200,QUALIFIED
+Josephine Adeyemi,202531467536CF,197,C5,C4,Mathematics,C5,Physics,C4,Further Mathematics,C4,3.0,Civil Engineering,210,BORDERLINE
+Chioma Olawale,202579630448EG,208,C4,B3,Literature,B2,Government,C5,Further Mathematics,C5,3.4,Law,220,BORDERLINE
+Tunde Okonkwo,202564047350FG,220,A1,C6,English Language,B3,Literature,B3,Further Mathematics,B3,4.0,Mass Communication,180,QUALIFIED
+Funmilayo Adeleke,202552980061FG,150,C4,C4,Economics,B2,Commerce,B2,Further Mathematics,C5,3.4,Business Administration,180,REJECTED
+Ibrahim Nwosu,202586342556EG,162,C6,C4,Biology,C5,Chemistry,C4,Further Mathematics,B3,3.2,Nursing Science,200,REJECTED
+Amaka Chukwu,202567024403EG,236,C5,E8,Mathematics,A1,Economics,A1,Further Mathematics,E8,3.0,Economics,190,REJECTED
+Daniel Olawale,202511186008EG,215,B3,B2,Mathematics,C6,Physics,C5,Further Mathematics,B2,3.6,Computer Science,200,QUALIFIED
+Victor Okonkwo,202580447314HJ,203,C5,C6,Biology,B2,Chemistry,C5,Further Mathematics,B3,3.4,Medicine and Surgery,280,BORDERLINE
+Aisha Chukwu,202536076581HJ,210,B3,A1,English Language,E8,Literature,C4,Further Mathematics,C4,3.2,Mass Communication,180,ALTERNATIVE_COURSE
+Amaka Ogundele,202545211823HJ,222,C4,A1,Mathematics,C6,Economics,C4,Further Mathematics,C4,3.4,Accounting,200,QUALIFIED
+Peter Anyanwu,202530746452CF,191,B2,B2,Mathematics,C5,Fine Art,C4,Further Mathematics,C5,3.4,Architecture,200,BORDERLINE
+Aisha Anyanwu,202578753577CF,182,C5,C4,Biology,D7,Chemistry,B3,Further Mathematics,B2,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Amaka Nwosu,202537106728HJ,216,C4,A1,Biology,B2,Chemistry,A1,Further Mathematics,C4,4.0,Medicine and Surgery,280,BORDERLINE
+Josephine Musa,202548595922FG,175,C5,C4,Literature,B3,Government,B3,Further Mathematics,C4,3.4,Law,220,REJECTED
+Chioma Ibrahim,202535228705HJ,224,C5,C6,Mathematics,E8,Economics,B3,Further Mathematics,C5,2.8,Economics,190,ALTERNATIVE_COURSE
+Amaka Chukwu,202575109792CF,150,B2,A1,Literature,F9,Government,B3,Further Mathematics,B2,3.4,Law,220,REJECTED
+Josephine Olawale,202569459648EG,246,C5,D7,Biology,B3,Chemistry,A1,Further Mathematics,B2,3.6,Nursing Science,200,ALTERNATIVE_COURSE
+Oluwaseun Anyanwu,202589659994HJ,226,C4,B2,Biology,B2,Chemistry,B2,Further Mathematics,C4,3.6,Medicine and Surgery,280,BORDERLINE
+Oluwaseun Nwosu,202527051028HJ,218,B2,C6,Mathematics,F9,Economics,A1,Further Mathematics,C6,3.0,Accounting,200,ALTERNATIVE_COURSE
+Solomon Anyanwu,202567548581EG,244,C5,B3,English Language,C4,Literature,B2,Further Mathematics,C4,3.4,Mass Communication,180,QUALIFIED
+Chioma Musa,202541865205HJ,268,E8,C6,Literature,C5,Government,C6,Further Mathematics,C4,2.6,Law,220,ALTERNATIVE_COURSE
+Solomon Abubakar,202520375830FG,245,C5,B2,Biology,C4,Chemistry,F9,Further Mathematics,E8,2.2,Nursing Science,200,REJECTED
+Blessing Ogundele,202547604409CF,145,A1,B3,Biology,B3,Chemistry,E8,Further Mathematics,C5,3.4,Nursing Science,200,REJECTED
+Aisha Anyanwu,202510509222CF,165,F9,C5,Economics,C4,Commerce,C4,Further Mathematics,D7,2.2,Business Administration,180,REJECTED
+Aisha Eze,202539055295CF,188,C6,B2,English Language,C4,Literature,C5,Further Mathematics,B3,3.4,Mass Communication,180,QUALIFIED
+Oluwaseun Musa,202541270493HJ,210,C4,C5,English Language,A1,Literature,B2,Further Mathematics,C6,3.6,Mass Communication,180,QUALIFIED
+Amaka Abubakar,202579197111EG,228,C5,C6,Literature,E8,Government,B3,Further Mathematics,C4,2.8,Law,220,ALTERNATIVE_COURSE
+Ibrahim Ogundele,202557134324CF,184,B2,C4,Biology,E8,Chemistry,C6,Further Mathematics,C6,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Eze,202532447417FG,216,C5,B2,English Language,B2,Literature,B3,Further Mathematics,B2,3.8,Mass Communication,180,QUALIFIED
+Fatima Okafor,202596289365FG,183,B3,C6,Mathematics,C4,Fine Art,C6,Further Mathematics,C5,3.2,Architecture,200,BORDERLINE
+Kelvin Anyanwu,202534374018EG,188,B3,E8,Mathematics,C4,Economics,C5,Further Mathematics,B3,3.0,Accounting,200,ALTERNATIVE_COURSE
+Blessing Abubakar,202515026755CF,160,B2,C4,Economics,B3,Commerce,B3,Further Mathematics,C4,3.6,Business Administration,180,REJECTED
+Funmilayo Ibrahim,202599667345FG,177,D7,B3,Literature,C4,Government,B2,Further Mathematics,A1,3.6,Law,220,REJECTED
+Kelvin Adeyemi,202566496902EG,162,C5,B3,Economics,F9,Commerce,D7,Further Mathematics,C6,2.4,Business Administration,180,REJECTED
+Oluwaseun Nwosu,202550142576EG,175,D7,E8,Mathematics,E8,Physics,B2,Further Mathematics,F9,1.6,Civil Engineering,210,REJECTED
+Grace Olawale,202536132850HJ,246,A1,B2,Economics,D7,Commerce,B3,Further Mathematics,A1,4.0,Business Administration,180,ALTERNATIVE_COURSE
+Solomon Olawale,202573162526FG,176,B3,C4,Literature,C5,Government,C5,Further Mathematics,D7,3.0,Law,220,REJECTED
+Chioma Ogundele,202590392355FG,302,C6,C5,Mathematics,C4,Physics,B3,Further Mathematics,A1,3.6,Civil Engineering,210,QUALIFIED
+Oluwaseun Ibrahim,202530346156EG,227,C6,C5,Mathematics,C6,Economics,D7,Further Mathematics,C5,2.8,Economics,190,ALTERNATIVE_COURSE
+Adaeze Nwosu,202526817151HJ,216,B2,B3,English Language,C5,Literature,C4,Further Mathematics,B3,3.6,Mass Communication,180,QUALIFIED
+Solomon Okonkwo,202504641978FG,179,B2,B2,Mathematics,C4,Physics,C5,Further Mathematics,A1,3.8,Computer Science,200,REJECTED
+Adaeze Chukwu,202561205943HJ,234,C5,C6,Economics,F9,Commerce,B2,Further Mathematics,B2,2.8,Business Administration,180,ALTERNATIVE_COURSE
+Funmilayo Ogundele,202554654084EG,189,A1,B3,English Language,B2,Literature,C4,Further Mathematics,B3,4.0,Mass Communication,180,QUALIFIED
+Ngozi Musa,202508632181EG,214,B3,A1,Mathematics,B3,Physics,C5,Further Mathematics,C4,3.8,Civil Engineering,210,QUALIFIED
+Grace Nzekwe,202589701550EG,299,C5,C4,Literature,B3,Government,F9,Further Mathematics,C5,2.6,Law,220,ALTERNATIVE_COURSE
+Chukwuemeka Abubakar,202546602416CF,206,F9,C5,Mathematics,D7,Fine Art,B3,Further Mathematics,F9,1.8,Architecture,200,REJECTED
+Blessing Abubakar,202597364248CF,250,C4,F9,Mathematics,C5,Economics,C4,Further Mathematics,C6,2.4,Accounting,200,ALTERNATIVE_COURSE
+Adaeze Ogundele,202524479513EG,185,B3,B2,Mathematics,B3,Fine Art,A1,Further Mathematics,B2,4.2,Architecture,200,BORDERLINE
+Tunde Adeleke,202569586780FG,208,C5,B2,Mathematics,C5,Physics,C5,Further Mathematics,C5,3.2,Computer Science,200,QUALIFIED
+Aisha Musa,202526460917FG,271,B3,C6,Biology,B2,Chemistry,D7,Further Mathematics,C4,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Tunde Okafor,202529929596HJ,188,B2,F9,Biology,B3,Chemistry,B3,Further Mathematics,B3,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Aisha Nwosu,202569116331FG,273,C6,B3,Mathematics,C5,Physics,F9,Further Mathematics,B3,2.8,Computer Science,200,ALTERNATIVE_COURSE
+Ngozi Anyanwu,202536945515HJ,234,D7,C6,Literature,F9,Government,F9,Further Mathematics,C4,1.6,Law,220,REJECTED
+Fatima Okonkwo,202540857216HJ,190,D7,C4,Mathematics,C4,Economics,C6,Further Mathematics,C4,2.8,Accounting,200,ALTERNATIVE_COURSE
+Chukwuemeka Adeleke,202596059329HJ,232,C4,C5,English Language,C5,Literature,B2,Further Mathematics,C5,3.2,Mass Communication,180,QUALIFIED
+Kelvin Olawale,202532753273FG,244,E8,A1,Biology,C5,Chemistry,C6,Further Mathematics,B3,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Funmilayo Ibrahim,202532781952EG,231,B3,D7,Literature,B2,Government,C4,Further Mathematics,B2,3.4,Law,220,ALTERNATIVE_COURSE
+Kelvin Ibrahim,202561648198CF,155,C5,A1,Economics,C5,Commerce,C5,Further Mathematics,C4,3.4,Business Administration,180,REJECTED
+Blessing Abubakar,202568761124CF,184,C4,C5,Economics,B3,Commerce,B3,Further Mathematics,C6,3.4,Business Administration,180,QUALIFIED
+Daniel Adeyemi,202551773454HJ,201,B3,C5,Literature,B2,Government,B2,Further Mathematics,C4,3.6,Law,220,BORDERLINE
+Oluwaseun Chukwu,202540359544EG,207,C6,C5,Biology,C4,Chemistry,C4,Further Mathematics,C6,3.0,Nursing Science,200,QUALIFIED
+Oluwaseun Nwosu,202594643039FG,231,C5,C4,Mathematics,C4,Fine Art,B3,Further Mathematics,C5,3.2,Architecture,200,QUALIFIED
+Solomon Ibrahim,202592529858FG,216,C4,B3,Literature,C5,Government,C5,Further Mathematics,F9,2.6,Law,220,ALTERNATIVE_COURSE
+Solomon Okafor,202515343324CF,163,D7,C4,English Language,B2,Literature,C4,Further Mathematics,B2,3.2,Mass Communication,180,REJECTED
+Kelvin Nzekwe,202533506158CF,223,B3,C4,Mathematics,D7,Economics,D7,Further Mathematics,C6,2.8,Accounting,200,REJECTED
+Blessing Ibrahim,202598334233HJ,231,C4,C4,Mathematics,C5,Physics,D7,Further Mathematics,F9,2.2,Civil Engineering,210,REJECTED
+Chukwuemeka Nzekwe,202528403339HJ,229,A1,C5,Literature,C4,Government,A1,Further Mathematics,B2,4.0,Law,220,QUALIFIED
+Chioma Adeyemi,202571731893HJ,247,A1,D7,Economics,A1,Commerce,C6,Further Mathematics,A1,4.0,Business Administration,180,ALTERNATIVE_COURSE
+Ibrahim Adeleke,202597046947EG,239,C4,C4,Mathematics,D7,Physics,B2,Further Mathematics,D7,2.8,Civil Engineering,210,REJECTED
+Grace Abubakar,202548847127CF,226,C4,C4,Biology,E8,Chemistry,B3,Further Mathematics,D7,2.6,Nursing Science,200,REJECTED
+Josephine Adeyemi,202575823133FG,207,D7,C4,Biology,C4,Chemistry,B2,Further Mathematics,C6,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Ibrahim Adeleke,202525236229EG,151,B3,C6,Mathematics,C4,Economics,C5,Further Mathematics,E8,2.8,Economics,190,REJECTED
+Daniel Bello,202547452455FG,225,E8,F9,Biology,C5,Chemistry,C6,Further Mathematics,C6,2.0,Nursing Science,200,REJECTED
+Blessing Okonkwo,202552740334FG,217,B3,C4,Economics,C6,Commerce,A1,Further Mathematics,E8,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Ibrahim Adeleke,202587411325HJ,219,A1,C4,Biology,B3,Chemistry,C4,Further Mathematics,C5,3.6,Nursing Science,200,QUALIFIED
+Chioma Bello,202549960105FG,165,C4,F9,Mathematics,A1,Fine Art,C5,Further Mathematics,C5,2.8,Architecture,200,REJECTED
+Victor Anyanwu,202562294938CF,172,B3,E8,Mathematics,B2,Economics,B2,Further Mathematics,C5,3.2,Economics,190,REJECTED
+Josephine Musa,202502155732FG,246,B2,C4,Economics,C6,Commerce,B3,Further Mathematics,C4,3.4,Business Administration,180,QUALIFIED
+Funmilayo Musa,202502166670CF,208,B2,B3,Economics,B2,Commerce,F9,Further Mathematics,B3,3.2,Business Administration,180,ALTERNATIVE_COURSE
+Victor Anyanwu,202587495119CF,233,B3,C4,Mathematics,F9,Economics,E8,Further Mathematics,D7,2.0,Economics,190,REJECTED
+Tunde Adeleke,202531647725CF,210,C6,C4,Mathematics,C6,Economics,C6,Further Mathematics,A1,3.4,Economics,190,QUALIFIED
+Adaeze Nzekwe,202506940960CF,211,C5,B3,Literature,C4,Government,C5,Further Mathematics,C6,3.2,Law,220,BORDERLINE
+Aisha Ibrahim,202539592323FG,242,B3,B2,Mathematics,D7,Economics,C4,Further Mathematics,C6,3.2,Accounting,200,ALTERNATIVE_COURSE
+Ngozi Adeyemi,202555333426FG,191,B2,C4,Literature,E8,Government,A1,Further Mathematics,B2,3.4,Law,220,ALTERNATIVE_COURSE
+Tunde Adeyemi,202560736077HJ,213,E8,B2,Mathematics,B3,Economics,B2,Further Mathematics,D7,3.0,Accounting,200,REJECTED
+Peter Musa,202581231795FG,193,B2,B3,Mathematics,C6,Economics,A1,Further Mathematics,B2,4.0,Accounting,200,BORDERLINE
+Amaka Ibrahim,202500666155FG,194,B2,F9,English Language,C6,Literature,B3,Further Mathematics,B3,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Solomon Nzekwe,202570450232CF,199,C4,C6,Biology,B3,Chemistry,F9,Further Mathematics,A1,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Olawale,202545962622EG,217,C4,B2,Literature,C4,Government,A1,Further Mathematics,C4,3.6,Law,220,BORDERLINE
+Solomon Ogundele,202554950050HJ,193,B3,E8,Literature,C6,Government,A1,Further Mathematics,B2,3.4,Law,220,ALTERNATIVE_COURSE
+Kelvin Nwosu,202521053161CF,253,C5,B2,Mathematics,C4,Physics,C4,Further Mathematics,C6,3.2,Computer Science,200,QUALIFIED
+Emmanuel Eze,202577425859CF,178,C4,C4,Economics,D7,Commerce,C4,Further Mathematics,D7,2.6,Business Administration,180,REJECTED
+Oluwaseun Bello,202511649133FG,203,C4,C6,Economics,C4,Commerce,B2,Further Mathematics,C4,3.2,Business Administration,180,QUALIFIED
+Kelvin Adeleke,202542565290HJ,194,C5,B3,Literature,C5,Government,C4,Further Mathematics,C4,3.2,Law,220,BORDERLINE
+Grace Nwosu,202565097753HJ,260,C6,F9,Mathematics,A1,Physics,C5,Further Mathematics,C6,2.8,Computer Science,200,ALTERNATIVE_COURSE
+Kelvin Nzekwe,202555245787CF,216,F9,C4,Economics,B3,Commerce,C4,Further Mathematics,C5,2.6,Business Administration,180,ALTERNATIVE_COURSE
+Aisha Nwosu,202513711842FG,246,C6,B3,Biology,C6,Chemistry,C4,Further Mathematics,A1,3.6,Nursing Science,200,QUALIFIED
+Fatima Okonkwo,202583230358EG,158,C4,C4,Mathematics,E8,Physics,E8,Further Mathematics,F9,1.6,Civil Engineering,210,REJECTED
+Kelvin Nwosu,202552129328HJ,219,D7,C4,Mathematics,C6,Fine Art,B3,Further Mathematics,B2,3.2,Architecture,200,ALTERNATIVE_COURSE
+Adaeze Nzekwe,202577524014FG,241,B3,E8,Mathematics,E8,Economics,B3,Further Mathematics,D7,2.4,Accounting,200,REJECTED
+Oluwaseun Ibrahim,202523626693EG,212,E8,C5,Mathematics,E8,Economics,A1,Further Mathematics,C4,2.6,Accounting,200,REJECTED
+Peter Ogundele,202523724501FG,247,A1,E8,Biology,B3,Chemistry,D7,Further Mathematics,B2,3.2,Nursing Science,200,REJECTED
+Amaka Chukwu,202597215406FG,191,B2,C5,Mathematics,C4,Economics,C5,Further Mathematics,B3,3.4,Economics,190,QUALIFIED
+Chioma Anyanwu,202543811995EG,259,C5,C4,Biology,B2,Chemistry,C5,Further Mathematics,D7,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Daniel Olawale,202544856451CF,290,C6,E8,Economics,C4,Commerce,C5,Further Mathematics,D7,2.4,Business Administration,180,REJECTED
+Daniel Adeyemi,202578996986CF,197,C5,C4,Biology,C4,Chemistry,B2,Further Mathematics,C4,3.2,Medicine and Surgery,280,BORDERLINE
+Grace Abubakar,202599660577CF,194,B2,C6,Mathematics,C5,Fine Art,A1,Further Mathematics,A1,4.0,Architecture,200,BORDERLINE
+Peter Nwosu,202505146074FG,260,C6,C5,English Language,C6,Literature,C5,Further Mathematics,A1,3.4,Mass Communication,180,QUALIFIED
+Daniel Anyanwu,202523885652HJ,265,B3,E8,Biology,B3,Chemistry,C6,Further Mathematics,B3,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Josephine Adeyemi,202516597263FG,191,B3,C5,Biology,C5,Chemistry,C6,Further Mathematics,B2,3.4,Medicine and Surgery,280,BORDERLINE
+Victor Okafor,202513948848EG,195,B3,C6,Economics,D7,Commerce,C6,Further Mathematics,E8,2.6,Business Administration,180,REJECTED
+Solomon Olawale,202542585626CF,200,C5,A1,English Language,A1,Literature,C5,Further Mathematics,D7,3.6,Mass Communication,180,ALTERNATIVE_COURSE
+Grace Chukwu,202524073333HJ,162,C5,F9,Mathematics,B3,Physics,B2,Further Mathematics,C6,2.8,Civil Engineering,210,REJECTED
+Tunde Okonkwo,202588936289HJ,177,B2,B3,Mathematics,E8,Economics,D7,Further Mathematics,C4,2.8,Accounting,200,REJECTED
+Daniel Okonkwo,202555358512FG,174,D7,F9,Mathematics,C5,Fine Art,C5,Further Mathematics,F9,1.6,Architecture,200,REJECTED
+Chioma Chukwu,202551935837FG,183,C6,C4,Mathematics,A1,Economics,D7,Further Mathematics,F9,2.6,Accounting,200,REJECTED
+Fatima Okafor,202587805721FG,208,C6,C4,Mathematics,C4,Fine Art,C4,Further Mathematics,A1,3.4,Architecture,200,QUALIFIED
+Funmilayo Ibrahim,202562637484FG,218,E8,B3,Biology,B3,Chemistry,D7,Further Mathematics,A1,3.2,Medicine and Surgery,280,REJECTED
+Peter Abubakar,202509059119CF,264,C4,D7,Mathematics,E8,Economics,B2,Further Mathematics,C4,2.6,Accounting,200,REJECTED
+Fatima Olawale,202520715116HJ,175,C4,B2,Mathematics,B2,Economics,F9,Further Mathematics,C6,2.8,Economics,190,REJECTED
+Fatima Musa,202564712463EG,244,B3,C4,English Language,C6,Literature,B2,Further Mathematics,B3,3.6,Mass Communication,180,QUALIFIED
+Emmanuel Nzekwe,202590805120CF,202,F9,C5,Biology,B3,Chemistry,C6,Further Mathematics,C4,2.6,Nursing Science,200,ALTERNATIVE_COURSE
+Chukwuemeka Nwosu,202539728351EG,208,B3,B3,Mathematics,C6,Physics,C4,Further Mathematics,B3,3.6,Computer Science,200,QUALIFIED
+Kelvin Nwosu,202570908144CF,233,B3,B2,Mathematics,C4,Fine Art,C6,Further Mathematics,C6,3.4,Architecture,200,QUALIFIED
+Oluwaseun Adeleke,202557867181FG,170,C5,C4,Biology,B2,Chemistry,A1,Further Mathematics,B2,3.8,Nursing Science,200,REJECTED
+Ngozi Okafor,202579181589HJ,223,B3,B2,Mathematics,C6,Economics,B2,Further Mathematics,C4,3.6,Accounting,200,QUALIFIED
+Adaeze Okonkwo,202566170715HJ,215,C5,B3,Mathematics,B2,Economics,C6,Further Mathematics,B3,3.6,Economics,190,QUALIFIED
+Blessing Chukwu,202503149982FG,227,B3,C4,Mathematics,C6,Fine Art,B3,Further Mathematics,C5,3.4,Architecture,200,QUALIFIED
+Blessing Olawale,202568828503CF,220,C4,A1,Mathematics,B3,Physics,B2,Further Mathematics,E8,3.4,Computer Science,200,ALTERNATIVE_COURSE
+Ibrahim Adeleke,202590063140EG,295,E8,D7,Economics,C5,Commerce,A1,Further Mathematics,B2,3.0,Business Administration,180,REJECTED
+Blessing Nwosu,202529394694EG,187,F9,F9,Biology,C6,Chemistry,B3,Further Mathematics,C6,2.0,Nursing Science,200,REJECTED
+Ibrahim Olawale,202574906072EG,191,C4,A1,Mathematics,C6,Physics,B3,Further Mathematics,C6,3.6,Civil Engineering,210,BORDERLINE
+Victor Nwosu,202546484494CF,188,C5,B2,Biology,D7,Chemistry,C4,Further Mathematics,B2,3.2,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Ibrahim Nwosu,202580771130HJ,190,B3,D7,Biology,B2,Chemistry,A1,Further Mathematics,C6,3.6,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Oluwaseun Ibrahim,202590833509CF,187,A1,C5,Literature,A1,Government,C4,Further Mathematics,B3,4.0,Law,220,BORDERLINE
+Blessing Okonkwo,202562481323FG,251,B3,E8,Literature,E8,Government,B3,Further Mathematics,B2,2.8,Law,220,REJECTED
+Fatima Nwosu,202585011688CF,259,A1,C4,Economics,C6,Commerce,C5,Further Mathematics,B3,3.6,Business Administration,180,QUALIFIED
+Grace Okafor,202560906913CF,190,C5,C5,Mathematics,B3,Fine Art,A1,Further Mathematics,D7,3.4,Architecture,200,ALTERNATIVE_COURSE
+Solomon Eze,202596737945HJ,180,C4,A1,Mathematics,C6,Fine Art,C4,Further Mathematics,C4,3.4,Architecture,200,BORDERLINE
+Fatima Okonkwo,202542506420HJ,226,D7,B2,Economics,C4,Commerce,B3,Further Mathematics,B2,3.4,Business Administration,180,ALTERNATIVE_COURSE
+Ngozi Bello,202566677767FG,190,C5,C4,English Language,B2,Literature,C4,Further Mathematics,C6,3.2,Mass Communication,180,QUALIFIED
+Ibrahim Adeleke,202539578654EG,232,B3,B3,Biology,C5,Chemistry,B2,Further Mathematics,B2,3.8,Nursing Science,200,QUALIFIED
+Funmilayo Okonkwo,202503358268HJ,217,B2,B2,English Language,C5,Literature,B3,Further Mathematics,C6,3.6,Mass Communication,180,QUALIFIED
+Peter Anyanwu,202526932657EG,156,E8,A1,Literature,B2,Government,C4,Further Mathematics,B2,3.4,Law,220,REJECTED
+Blessing Ogundele,202511100051FG,264,C6,C4,Literature,C5,Government,C6,Further Mathematics,C4,3.0,Law,220,QUALIFIED
+Victor Adeleke,202577524418EG,272,B2,B2,Biology,B2,Chemistry,C6,Further Mathematics,B3,3.8,Nursing Science,200,QUALIFIED
+Chioma Musa,202543127102HJ,188,B2,B2,Literature,D7,Government,C4,Further Mathematics,C4,3.2,Law,220,ALTERNATIVE_COURSE
+Tunde Adeleke,202592707955CF,196,B3,B2,Economics,A1,Commerce,C5,Further Mathematics,C6,3.8,Business Administration,180,QUALIFIED
+Ibrahim Ogundele,202554159709HJ,220,A1,B2,Biology,B3,Chemistry,B3,Further Mathematics,B2,4.2,Nursing Science,200,QUALIFIED
+Emmanuel Ibrahim,202552034476FG,221,B3,B3,Literature,C4,Government,F9,Further Mathematics,D7,2.6,Law,220,REJECTED
+Blessing Nwosu,202590904637HJ,233,B3,F9,Mathematics,C5,Physics,C5,Further Mathematics,B3,2.8,Computer Science,200,ALTERNATIVE_COURSE
+Adaeze Okonkwo,202552548374FG,280,A1,C5,English Language,C5,Literature,B3,Further Mathematics,C6,3.6,Mass Communication,180,QUALIFIED
+Kelvin Nzekwe,202510213125CF,203,D7,D7,Biology,A1,Chemistry,C5,Further Mathematics,B3,3.2,Medicine and Surgery,280,REJECTED
+Victor Olawale,202591297519CF,182,C4,B2,Literature,A1,Government,A1,Further Mathematics,C5,4.0,Law,220,BORDERLINE
+Chukwuemeka Okafor,202563301658EG,161,C5,B2,Mathematics,C5,Physics,A1,Further Mathematics,A1,4.0,Computer Science,200,REJECTED
+Peter Olawale,202507280123FG,184,C6,C5,Economics,C4,Commerce,C5,Further Mathematics,C4,3.0,Business Administration,180,QUALIFIED
+Ibrahim Nwosu,202553269496FG,208,D7,C4,Literature,B2,Government,B2,Further Mathematics,C6,3.2,Law,220,ALTERNATIVE_COURSE
+Daniel Eze,202521017509HJ,272,C4,C6,Mathematics,C5,Economics,C4,Further Mathematics,C5,3.0,Accounting,200,QUALIFIED
+Victor Adeleke,202559194575HJ,191,C5,D7,Biology,C4,Chemistry,F9,Further Mathematics,C5,2.2,Medicine and Surgery,280,REJECTED
+Peter Nwosu,202505677567HJ,217,C4,C6,Biology,B3,Chemistry,F9,Further Mathematics,B2,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Victor Okonkwo,202526506229EG,209,B2,C5,Economics,B3,Commerce,E8,Further Mathematics,D7,2.8,Business Administration,180,REJECTED
+Solomon Nwosu,202548433797HJ,251,A1,B3,Mathematics,B2,Economics,B3,Further Mathematics,A1,4.4,Accounting,200,QUALIFIED
+Chukwuemeka Abubakar,202579423873HJ,298,E8,B2,English Language,E8,Literature,A1,Further Mathematics,E8,2.4,Mass Communication,180,REJECTED
+Adaeze Adeleke,202519284552FG,191,A1,B3,Economics,B2,Commerce,C5,Further Mathematics,C5,3.8,Business Administration,180,QUALIFIED
+Victor Musa,202535748595EG,192,F9,A1,Mathematics,C4,Fine Art,C4,Further Mathematics,B2,3.0,Architecture,200,ALTERNATIVE_COURSE
+Funmilayo Bello,202537970581HJ,246,E8,C6,Literature,C4,Government,D7,Further Mathematics,C5,2.4,Law,220,REJECTED
+Daniel Adeyemi,202576342507EG,233,C5,A1,Literature,C4,Government,C5,Further Mathematics,D7,3.2,Law,220,ALTERNATIVE_COURSE
+Daniel Abubakar,202575983399CF,274,C5,B3,Mathematics,C6,Economics,C4,Further Mathematics,B2,3.4,Accounting,200,QUALIFIED
+Solomon Okonkwo,202504432400HJ,230,C5,C5,Mathematics,B2,Physics,C6,Further Mathematics,B3,3.4,Civil Engineering,210,QUALIFIED
+Fatima Adeleke,202575147439HJ,197,B3,C6,Biology,F9,Chemistry,C4,Further Mathematics,B3,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Aisha Ibrahim,202552568065HJ,230,B2,B2,Mathematics,E8,Physics,B2,Further Mathematics,D7,3.0,Civil Engineering,210,REJECTED
+Peter Okafor,202580271122CF,248,B3,C6,Literature,A1,Government,B3,Further Mathematics,C4,3.8,Law,220,QUALIFIED
+Chukwuemeka Okonkwo,202551768086HJ,238,B2,C5,Mathematics,A1,Economics,B3,Further Mathematics,B3,4.0,Economics,190,QUALIFIED
+Daniel Bello,202530800370CF,227,C4,A1,Literature,B2,Government,B2,Further Mathematics,C6,3.8,Law,220,QUALIFIED
+Solomon Anyanwu,202560847068CF,247,C6,E8,Mathematics,E8,Economics,B2,Further Mathematics,B3,2.6,Accounting,200,REJECTED
+Chukwuemeka Adeleke,202558263280FG,250,B2,A1,Mathematics,B2,Physics,C4,Further Mathematics,B3,4.0,Computer Science,200,QUALIFIED
+Victor Bello,202554614707HJ,258,C4,C4,Mathematics,B2,Physics,B2,Further Mathematics,C5,3.4,Civil Engineering,210,QUALIFIED
+Ibrahim Anyanwu,202594394570EG,232,B2,A1,Mathematics,C6,Economics,C5,Further Mathematics,D7,3.4,Accounting,200,ALTERNATIVE_COURSE
+Fatima Olawale,202553765769EG,204,D7,C6,Mathematics,B2,Fine Art,A1,Further Mathematics,A1,3.8,Architecture,200,ALTERNATIVE_COURSE
+Chukwuemeka Adeleke,202510090040FG,215,C4,C4,Economics,C6,Commerce,C5,Further Mathematics,E8,2.6,Business Administration,180,ALTERNATIVE_COURSE
+Ibrahim Okonkwo,202551460401FG,252,B3,C4,Economics,B2,Commerce,A1,Further Mathematics,B2,4.0,Business Administration,180,QUALIFIED
+Emmanuel Nzekwe,202572011379FG,181,B3,E8,Literature,D7,Government,C6,Further Mathematics,B2,2.8,Law,220,REJECTED
+Solomon Ogundele,202560076762CF,222,A1,C4,Mathematics,A1,Physics,C5,Further Mathematics,B2,4.0,Civil Engineering,210,QUALIFIED
+Chioma Bello,202540433700HJ,196,D7,C5,Mathematics,E8,Fine Art,D7,Further Mathematics,C5,2.2,Architecture,200,REJECTED
+Ngozi Adeyemi,202595778255EG,211,E8,C4,Mathematics,B2,Economics,C6,Further Mathematics,A1,3.2,Economics,190,ALTERNATIVE_COURSE
+Ngozi Anyanwu,202542786561FG,254,C5,B3,Biology,B2,Chemistry,C4,Further Mathematics,C4,3.4,Nursing Science,200,QUALIFIED
+Fatima Nzekwe,202505829582EG,216,B3,B3,Literature,C4,Government,C6,Further Mathematics,D7,3.2,Law,220,ALTERNATIVE_COURSE
+Aisha Okafor,202581904823FG,211,C6,B3,Mathematics,C6,Economics,D7,Further Mathematics,F9,2.4,Accounting,200,REJECTED
+Solomon Bello,202595613723CF,162,B2,C5,Economics,C6,Commerce,C4,Further Mathematics,B3,3.4,Business Administration,180,REJECTED
+Solomon Eze,202538130004CF,236,C6,C4,Mathematics,D7,Economics,C5,Further Mathematics,B3,3.0,Economics,190,ALTERNATIVE_COURSE
+Adaeze Abubakar,202560945653FG,232,B2,C6,Mathematics,A1,Economics,B3,Further Mathematics,E8,3.4,Accounting,200,ALTERNATIVE_COURSE
+Blessing Ibrahim,202555047681HJ,285,C5,D7,English Language,C5,Literature,C4,Further Mathematics,C5,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Blessing Ibrahim,202517481131HJ,199,C5,B3,Mathematics,F9,Fine Art,C4,Further Mathematics,A1,3.0,Architecture,200,ALTERNATIVE_COURSE
+Tunde Bello,202596102908HJ,217,C5,B2,English Language,F9,Literature,A1,Further Mathematics,B3,3.2,Mass Communication,180,ALTERNATIVE_COURSE
+Blessing Eze,202591872742CF,218,C4,C4,Biology,C5,Chemistry,B3,Further Mathematics,E8,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Chioma Ibrahim,202530626042EG,265,C5,C4,Mathematics,C5,Physics,E8,Further Mathematics,A1,3.0,Civil Engineering,210,ALTERNATIVE_COURSE
+Amaka Adeyemi,202522299077FG,206,D7,C4,Biology,C4,Chemistry,C5,Further Mathematics,C6,2.8,Nursing Science,200,ALTERNATIVE_COURSE
+Chioma Okafor,202546861114FG,219,A1,C4,English Language,C5,Literature,C5,Further Mathematics,B2,3.6,Mass Communication,180,QUALIFIED
+Fatima Adeyemi,202592378584HJ,231,C4,D7,Economics,D7,Commerce,D7,Further Mathematics,B2,2.6,Business Administration,180,REJECTED
+Ibrahim Nwosu,202542605080CF,216,F9,C5,Biology,C4,Chemistry,B2,Further Mathematics,A1,3.0,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Grace Olawale,202573377731EG,194,C5,C4,Mathematics,A1,Economics,D7,Further Mathematics,B2,3.4,Economics,190,ALTERNATIVE_COURSE
+Kelvin Nwosu,202517819236FG,216,C4,C5,English Language,D7,Literature,A1,Further Mathematics,C5,3.2,Mass Communication,180,ALTERNATIVE_COURSE
+Solomon Okafor,202535679327HJ,247,C6,C4,Mathematics,C6,Economics,A1,Further Mathematics,B3,3.6,Accounting,200,QUALIFIED
+Adaeze Adeyemi,202581205464HJ,174,B2,C4,Literature,C4,Government,A1,Further Mathematics,C4,3.6,Law,220,REJECTED
+Kelvin Ibrahim,202569899927FG,214,B3,C4,Biology,B3,Chemistry,B3,Further Mathematics,E8,3.2,Nursing Science,200,ALTERNATIVE_COURSE
+Daniel Nzekwe,202544983553EG,185,C5,F9,Biology,C4,Chemistry,C5,Further Mathematics,A1,2.8,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Funmilayo Okonkwo,202539243588FG,251,F9,B2,Biology,B3,Chemistry,C5,Further Mathematics,B3,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Grace Bello,202595275367FG,156,C6,C4,Mathematics,B2,Economics,C5,Further Mathematics,D7,3.0,Accounting,200,REJECTED
+Solomon Olawale,202586013477FG,190,C4,B3,Mathematics,B3,Fine Art,A1,Further Mathematics,B2,4.0,Architecture,200,BORDERLINE
+Funmilayo Adeyemi,202576651221FG,223,C4,B2,Mathematics,A1,Economics,C4,Further Mathematics,F9,3.0,Economics,190,ALTERNATIVE_COURSE
+Amaka Nzekwe,202563090015FG,264,A1,A1,Mathematics,B2,Physics,C4,Further Mathematics,B2,4.2,Computer Science,200,QUALIFIED
+Aisha Abubakar,202532089532HJ,207,C4,B2,Mathematics,C5,Physics,C4,Further Mathematics,B3,3.4,Civil Engineering,210,BORDERLINE
+Daniel Anyanwu,202571136337EG,190,C4,A1,Mathematics,B2,Economics,C4,Further Mathematics,C5,3.6,Accounting,200,BORDERLINE
+Funmilayo Olawale,202567331167HJ,275,D7,B3,Literature,A1,Government,C5,Further Mathematics,C4,3.4,Law,220,ALTERNATIVE_COURSE
+Daniel Bello,202576855078HJ,159,C5,B3,Literature,C5,Government,B3,Further Mathematics,C4,3.4,Law,220,REJECTED
+Solomon Nwosu,202563355643FG,133,C5,B3,Economics,C5,Commerce,C5,Further Mathematics,C5,3.2,Business Administration,180,REJECTED
+Chukwuemeka Ibrahim,202506955607HJ,225,B3,D7,Mathematics,E8,Economics,C5,Further Mathematics,C4,2.6,Accounting,200,REJECTED
+Daniel Ibrahim,202522398983CF,192,D7,A1,Economics,B3,Commerce,B2,Further Mathematics,B3,3.8,Business Administration,180,ALTERNATIVE_COURSE
+Aisha Okafor,202541847242HJ,174,B3,C6,English Language,A1,Literature,D7,Further Mathematics,A1,3.8,Mass Communication,180,REJECTED
+Chukwuemeka Adeleke,202509248762EG,234,D7,B2,Mathematics,C4,Physics,B2,Further Mathematics,A1,3.6,Civil Engineering,210,ALTERNATIVE_COURSE
+Fatima Chukwu,202517852282EG,218,C6,B2,Mathematics,C5,Physics,A1,Further Mathematics,B2,3.8,Computer Science,200,QUALIFIED
+Blessing Okonkwo,202522072239FG,190,B3,B2,Mathematics,B3,Physics,C6,Further Mathematics,C4,3.6,Computer Science,200,BORDERLINE
+Fatima Ogundele,202590162047HJ,165,C6,C4,Mathematics,C4,Fine Art,C5,Further Mathematics,C5,3.0,Architecture,200,REJECTED
+Kelvin Abubakar,202599648628HJ,240,C4,C5,English Language,D7,Literature,C4,Further Mathematics,C5,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Funmilayo Nzekwe,202566645057EG,232,C6,B2,Literature,C4,Government,B3,Further Mathematics,B3,3.6,Law,220,QUALIFIED
+Oluwaseun Ogundele,202546320374HJ,206,B2,C6,Mathematics,C6,Physics,C4,Further Mathematics,C4,3.2,Computer Science,200,QUALIFIED
+Blessing Bello,202521450576HJ,274,C4,C4,English Language,D7,Literature,C4,Further Mathematics,C4,2.8,Mass Communication,180,ALTERNATIVE_COURSE
+Chioma Adeyemi,202555348201EG,172,C4,B3,Biology,C4,Chemistry,C4,Further Mathematics,E8,2.8,Medicine and Surgery,280,REJECTED
+Solomon Abubakar,202597595450CF,156,B3,A1,Mathematics,B2,Economics,C4,Further Mathematics,A1,4.2,Economics,190,REJECTED
+Peter Chukwu,202512657422EG,185,C6,C4,Economics,C4,Commerce,C5,Further Mathematics,C4,3.0,Business Administration,180,QUALIFIED
+Oluwaseun Bello,202569362689FG,208,C5,B3,Biology,B2,Chemistry,A1,Further Mathematics,A1,4.2,Medicine and Surgery,280,BORDERLINE
+Chukwuemeka Bello,202572711759FG,218,A1,A1,Mathematics,D7,Economics,B3,Further Mathematics,C4,3.8,Accounting,200,ALTERNATIVE_COURSE
+Victor Ogundele,202558298493EG,201,E8,B3,Economics,C4,Commerce,D7,Further Mathematics,C6,2.6,Business Administration,180,REJECTED
+Solomon Okafor,202594412833EG,222,C4,B3,Mathematics,E8,Physics,B3,Further Mathematics,F9,2.4,Computer Science,200,REJECTED
+Solomon Okonkwo,202595413297CF,166,D7,E8,Economics,C5,Commerce,C4,Further Mathematics,C4,2.4,Business Administration,180,REJECTED
+Emmanuel Abubakar,202551437769EG,260,E8,A1,Biology,C4,Chemistry,C4,Further Mathematics,C4,3.0,Nursing Science,200,ALTERNATIVE_COURSE
+Funmilayo Abubakar,202596111102HJ,207,C4,B2,English Language,B2,Literature,C6,Further Mathematics,B3,3.6,Mass Communication,180,QUALIFIED
+Blessing Okafor,202572024559CF,249,D7,E8,Economics,C6,Commerce,C5,Further Mathematics,B2,2.6,Business Administration,180,REJECTED
+Blessing Adeleke,202503267149FG,221,B2,B3,Mathematics,A1,Physics,F9,Further Mathematics,A1,3.6,Computer Science,200,ALTERNATIVE_COURSE
+Daniel Nwosu,202581793406FG,225,C6,A1,Mathematics,C5,Fine Art,B2,Further Mathematics,C4,3.6,Architecture,200,QUALIFIED
+Solomon Okonkwo,202534533722CF,229,C5,C6,Literature,B3,Government,C4,Further Mathematics,B3,3.4,Law,220,QUALIFIED
+Chukwuemeka Eze,202555937661FG,225,A1,D7,Biology,B2,Chemistry,F9,Further Mathematics,B2,3.0,Medicine and Surgery,280,REJECTED
+Blessing Okafor,202546277657EG,232,D7,C5,Mathematics,B3,Economics,B3,Further Mathematics,B3,3.4,Accounting,200,ALTERNATIVE_COURSE
+Fatima Okafor,202524617520EG,256,C5,C5,Biology,C5,Chemistry,E8,Further Mathematics,C6,2.6,Nursing Science,200,ALTERNATIVE_COURSE
+Blessing Anyanwu,202505595501HJ,216,C4,C4,Mathematics,B3,Economics,B2,Further Mathematics,B2,3.6,Accounting,200,QUALIFIED
+Daniel Chukwu,202568999360HJ,234,B2,B2,Mathematics,C5,Economics,D7,Further Mathematics,C5,3.2,Economics,190,ALTERNATIVE_COURSE
+Adaeze Adeleke,202517679935EG,206,C4,C4,Mathematics,C6,Fine Art,A1,Further Mathematics,B3,3.6,Architecture,200,QUALIFIED
+Peter Eze,202564083037EG,260,B3,D7,Economics,D7,Commerce,C6,Further Mathematics,C5,2.8,Business Administration,180,REJECTED
+Aisha Okonkwo,202508490793FG,186,A1,A1,English Language,A1,Literature,C6,Further Mathematics,C4,4.2,Mass Communication,180,QUALIFIED
+Ibrahim Okafor,202561537012FG,273,D7,E8,Biology,B3,Chemistry,C5,Further Mathematics,B2,2.8,Medicine and Surgery,280,REJECTED
+Fatima Abubakar,202514488112CF,208,C5,C5,Literature,C4,Government,D7,Further Mathematics,B2,3.0,Law,220,ALTERNATIVE_COURSE
+Fatima Adeyemi,202575188781HJ,159,E8,A1,Mathematics,C6,Physics,C6,Further Mathematics,B3,3.2,Computer Science,200,REJECTED
+Ibrahim Chukwu,202540911225EG,214,B3,A1,Mathematics,C6,Fine Art,B3,Further Mathematics,B3,4.0,Architecture,200,QUALIFIED
+Emmanuel Abubakar,202566186323HJ,186,C6,C4,Mathematics,C4,Economics,E8,Further Mathematics,C5,2.6,Economics,190,ALTERNATIVE_COURSE
+Chioma Chukwu,202576553007EG,239,C5,A1,Mathematics,F9,Fine Art,B2,Further Mathematics,C5,3.0,Architecture,200,ALTERNATIVE_COURSE
+Emmanuel Abubakar,202571219881EG,187,C4,A1,Mathematics,C5,Physics,B3,Further Mathematics,B3,3.8,Computer Science,200,BORDERLINE
+Blessing Anyanwu,202553486401CF,194,C4,F9,Economics,C5,Commerce,B3,Further Mathematics,C5,2.6,Business Administration,180,ALTERNATIVE_COURSE
+Daniel Abubakar,202561851744HJ,143,C5,F9,Mathematics,C5,Physics,C6,Further Mathematics,F9,1.8,Civil Engineering,210,REJECTED
+Kelvin Adeleke,202591511455CF,194,A1,B3,Mathematics,B2,Physics,A1,Further Mathematics,B2,4.4,Computer Science,200,BORDERLINE
+Aisha Anyanwu,202581898484CF,125,C4,C4,Literature,A1,Government,A1,Further Mathematics,B3,4.0,Law,220,REJECTED
+Daniel Musa,202502119017CF,154,C6,A1,English Language,D7,Literature,C4,Further Mathematics,C5,3.2,Mass Communication,180,REJECTED
+Grace Adeyemi,202552291073EG,236,C6,C4,Economics,B2,Commerce,B2,Further Mathematics,E8,3.0,Business Administration,180,ALTERNATIVE_COURSE
+Kelvin Nzekwe,202549378306EG,237,C5,C6,Literature,C5,Government,B2,Further Mathematics,C4,3.2,Law,220,QUALIFIED
+Peter Okonkwo,202594439164HJ,224,C5,B2,Mathematics,C4,Fine Art,B3,Further Mathematics,C4,3.4,Architecture,200,QUALIFIED
+Fatima Olawale,202591320330CF,176,F9,C4,Mathematics,B2,Physics,B3,Further Mathematics,B2,3.0,Computer Science,200,REJECTED
+Amaka Olawale,202506153722CF,208,B2,B2,English Language,E8,Literature,C4,Further Mathematics,C5,3.0,Mass Communication,180,ALTERNATIVE_COURSE
+Ibrahim Olawale,202523653377FG,209,B3,C4,Biology,C5,Chemistry,C5,Further Mathematics,C4,3.2,Nursing Science,200,QUALIFIED
+Blessing Musa,202578436142FG,169,A1,A1,English Language,C4,Literature,A1,Further Mathematics,D7,4.0,Mass Communication,180,REJECTED
+Tunde Abubakar,202543734764EG,262,B2,C6,Mathematics,C4,Physics,C6,Further Mathematics,A1,3.6,Civil Engineering,210,QUALIFIED
+Grace Chukwu,202582145841FG,240,B2,D7,Economics,A1,Commerce,B2,Further Mathematics,C4,3.6,Business Administration,180,ALTERNATIVE_COURSE
+Grace Nzekwe,202544389982HJ,202,C6,C5,Mathematics,A1,Economics,C4,Further Mathematics,D7,3.2,Economics,190,ALTERNATIVE_COURSE
+Peter Abubakar,202507321464FG,210,A1,E8,Mathematics,B3,Economics,C5,Further Mathematics,C4,3.2,Economics,190,ALTERNATIVE_COURSE
+Amaka Okonkwo,202579335055HJ,217,B2,C4,Mathematics,C6,Fine Art,C5,Further Mathematics,C4,3.2,Architecture,200,QUALIFIED
+Amaka Adeleke,202523603768CF,138,C4,C4,Mathematics,C4,Economics,C4,Further Mathematics,C5,3.0,Accounting,200,REJECTED
+Ibrahim Abubakar,202510409614HJ,201,C5,F9,Biology,C4,Chemistry,B2,Further Mathematics,C5,2.6,Medicine and Surgery,280,ALTERNATIVE_COURSE
+Funmilayo Chukwu,202530748207EG,186,A1,E8,Mathematics,C5,Economics,A1,Further Mathematics,B3,3.6,Accounting,200,ALTERNATIVE_COURSE
+Emmanuel Okonkwo,202555782019CF,174,D7,B2,English Language,C4,Literature,B2,Further Mathematics,C4,3.2,Mass Communication,180,REJECTED
+Ibrahim Bello,202524707392CF,200,B2,C6,Mathematics,B2,Physics,A1,Further Mathematics,B2,4.0,Civil Engineering,210,BORDERLINE
+Adaeze Nwosu,202512760250EG,272,C5,C5,Biology,B3,Chemistry,C6,Further Mathematics,C6,3.2,Medicine and Surgery,280,BORDERLINE
+Grace Musa,202524888995HJ,232,B2,C6,English Language,B2,Literature,B2,Further Mathematics,B2,3.8,Mass Communication,180,QUALIFIED
+Fatima Adeleke,202574549303HJ,190,C6,C4,Literature,C5,Government,B2,Further Mathematics,C4,3.2,Law,220,BORDERLINE
+Oluwaseun Nzekwe,202503818769EG,230,B3,C4,Mathematics,E8,Physics,D7,Further Mathematics,B2,2.8,Civil Engineering,210,REJECTED

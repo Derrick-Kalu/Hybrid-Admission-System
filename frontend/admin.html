@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel — Bingham University Admission Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-bg">
+
+<div class="dashboard-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <img src="img/bingham_seal.png" alt="Bingham University Seal">
+            <h3>Bingham University</h3>
+            <span class="brand-sub">Admin Control Panel</span>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-section-label">Management</div>
+            <a href="admin.html" class="nav-item active">
+                <span class="nav-icon">📋</span> All Applications
+            </a>
+            <a href="#" class="nav-item" id="navRefresh">
+                <span class="nav-icon">🔄</span> Refresh List
+            </a>
+            <div class="nav-section-label" style="margin-top:1rem;">Reports</div>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📊</span> Screening Statistics
+            </a>
+            <a href="#" class="nav-item" id="exportBtn">
+                <span class="nav-icon">📥</span> Export Records
+            </a>
+            <div class="nav-section-label" style="margin-top:1rem;">System</div>
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🔐</span> Applicant Portal
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="applicant-info">
+                <strong>Administrator</strong>
+                Bingham University Registry
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+        <!-- Top Bar -->
+        <div class="dash-topbar">
+            <div>
+                <div class="page-title">Admissions Administration — 2025/2026</div>
+                <div class="breadcrumb">Home › Applications › Review & Approval</div>
+            </div>
+            <div id="statsRow" style="display:flex; gap:1.5rem; font-size:0.82rem; color:var(--gray-600);"></div>
+        </div>
+
+        <div class="dash-content">
+            <!-- Page Banner -->
+            <div class="welcome-banner" style="margin-bottom:1.5rem;">
+                <div>
+                    <h2>Application Review Panel</h2>
+                    <p>Review AI-screened applications and issue final admission decisions on behalf of the Academic Board.</p>
+                </div>
+                <div class="status-pill">🛡️ Admin Access</div>
+            </div>
+
+            <!-- Notice -->
+            <div style="background:var(--warning-bg); border:1px solid #f0d090; border-left:4px solid var(--warning); border-radius:8px; padding:0.85rem 1.25rem; margin-bottom:1.5rem; font-size:0.83rem; color:var(--warning);">
+                ⚠️ <strong>Important:</strong> All decisions made here are final and will trigger official notification to applicants. Exercise due diligence before approving or rejecting any application.
+            </div>
+
+            <!-- Filters -->
+            <div class="dashboard-card" style="margin-bottom:1rem;">
+                <div class="card-body" style="padding:1rem 1.5rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap;">
+                    <div style="font-size:0.82rem; font-weight:600; color:var(--navy);">Filter by Status:</div>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="QUALIFIED">Qualified</button>
+                    <button class="filter-btn" data-filter="BORDERLINE">Borderline</button>
+                    <button class="filter-btn" data-filter="ALTERNATIVE_COURSE">Alternative</button>
+                    <button class="filter-btn" data-filter="REJECTED">Rejected</button>
+                    <div style="margin-left:auto;">
+                        <input type="text" id="searchInput" placeholder="Search by name or course…" style="width:220px; padding:0.5rem 0.75rem; font-size:0.83rem;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Applications Table -->
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">👥</span>
+                    <h3>Applicant Records</h3>
+                </div>
+                <div class="card-body" style="padding:0;">
+                    <div class="admin-table-wrapper">
+                        <table id="applicationsTable">
+                            <thead>
+                                <tr>
+                                    <th>App. ID</th>
+                                    <th>Full Name</th>
+                                    <th>Programme Applied</th>
+                                    <th>Rule Engine</th>
+                                    <th>AI Recommendation</th>
+                                    <th>AI Confidence</th>
+                                    <th>Admin Decision</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="applicationsTableBody">
+                                <tr>
+                                    <td colspan="8" style="text-align:center; padding:3rem; color:var(--gray-400);">
+                                        <div style="font-size:2rem; margin-bottom:0.5rem;">📂</div>
+                                        Loading applications…
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Records Message (hidden) -->
+            <div id="noRecordsMsg" class="hidden" style="text-align:center; padding:3rem; color:var(--gray-400);">
+                <div style="font-size:3rem; margin-bottom:1rem;">📭</div>
+                <h3 style="color:var(--navy); font-family:'Playfair Display',serif; margin-bottom:0.5rem;">No Applications Found</h3>
+                <p style="font-size:0.875rem;">No applicants have submitted their forms yet, or no records match your filter.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="portal-footer" style="margin-top:auto;">
+            © 2025 Bingham University Registry — Admission Control System. For system issues, contact the ICT Directorate.
+        </footer>
+    </main>
+</div>
+
+<!-- Decision Confirmation Modal -->
+<div id="decisionModal" class="modal hidden">
+    <div class="formal-modal">
+        <div id="decisionIcon" style="font-size:2.5rem; margin-bottom:1rem;">⚖️</div>
+        <h2 id="decisionTitle">Confirm Decision</h2>
+        <p id="decisionMessage" style="margin-bottom:1rem;"></p>
+        <div class="input-group" style="text-align:left;">
+            <label for="remarksInput">Remarks / Justification (Optional)</label>
+            <input type="text" id="remarksInput" placeholder="e.g. Scores verified — admitted to first choice">
+        </div>
+        <div style="display:flex; gap:1rem; margin-top:1rem;">
+            <button id="confirmDecisionBtn" class="primary-btn" style="flex:1;">Confirm</button>
+            <button id="cancelDecisionBtn" class="primary-btn" style="flex:1; background:var(--gray-200); color:var(--gray-800);">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.filter-btn {
+    padding: 0.35rem 0.85rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--gray-600);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.filter-btn:hover { border-color: var(--navy); color: var(--navy); }
+.filter-btn.active { background: var(--navy); color: white; border-color: var(--navy); }
+</style>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

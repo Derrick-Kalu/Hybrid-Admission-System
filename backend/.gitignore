@@ -1,0 +1,10 @@
+# .gitignore — Bingham University Admission System
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+uploads/
+venv/
+*.db
+*.log

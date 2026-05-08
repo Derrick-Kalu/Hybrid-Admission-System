@@ -1,0 +1,279 @@
+const API_BASE = 'http://127.0.0.1:5000/api';
+
+let allApplications = [];
+let pendingDecision = null; // { id, decision }
+
+// =============================================
+//  LOAD & RENDER APPLICATIONS
+// =============================================
+async function loadApplications() {
+    try {
+        const token = localStorage.getItem('auth_token');
+        const response = await fetch(`${API_BASE}/admin/applications`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+        if (!response.ok) throw new Error('Failed to fetch');
+        allApplications = await response.json();
+        renderStats(allApplications);
+        renderTable(allApplications);
+    } catch (error) {
+        document.getElementById('applicationsTableBody').innerHTML = `
+            <tr>
+                <td colspan="8" style="text-align:center; padding:3rem; color:var(--danger);">
+                    <div style="font-size:2rem; margin-bottom:0.5rem;">⚠️</div>
+                    Failed to load applications. Ensure the backend is running on port 5000.
+                </td>
+            </tr>`;
+    }
+}
+
+// =============================================
+//  RENDER STATS ROW
+// =============================================
+function renderStats(apps) {
+    const total = apps.length;
+    const qualified = apps.filter(a => a.screening_status === 'QUALIFIED').length;
+    const borderline = apps.filter(a => a.screening_status === 'BORDERLINE').length;
+    const rejected = apps.filter(a => a.screening_status === 'REJECTED').length;
+    const pending = apps.filter(a => a.admin_status === 'PENDING_APPROVAL').length;
+
+    document.getElementById('statsRow').innerHTML = `
+        <span>Total: <strong style="color:var(--navy)">${total}</strong></span>
+        <span style="color:var(--success)">✅ Qualified: <strong>${qualified}</strong></span>
+        <span style="color:var(--warning)">⚠️ Borderline: <strong>${borderline}</strong></span>
+        <span style="color:var(--danger)">❌ Rejected: <strong>${rejected}</strong></span>
+        <span style="color:var(--info)">⏳ Pending Review: <strong>${pending}</strong></span>
+    `;
+}
+
+// =============================================
+//  RENDER TABLE
+// =============================================
+function renderTable(apps) {
+    const tbody = document.getElementById('applicationsTableBody');
+
+    if (apps.length === 0) {
+        tbody.innerHTML = `
+            <tr>
+                <td colspan="8" style="text-align:center; padding:3rem; color:var(--gray-400);">
+                    <div style="font-size:2rem; margin-bottom:0.5rem;">📭</div>
+                    No applications match your filter.
+                </td>
+            </tr>`;
+        return;
+    }
+
+    tbody.innerHTML = '';
+
+    apps.forEach(app => {
+        const screeningClass = {
+            'QUALIFIED': 'status-qualified',
+            'BORDERLINE': 'status-alternative',
+            'ALTERNATIVE_COURSE': 'status-alternative',
+            'REJECTED': 'status-rejected',
+        }[app.screening_status] || 'status-pending';
+
+        const adminClass = {
+            'APPROVED': 'status-qualified',
+            'REJECTED': 'status-rejected',
+            'PENDING_APPROVAL': 'status-pending',
+        }[app.admin_status] || 'status-pending';
+
+        const mlClass = {
+            'QUALIFIED': 'status-qualified',
+            'BORDERLINE': 'status-alternative',
+            'ALTERNATIVE_COURSE': 'status-alternative',
+            'REJECTED': 'status-rejected',
+            'N/A': 'status-pending',
+        }[app.ml_prediction] || 'status-pending';
+
+        const isDecided = app.admin_status !== 'PENDING_APPROVAL';
+
+        const tr = document.createElement('tr');
+        tr.dataset.status = app.screening_status;
+        tr.innerHTML = `
+            <td><strong style="color:var(--navy)">APP-${String(app.id).padStart(5, '0')}</strong></td>
+            <td>${app.full_name}</td>
+            <td>${app.course_applied}</td>
+            <td><span class="status-badge ${screeningClass}">${app.screening_status}</span></td>
+            <td><span class="status-badge ${mlClass}" style="font-size:0.72rem;">${app.ml_prediction}</span></td>
+            <td>
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <div style="background:var(--gray-200); border-radius:999px; height:6px; width:60px; overflow:hidden;">
+                        <div style="background:var(--navy); height:100%; width:${app.ml_confidence}%;"></div>
+                    </div>
+                    <span style="font-size:0.8rem;">${app.ml_confidence}%</span>
+                </div>
+            </td>
+            <td><span class="status-badge ${adminClass}">${app.admin_status.replace('_', ' ')}</span></td>
+            <td>
+                ${isDecided
+                    ? `<span style="font-size:0.78rem; color:var(--gray-400); font-style:italic;">Decision recorded</span>`
+                    : `<button class="action-btn btn-approve" onclick="openDecisionModal(${app.id}, '${app.full_name}', 'APPROVED')">✅ Approve</button>
+                       <button class="action-btn btn-reject" onclick="openDecisionModal(${app.id}, '${app.full_name}', 'REJECTED')">❌ Reject</button>`
+                }
+            </td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+// =============================================
+//  DECISION MODAL
+// =============================================
+function openDecisionModal(id, name, decision) {
+    pendingDecision = { id, decision };
+    const modal = document.getElementById('decisionModal');
+    const icon = document.getElementById('decisionIcon');
+    const title = document.getElementById('decisionTitle');
+    const msg = document.getElementById('decisionMessage');
+    const confirmBtn = document.getElementById('confirmDecisionBtn');
+
+    if (decision === 'APPROVED') {
+        icon.textContent = '✅';
+        title.textContent = 'Confirm Approval';
+        msg.innerHTML = `You are about to <strong>APPROVE</strong> the application of <strong>${name}</strong>. This action will be recorded and the applicant will be notified.`;
+        confirmBtn.style.background = 'var(--success)';
+    } else {
+        icon.textContent = '❌';
+        title.textContent = 'Confirm Rejection';
+        msg.innerHTML = `You are about to <strong>REJECT</strong> the application of <strong>${name}</strong>. Please provide a justification in the remarks field below.`;
+        confirmBtn.style.background = 'var(--danger)';
+    }
+
+    document.getElementById('remarksInput').value = '';
+    modal.classList.remove('hidden');
+}
+
+document.getElementById('confirmDecisionBtn').addEventListener('click', async () => {
+    if (!pendingDecision) return;
+
+    const remarks = document.getElementById('remarksInput').value ||
+        `Manually ${pendingDecision.decision.toLowerCase()} by Admin`;
+
+    try {
+        const token = localStorage.getItem('auth_token');
+        const res = await fetch(`${API_BASE}/admin/approve/${pendingDecision.id}`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify({ decision: pendingDecision.decision, remarks })
+        });
+
+        if (res.ok) {
+            document.getElementById('decisionModal').classList.add('hidden');
+            pendingDecision = null;
+            await loadApplications();
+        } else {
+            alert('Failed to record decision. Please try again.');
+        }
+    } catch (err) {
+        alert('Network error. Ensure the backend is running.');
+    }
+});
+
+document.getElementById('cancelDecisionBtn').addEventListener('click', () => {
+    document.getElementById('decisionModal').classList.add('hidden');
+    pendingDecision = null;
+});
+
+// =============================================
+//  FILTER BUTTONS
+// =============================================
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        const filtered = filter === 'all'
+            ? allApplications
+            : allApplications.filter(a => a.screening_status === filter);
+
+        renderTable(filtered);
+    });
+});
+
+// =============================================
+//  SEARCH
+// =============================================
+document.getElementById('searchInput').addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = allApplications.filter(a =>
+        a.full_name.toLowerCase().includes(query) ||
+        a.course_applied.toLowerCase().includes(query)
+    );
+    renderTable(filtered);
+});
+
+// =============================================
+//  REFRESH
+// =============================================
+document.getElementById('navRefresh').addEventListener('click', (e) => {
+    e.preventDefault();
+    loadApplications();
+});
+
+// =============================================
+//  EXPORT TO CSV
+// =============================================
+document.getElementById('exportBtn').addEventListener('click', (e) => {
+    e.preventDefault();
+    if (allApplications.length === 0) {
+        alert("No applications to export.");
+        return;
+    }
+
+    // Define CSV headers
+    const headers = [
+        "Applicant ID",
+        "Full Name",
+        "JAMB Reg Number",
+        "Programme Applied",
+        "UTME Score",
+        "JAMB Verified",
+        "Rule Engine Status",
+        "AI Prediction",
+        "AI Confidence (%)",
+        "Admin Decision"
+    ];
+
+    // Map data to CSV rows
+    const rows = allApplications.map(app => [
+        `APP-${String(app.id).padStart(5, '0')}`,
+        `"${app.full_name}"`,
+        app.jamb_reg_number,
+        `"${app.course_applied}"`,
+        app.utme_score || "N/A",
+        app.jamb_ocr_verified ? "Yes" : "No",
+        app.screening_status,
+        app.ml_prediction,
+        app.ml_confidence,
+        app.admin_status
+    ]);
+
+    // Combine headers and rows
+    const csvContent = [
+        headers.join(","),
+        ...rows.map(row => row.join(","))
+    ].join("\n");
+
+    // Create and trigger download
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", `Bingham_Admissions_Export_${new Date().toISOString().split('T')[0]}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+// =============================================
+//  INIT
+// =============================================
+loadApplications();

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Dashboard — Bingham University Admission Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-bg">
+
+<div class="dashboard-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <img src="img/bingham_seal.png" alt="Bingham University Seal">
+            <h3>Bingham University</h3>
+            <span class="brand-sub">Admission Portal</span>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-section-label">Applicant</div>
+            <a href="dashboard.html" class="nav-item active">
+                <span class="nav-icon">📋</span> My Application
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🔍</span> Screening Status
+            </a>
+            <div class="nav-section-label" style="margin-top:1rem;">Information</div>
+            <a href="#" class="nav-item"><span class="nav-icon">📖</span> Guidelines</a>
+            <a href="#" class="nav-item"><span class="nav-icon">❓</span> Help & Support</a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="applicant-info">
+                <strong id="sidebarName">Loading...</strong>
+                ID: <span id="sidebarId">—</span>
+            </div>
+            <button class="logout-btn" id="logoutBtn">🚪 Sign Out</button>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+        <div class="dash-topbar">
+            <div>
+                <div class="page-title">2025/2026 Admission Screening Portal</div>
+                <div class="breadcrumb">Home › My Application</div>
+            </div>
+            <div style="font-size:0.8rem; color:var(--gray-400);">Session: 2025/2026 Academic Year</div>
+        </div>
+
+        <div class="dash-content">
+            <!-- Welcome Banner -->
+            <div class="welcome-banner">
+                <div>
+                    <h2 id="welcomeMessage">Welcome, Applicant</h2>
+                    <p>Complete and submit your academic profile to initiate the hybrid AI screening process.</p>
+                </div>
+                <div id="appStatusPill" class="status-pill">⏳ Pending Submission</div>
+            </div>
+
+            <!-- Already Submitted Card -->
+            <div id="alreadySubmittedCard" class="dashboard-card hidden">
+                <div class="card-header"><span class="card-icon">✅</span><h3>Application Submitted</h3></div>
+                <div class="card-body" style="text-align:center; padding:2.5rem;">
+                    <div style="font-size:3rem; margin-bottom:1rem;">📨</div>
+                    <h2 style="font-family:'Playfair Display',serif; color:var(--navy); margin-bottom:0.5rem;">Application Received</h2>
+                    <p style="color:var(--gray-600); max-width:480px; margin:0 auto 1.5rem;">
+                        Your application has been received and is undergoing AI-powered pre-screening.
+                        You will be notified via email once the process is complete.
+                    </p>
+                    <div id="screeningResultBadge"></div>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <div id="applicationFormCard" class="dashboard-card">
+                <div class="card-header">
+                    <span class="card-icon">📝</span>
+                    <h3>Academic Application Form — 2025/2026</h3>
+                </div>
+                <div class="card-body">
+                    <form id="applicationForm" enctype="multipart/form-data">
+
+                        <!-- SECTION A: Programme -->
+                        <div class="form-section">
+                            <div class="section-label">Section A: Programme Selection</div>
+                            <p class="section-desc">Select the programme you wish to be considered for. Departmental cut-off marks apply in addition to the institutional minimum.</p>
+                            <div class="input-group">
+                                <label for="courseApplied">Programme / Course Applied For <span style="color:var(--danger)">*</span></label>
+                                <select id="courseApplied" name="course_applied" required>
+                                    <option value="">— Select a Programme —</option>
+                                    <optgroup label="College of Medicine &amp; Health Sciences">
+                                        <option value="Medicine">Medicine and Surgery (Cut-off: 220)</option>
+                                        <option value="Anatomy">Human Anatomy (Cut-off: 200)</option>
+                                        <option value="Nursing">Nursing Science (Cut-off: 180)</option>
+                                    </optgroup>
+                                    <optgroup label="Faculty of Law">
+                                        <option value="Law">Law (Cut-off: 200)</option>
+                                    </optgroup>
+                                    <optgroup label="Faculty of Computing &amp; ICT">
+                                        <option value="Computer Science">Computer Science (Cut-off: 180)</option>
+                                        <option value="Information Technology">Information Technology (Cut-off: 170)</option>
+                                    </optgroup>
+                                    <optgroup label="Faculty of Management Sciences">
+                                        <option value="Business Admin">Business Administration (Cut-off: 170)</option>
+                                        <option value="Accounting">Accounting (Cut-off: 170)</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- SECTION B: JAMB RESULT UPLOAD -->
+                        <div class="form-section">
+                            <div class="section-label">Section B: JAMB Result Verification</div>
+                            <div style="background:var(--info-bg); border:1px solid #b8d4f0; border-left:4px solid var(--info); border-radius:8px; padding:1rem 1.25rem; margin-bottom:1.25rem;">
+                                <p style="font-size:0.83rem; color:var(--info); font-weight:600; margin-bottom:0.4rem;">🛡️ AI-Powered JAMB Score Verification</p>
+                                <p style="font-size:0.82rem; color:var(--gray-600); line-height:1.6;">
+                                    To prevent falsification, your UTME score will <strong>not</strong> be manually entered.
+                                    Upload a clear, legible scan of your official JAMB result slip.
+                                    Our AI will automatically extract and verify your score using Optical Character Recognition (OCR).
+                                    <br><br>
+                                    <strong>Note:</strong> In future versions, this score will be auto-verified directly from the JAMB CBT portal using your registration number.
+                                </p>
+                            </div>
+                            <div class="file-upload-area" id="jambDropZone">
+                                <span class="upload-icon">📄</span>
+                                <label class="upload-label" for="jamb_document">Upload JAMB Result Slip</label>
+                                <p class="upload-hint">Official JAMB print-out or e-result · JPG or PNG · Max 5MB</p>
+                                <input type="file" id="jamb_document" name="jamb_document" accept="image/jpeg,image/png" required>
+                                <span id="jambFileDisplay"></span>
+                            </div>
+                            <div class="input-group" style="margin-top:1rem; max-width:280px;">
+                                <label for="utme_score_declared">Declared UTME Score (for cross-reference) <span style="color:var(--danger)">*</span></label>
+                                <span class="field-hint">This will be compared against the OCR-extracted score. Discrepancies will be flagged.</span>
+                                <input type="number" id="utme_score_declared" name="utme_score_declared" required min="100" max="400" placeholder="e.g. 235">
+                            </div>
+                        </div>
+
+                        <!-- SECTION C: O'LEVEL GRADES -->
+                        <div class="form-section">
+                            <div class="section-label">Section C: O'Level Academic Records</div>
+                            <p class="section-desc">
+                                Select your WAEC/NECO grades from the dropdown for each subject. 
+                                Only grades <strong>A1 to C6</strong> are considered credit passes. 
+                                A minimum of 5 credit passes including Mathematics and English Language is required.
+                            </p>
+
+                            <div style="margin-bottom:1.25rem;">
+                                <p style="font-size:0.82rem; font-weight:700; color:var(--navy); margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:0.5px;">Compulsory Core Subjects</p>
+                                <div class="grades-grid">
+                                    <div class="input-group">
+                                        <label>Mathematics <span style="color:var(--danger)">*</span></label>
+                                        <select name="o_level_math" required>
+                                            <option value="">— Grade —</option>
+                                            <option value="A1">A1 — Excellent</option>
+                                            <option value="B2">B2 — Very Good</option>
+                                            <option value="B3">B3 — Good</option>
+                                            <option value="C4">C4 — Credit</option>
+                                            <option value="C5">C5 — Credit</option>
+                                            <option value="C6">C6 — Credit</option>
+                                            <option value="D7">D7 — Pass</option>
+                                            <option value="E8">E8 — Pass</option>
+                                            <option value="F9">F9 — Fail</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label>English Language <span style="color:var(--danger)">*</span></label>
+                                        <select name="o_level_english" required>
+                                            <option value="">— Grade —</option>
+                                            <option value="A1">A1 — Excellent</option>
+                                            <option value="B2">B2 — Very Good</option>
+                                            <option value="B3">B3 — Good</option>
+                                            <option value="C4">C4 — Credit</option>
+                                            <option value="C5">C5 — Credit</option>
+                                            <option value="C6">C6 — Credit</option>
+                                            <option value="D7">D7 — Pass</option>
+                                            <option value="E8">E8 — Pass</option>
+                                            <option value="F9">F9 — Fail</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p style="font-size:0.82rem; font-weight:700; color:var(--navy); margin-bottom:0.75rem; text-transform:uppercase; letter-spacing:0.5px;">Additional Relevant Subjects (3 Required)</p>
+                                <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                                    <!-- Subject 1 -->
+                                    <div class="grade-pair">
+                                        <div class="input-group">
+                                            <label>Subject 1 <span style="color:var(--danger)">*</span></label>
+                                            <input type="text" name="o_level_subject_1" placeholder="e.g. Physics" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label>Grade <span style="color:var(--danger)">*</span></label>
+                                            <select name="o_level_grade_1" required>
+                                                <option value="">—</option>
+                                                <option value="A1">A1</option><option value="B2">B2</option>
+                                                <option value="B3">B3</option><option value="C4">C4</option>
+                                                <option value="C5">C5</option><option value="C6">C6</option>
+                                                <option value="D7">D7</option><option value="E8">E8</option>
+                                                <option value="F9">F9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Subject 2 -->
+                                    <div class="grade-pair">
+                                        <div class="input-group">
+                                            <label>Subject 2 <span style="color:var(--danger)">*</span></label>
+                                            <input type="text" name="o_level_subject_2" placeholder="e.g. Chemistry" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label>Grade <span style="color:var(--danger)">*</span></label>
+                                            <select name="o_level_grade_2" required>
+                                                <option value="">—</option>
+                                                <option value="A1">A1</option><option value="B2">B2</option>
+                                                <option value="B3">B3</option><option value="C4">C4</option>
+                                                <option value="C5">C5</option><option value="C6">C6</option>
+                                                <option value="D7">D7</option><option value="E8">E8</option>
+                                                <option value="F9">F9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Subject 3 -->
+                                    <div class="grade-pair">
+                                        <div class="input-group">
+                                            <label>Subject 3 <span style="color:var(--danger)">*</span></label>
+                                            <input type="text" name="o_level_subject_3" placeholder="e.g. Biology" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label>Grade <span style="color:var(--danger)">*</span></label>
+                                            <select name="o_level_grade_3" required>
+                                                <option value="">—</option>
+                                                <option value="A1">A1</option><option value="B2">B2</option>
+                                                <option value="B3">B3</option><option value="C4">C4</option>
+                                                <option value="C5">C5</option><option value="C6">C6</option>
+                                                <option value="D7">D7</option><option value="E8">E8</option>
+                                                <option value="F9">F9</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SECTION D: O'LEVEL DOCUMENT UPLOAD -->
+                        <div class="form-section">
+                            <div class="section-label">Section D: O'Level Result Upload</div>
+                            <p class="section-desc">
+                                Upload a clear scan or photograph of your WAEC/NECO O'Level result. 
+                                The system will use OCR to verify that your name appears on the document 
+                                and cross-check submitted grades for consistency.
+                            </p>
+                            <div class="file-upload-area" id="olevelDropZone">
+                                <span class="upload-icon">📑</span>
+                                <label class="upload-label" for="olevel_document">Upload O'Level Result (WAEC/NECO)</label>
+                                <p class="upload-hint">JPG or PNG · Maximum 5MB · Ensure name is clearly visible</p>
+                                <input type="file" id="olevel_document" name="olevel_document" accept="image/jpeg,image/png" required>
+                                <span id="olevelFileDisplay"></span>
+                            </div>
+                        </div>
+
+                        <!-- DECLARATION -->
+                        <div class="form-section" style="background:var(--off-white); border:1px solid var(--gray-200); border-radius:8px; padding:1.25rem;">
+                            <div class="section-label" style="color:var(--danger);">Applicant Declaration</div>
+                            <p style="font-size:0.83rem; color:var(--gray-600); line-height:1.7; margin-bottom:1rem;">
+                                I hereby solemnly declare that all information and documents submitted in this application are authentic, true, and accurate to the best of my knowledge.
+                                I understand that any misrepresentation, falsification, or submission of forged documents is a criminal offence and will result in automatic disqualification, cancellation of admission, and possible prosecution under Nigerian law.
+                            </p>
+                            <div class="input-group" style="flex-direction:row; align-items:flex-start; gap:0.75rem;">
+                                <input type="checkbox" id="declarationCheck" required style="width:18px; height:18px; margin-top:2px; flex-shrink:0;">
+                                <label for="declarationCheck" style="font-size:0.85rem; font-weight:600; color:var(--navy); cursor:pointer; line-height:1.5;">
+                                    I agree to the above declaration. I confirm that all submitted documents and information are genuine and belong to me.
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="primary-btn submit-app-btn" id="submitAppBtn">
+                            Submit Application for AI Screening →
+                        </button>
+                        <div id="submitError" class="error-msg hidden" style="margin-top:1rem;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="portal-footer" style="margin-top:auto;">
+            © 2025 Bingham University. All rights reserved. | Powered by <strong style="color:var(--gold-light)">Hybrid AI Admission System</strong>
+        </footer>
+    </main>
+</div>
+
+<!-- Result Modal -->
+<div id="resultModal" class="modal hidden">
+    <div class="formal-modal">
+        <div id="modalIcon" style="font-size:3rem; margin-bottom:1rem;">📋</div>
+        <h2 id="modalTitle">Screening Result</h2>
+        <p id="modalMessage"></p>
+        <div id="modalStatusBadge" style="margin-bottom:1.5rem;"></div>
+        <div id="jambOcrInfo" style="background:var(--info-bg); border-radius:6px; padding:0.75rem 1rem; font-size:0.8rem; color:var(--info); margin-bottom:1.25rem; text-align:left; display:none;"></div>
+        <button id="closeModal" class="primary-btn" style="max-width:200px; margin:0 auto;">Acknowledge</button>
+    </div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Login — Bingham University Admission Portal</title>
+    <meta name="description"
+        content="Bingham University Hybrid Admission Pre-Screening System. Register or login to begin your application.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="formal-bg">
+
+    <!-- Top Banner -->
+    <div class="portal-top-banner">
+        <strong>NOTICE:</strong> This portal is for the 2025/2026 Academic Session Admission Screening only. All
+        submissions are subject to verification.
+    </div>
+
+    <div class="auth-wrapper">
+        <!-- University Header -->
+        <header class="uni-header">
+            <img src="img/bingham_seal.png" alt="Bingham University Seal" class="uni-header-logo">
+            <div class="uni-header-text">
+                <h1>Bingham University</h1>
+                <div class="system-title">Hybrid Admission Pre-Screening System</div>
+            </div>
+        </header>
+
+        <!-- Notice Banner -->
+        <div class="notice-banner">
+            <span class="notice-icon">ℹ️</span>
+            Applicants are to provide accurate information as any falsification of data will lead to automatic
+            disqualification.
+        </div>
+
+        <!-- Auth Body -->
+        <div class="auth-body">
+            <!-- Left: Information Panel -->
+            <div class="auth-info-panel">
+                <div class="info-card">
+                    <h3>How to Apply</h3>
+                    <ul>
+                        <li>Create an account using your JAMB Registration Number and a valid email address.</li>
+                        <li>Log in to your portal to access the application form.</li>
+                        <li>Fill in your academic records and UTME score accurately.</li>
+                        <li>Upload a clear image of your O'Level result for AI-powered verification.</li>
+                        <li>Submit your application and await the screening result.</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Eligibility Requirements</h3>
+                    <ul>
+                        <li>Minimum UTME score of 160 (course-specific cut-offs apply).</li>
+                        <li>Minimum of 5 O'Level credits including Mathematics and English.</li>
+                        <li>Valid JAMB Registration Number.</li>
+                    </ul>
+                    <div style="margin-top: 1rem; text-align: center;">
+                        <a href="requirements.html" style="display: inline-block; padding: 0.5rem 1rem; background: var(--navy); color: white; text-decoration: none; border-radius: 6px; font-size: 0.9rem; font-weight: 500;">View Full Admission Requirements</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Important Notice</h3>
+                    <p>
+                        This system employs Artificial Intelligence and rule-based screening for pre-assessment.
+                        Final admission decisions rest solely with the Bingham University Academic Board.
+                        All results are provisional pending document verification.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Support</h3>
+                    <p>
+                        For technical assistance, contact the ICT Directorate:<br>
+                        📧 admissions@binghamuni.edu.ng<br>
+                        📞 +234 (0) 800 BINGHAM
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Auth Form Panel -->
+            <div class="auth-form-panel">
+                <div class="auth-card">
+                    <!-- Login Card Header -->
+                    <div class="auth-card-header" id="cardHeader">
+                        <span class="header-icon">🔐</span>
+                        <h2 id="cardHeaderTitle">Applicant Portal Login — 2025/2026</h2>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="loginForm" class="auth-form active" autocomplete="off">
+                        <p class="form-intro">
+                            Enter your registered email address and password to access your applicant dashboard.
+                        </p>
+
+                        <div class="input-group">
+                            <label for="loginEmail">Email Address</label>
+                            <input type="email" id="loginEmail" required placeholder="e.g. john.doe@email.com"
+                                autocomplete="username">
+                        </div>
+                        <div class="input-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" required placeholder="Enter your password"
+                                autocomplete="current-password">
+                        </div>
+
+                        <button type="submit" class="primary-btn" id="loginBtn">Sign In to Portal</button>
+                        <div id="loginError" class="error-msg hidden"></div>
+
+                        <div class="auth-switch-row">
+                            New applicant? <a href="#" id="showRegister">Create an Account →</a>
+                        </div>
+                    </form>
+
+                    <!-- Registration Form -->
+                    <form id="registerForm" class="auth-form hidden" autocomplete="off">
+                        <p class="form-intro">
+                            Complete the form below to create your applicant account. Ensure all details match your
+                            official JAMB and O'Level records.
+                        </p>
+
+                        <div class="input-group">
+                            <label for="regName">Full Legal Name</label>
+                            <span class="field-hint">As it appears on your official documents</span>
+                            <input type="text" id="regName" required placeholder="e.g. JOHN ADEBAYO DOE">
+                        </div>
+                        <div class="input-group">
+                            <label for="regJamb">JAMB Registration Number</label>
+                            <span class="field-hint">Future integration with JAMB CBT Portal will verify this
+                                automatically</span>
+                            <input type="text" id="regJamb" required placeholder="e.g. 20261234567AB">
+                        </div>
+                        <div class="input-group">
+                            <label for="regEmail">Email Address</label>
+                            <span class="field-hint">Must be a valid, active email for official communication</span>
+                            <input type="email" id="regEmail" required placeholder="e.g. john.doe@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="regPhone">Phone Number</label>
+                            <input type="tel" id="regPhone" required placeholder="e.g. 08012345678">
+                        </div>
+                        <div class="input-group">
+                            <label for="regPassword">Create Password</label>
+                            <span class="field-hint">Minimum 8 characters</span>
+                            <input type="password" id="regPassword" required placeholder="Create a secure password"
+                                minlength="8" autocomplete="new-password">
+                        </div>
+
+                        <button type="submit" class="primary-btn" id="registerBtn">Create Account & Proceed</button>
+                        <div id="regError" class="error-msg hidden"></div>
+                        <div id="regSuccess" class="success-msg hidden"></div>
+
+                        <div class="auth-switch-row">
+                            Already registered? <a href="#" id="showLogin">← Sign In</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+        © 2026 Bingham University, Auta-Balefi, Nasarawa State, Nigeria.
+        All rights reserved. |
+        Powered by <strong style="color: var(--gold-light)">Hybrid AI Admission System</strong> |
+        <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

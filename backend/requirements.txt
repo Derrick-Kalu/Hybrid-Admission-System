@@ -1,0 +1,17 @@
+flask
+flask-cors
+scikit-learn
+pandas
+numpy
+matplotlib
+pytesseract
+opencv-python
+pillow
+werkzeug
+pymongo
+dnspython
+python-dotenv
+PyJWT
+joblib
+certifi
+bson
