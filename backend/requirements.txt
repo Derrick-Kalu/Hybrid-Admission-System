@@ -5,7 +5,6 @@ pandas
 numpy
 matplotlib
 pytesseract
-opencv-python
 pillow
 werkzeug
 pymongo
@@ -14,4 +13,3 @@ python-dotenv
 PyJWT
 joblib
 certifi
-bson

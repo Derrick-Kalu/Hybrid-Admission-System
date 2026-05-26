@@ -5,6 +5,21 @@ Bingham University Hybrid Admission Pre-Screening System
 All data is stored in MongoDB (no SQLite/SQLAlchemy).
 """
 
+# Monkey-patch select.select on Windows to prevent Werkzeug's reloader from throwing
+# WSAENOTSOCK (OSError: [WinError 10038]) during socket shutdown in Python 3.14+
+import sys
+if sys.platform == 'win32':
+    import select
+    _orig_select = select.select
+    def _patched_select(r, w, x, timeout=None):
+        try:
+            return _orig_select(r, w, x, timeout)
+        except OSError as e:
+            if getattr(e, 'winerror', None) == 10038 or e.errno == 10038:
+                return [], [], []
+            raise
+    select.select = _patched_select
+
 import os
 from flask import Flask, jsonify
 from flask_cors import CORS
@@ -45,3 +60,4 @@ def health_check():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+# Reload trigger comment

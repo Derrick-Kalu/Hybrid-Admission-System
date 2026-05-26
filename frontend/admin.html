@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dashboard-bg">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+    </script>
 
 <div class="dashboard-layout">
     <!-- SIDEBAR -->
@@ -33,8 +38,8 @@
                 <span class="nav-icon">📥</span> Export Records
             </a>
             <div class="nav-section-label" style="margin-top:1rem;">System</div>
-            <a href="index.html" class="nav-item">
-                <span class="nav-icon">🔐</span> Applicant Portal
+            <a href="index.html" class="nav-item" id="logoutBtn">
+                <span class="nav-icon">🚪</span> Sign Out
             </a>
         </nav>
         <div class="sidebar-footer">
@@ -92,24 +97,25 @@
                     <span class="card-icon">👥</span>
                     <h3>Applicant Records</h3>
                 </div>
-                <div class="card-body" style="padding:0;">
+                <div class="card-body" style="padding:0; overflow-x: auto;">
                     <div class="admin-table-wrapper">
-                        <table id="applicationsTable">
+                        <table id="applicationsTable" style="min-width: 1200px;">
                             <thead>
                                 <tr>
-                                    <th>App. ID</th>
+                                    <th>Reference</th>
                                     <th>Full Name</th>
-                                    <th>Programme Applied</th>
+                                    <th>Programme</th>
+                                    <th>JAMB Year</th>
+                                    <th>O'Level</th>
                                     <th>Rule Engine</th>
-                                    <th>AI Recommendation</th>
-                                    <th>AI Confidence</th>
-                                    <th>Admin Decision</th>
+                                    <th>AI Prediction</th>
+                                    <th>Decision</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody id="applicationsTableBody">
                                 <tr>
-                                    <td colspan="8" style="text-align:center; padding:3rem; color:var(--gray-400);">
+                                    <td colspan="9" style="text-align:center; padding:3rem; color:var(--gray-400);">
                                         <div style="font-size:2rem; margin-bottom:0.5rem;">📂</div>
                                         Loading applications…
                                     </td>
@@ -142,8 +148,9 @@
         <h2 id="decisionTitle">Confirm Decision</h2>
         <p id="decisionMessage" style="margin-bottom:1rem;"></p>
         <div class="input-group" style="text-align:left;">
-            <label for="remarksInput">Remarks / Justification (Optional)</label>
+            <label for="remarksInput">Remarks / Justification <span id="remarksAsterisk" style="color:var(--danger); display:none;">*</span></label>
             <input type="text" id="remarksInput" placeholder="e.g. Scores verified — admitted to first choice">
+            <span id="remarksHint" class="field-hint" style="display:none; color:var(--danger);">Remarks are mandatory when rejecting an application.</span>
         </div>
         <div style="display:flex; gap:1rem; margin-top:1rem;">
             <button id="confirmDecisionBtn" class="primary-btn" style="flex:1;">Confirm</button>
@@ -166,7 +173,21 @@
 }
 .filter-btn:hover { border-color: var(--navy); color: var(--navy); }
 .filter-btn.active { background: var(--navy); color: white; border-color: var(--navy); }
+.warning-badge {
+    background-color: #fffbeb;
+    color: #92400e;
+    border: 1px solid #fbbf24;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 4px;
+}
 </style>
+
+    <!-- Theme Toggle Floating Button -->
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme">🌓</button>
 
 <script src="js/admin.js"></script>
 </body>

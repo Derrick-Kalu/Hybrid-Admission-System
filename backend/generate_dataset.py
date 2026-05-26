@@ -15,16 +15,14 @@ random.seed(42)
 NUM_SAMPLES = 1000
 
 COURSES = [
-    ("Computer Science",       200, ["Mathematics", "Physics"]),
-    ("Medicine and Surgery",   280, ["Biology", "Chemistry"]),
-    ("Law",                    220, ["Literature", "Government"]),
-    ("Accounting",             200, ["Mathematics", "Economics"]),
-    ("Civil Engineering",      210, ["Mathematics", "Physics"]),
-    ("Nursing Science",        200, ["Biology", "Chemistry"]),
-    ("Mass Communication",     180, ["English Language", "Literature"]),
-    ("Business Administration",180, ["Economics", "Commerce"]),
-    ("Economics",              190, ["Mathematics", "Economics"]),
-    ("Architecture",           200, ["Mathematics", "Fine Art"]),
+    ("Computer Science",       180, ["Mathematics", "Physics"]),
+    ("Medicine",               220, ["Biology", "Chemistry"]),
+    ("Anatomy",                200, ["Biology", "Chemistry"]),
+    ("Nursing",                180, ["Biology", "Chemistry"]),
+    ("Law",                    200, ["Literature", "Government"]),
+    ("Information Technology", 170, ["Mathematics", "Physics"]),
+    ("Business Admin",         170, ["Economics", "Commerce"]),
+    ("Accounting",             170, ["Mathematics", "Economics"]),
 ]
 
 GRADES = ['A1', 'B2', 'B3', 'C4', 'C5', 'C6', 'D7', 'E8', 'F9']

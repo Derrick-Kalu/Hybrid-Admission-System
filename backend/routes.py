@@ -3,6 +3,8 @@ routes.py — API Routes
 Bingham University Hybrid Admission Pre-Screening System
 
 All database operations use MongoDB via the models.py helper layer.
+Supports dual O'Level (WAEC and/or NECO), JAMB year validation,
+PDF/image uploads, and score discrepancy flagging.
 """
 
 from flask import Blueprint, request, jsonify
@@ -13,26 +15,50 @@ from models import (
     create_uploaded_document, find_documents_by_applicant,
     create_screening_result, find_screening_result,
     create_ml_result, find_ml_result,
-    upsert_admin_approval, find_admin_approval
+    upsert_admin_approval, find_admin_approval,
+    update_applicant_password
 )
 from rule_engine import screen_applicant, calculate_olevel_average, is_credit_pass
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
-from ocr_module import extract_text_from_image, verify_document, verify_jamb_document
+from ocr_module import (
+    extract_text_from_image, verify_document,
+    verify_jamb_document, verify_waec_document, verify_neco_document,
+    detect_score_discrepancy, allowed_file
+)
 import mongo_logger as mlog
 import joblib
 import os
 import jwt
+import random
+import string
+from datetime import datetime, timedelta, timezone
 from functools import wraps
 from flask import current_app
-from datetime import datetime, timedelta, timezone
 
 api = Blueprint('api', __name__)
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+
+def generate_application_ref():
+    """
+    Generates a unique application reference number.
+    Format: BU-{YEAR}-{7-digit random number}
+    Example: BU-2025-4821937
+    """
+    year = datetime.now().year
+    rand = ''.join(random.choices(string.digits, k=7))
+    return f'BU-{year}-{rand}'
+
+
+def save_upload(file, prefix):
+    filename = secure_filename(file.filename)
+    file_path = os.path.join(UPLOAD_FOLDER, f"{prefix}_{filename}")
+    file.save(file_path)
+    return file_path
+
 
 # ── Load ML Model ─────────────────────────────────────────────────────────────
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'models', 'random_forest_model.joblib')
@@ -44,17 +70,6 @@ def load_model():
     if _model_bundle is None and os.path.exists(MODEL_PATH):
         _model_bundle = joblib.load(MODEL_PATH)
     return _model_bundle
-
-
-def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-def save_upload(file, prefix):
-    filename = secure_filename(file.filename)
-    file_path = os.path.join(UPLOAD_FOLDER, f"{prefix}_{filename}")
-    file.save(file_path)
-    return file_path
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -124,13 +139,11 @@ def register():
         return jsonify({'error': 'Password must be at least 8 characters'}), 400
 
     if find_applicant_by_email(email):
-        mlog.log_registration_failed(email, jamb_reg_number,
-                                     'Email already exists', ip=request.remote_addr)
+        mlog.log_registration_failed(email, jamb_reg_number, 'Email already exists', ip=request.remote_addr)
         return jsonify({'error': 'An account with this email address already exists'}), 400
 
     if find_applicant_by_jamb(jamb_reg_number):
-        mlog.log_registration_failed(email, jamb_reg_number,
-                                     'JAMB reg number already exists', ip=request.remote_addr)
+        mlog.log_registration_failed(email, jamb_reg_number, 'JAMB reg number already exists', ip=request.remote_addr)
         return jsonify({'error': 'An account with this JAMB Registration Number already exists'}), 400
 
     applicant_id = create_applicant(
@@ -168,7 +181,7 @@ def register():
 
 @api.route('/login', methods=['POST'])
 def login():
-    data     = request.json
+    data     = request.json or {}
     email    = data.get('email', '').strip().lower()
     password = data.get('password', '')
 
@@ -194,9 +207,39 @@ def login():
             'has_applied': has_applied
         }), 200
 
-    mlog.log_login(None, email, success=False,
-                   reason='Invalid email or password', ip=request.remote_addr)
+    mlog.log_login(None, email, success=False, reason='Invalid email or password', ip=request.remote_addr)
     return jsonify({'error': 'Invalid email or password. Please try again.'}), 401
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  FORGOT PASSWORD
+# ─────────────────────────────────────────────────────────────────────────────
+
+@api.route('/forgot-password', methods=['POST'])
+def forgot_password():
+    data  = request.json or {}
+    email = data.get('email', '').strip().lower()
+
+    if not email:
+        return jsonify({'error': 'Email address is required.'}), 400
+
+    applicant = find_applicant_by_email(email)
+    if not applicant:
+        return jsonify({'error': 'No applicant account found with this email address.'}), 404
+
+    # Generate a random temporary password
+    import random
+    import string
+    temp_password = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+    hashed_pwd    = generate_password_hash(temp_password)
+
+    if update_applicant_password(email, hashed_pwd):
+        return jsonify({
+            'message': 'Password has been successfully reset!',
+            'temp_password': temp_password
+        }), 200
+    
+    return jsonify({'error': 'Failed to reset password. Please try again.'}), 500
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -218,6 +261,9 @@ def apply(current_applicant_id):
     if find_academic_record(applicant_id):
         return jsonify({'error': 'You have already submitted an application for this cycle.'}), 400
 
+    # Generate unique application reference
+    application_ref = generate_application_ref()
+
     # ── Section 1: JAMB Document OCR ─────────────────────────────────────────
     jamb_ocr_result = {'verified': False, 'ocr_score': None, 'reason': 'No JAMB result uploaded.'}
     jamb_doc_path   = None
@@ -230,36 +276,78 @@ def apply(current_applicant_id):
             jamb_raw_text   = extract_text_from_image(jamb_doc_path)
             jamb_ocr_result = verify_jamb_document(jamb_raw_text, applicant['full_name'])
         else:
-            return jsonify({'error': 'Invalid JAMB document. Only JPG/PNG files are accepted.'}), 400
+            return jsonify({'error': 'Invalid JAMB document format. Accepted: JPG, PNG, PDF, BMP, TIFF, WEBP.'}), 400
     else:
         return jsonify({'error': 'JAMB result slip is required.'}), 400
 
-    utme_score         = jamb_ocr_result.get('ocr_score')
     utme_score_claimed = int(data.get('utme_score_declared', 0) or 0)
+    utme_score         = jamb_ocr_result.get('ocr_score')
     if utme_score is None:
         utme_score = utme_score_claimed
 
-    # ── Section 2: O'Level Document ──────────────────────────────────────────
-    olevel_ocr_flags = []
-    if 'olevel_document' in request.files:
-        olevel_file = request.files['olevel_document']
-        if olevel_file and olevel_file.filename and allowed_file(olevel_file.filename):
-            olevel_doc_path = save_upload(olevel_file, f"olevel_{applicant_id}")
-            olevel_text     = extract_text_from_image(olevel_doc_path)
-            name_keywords   = [p for p in applicant['full_name'].split() if len(p) > 2]
-            olevel_ver      = verify_document(olevel_text, name_keywords[:2])
+    # Score discrepancy check
+    discrepancy = detect_score_discrepancy(utme_score_claimed, jamb_ocr_result.get('ocr_score'))
+    score_discrepancy_flagged = discrepancy['flagged']
+
+    # ── Section 2: WAEC Document (Optional if NECO provided) ─────────────────
+    waec_doc_path    = None
+    waec_raw_text    = None
+    waec_ocr_result  = {'verified': False, 'reason': 'Not provided.'}
+    waec_ocr_flags   = []
+
+    if 'waec_document' in request.files:
+        waec_file = request.files['waec_document']
+        if waec_file and waec_file.filename and allowed_file(waec_file.filename):
+            waec_doc_path  = save_upload(waec_file, f"waec_{applicant_id}")
+            waec_raw_text  = extract_text_from_image(waec_doc_path)
+            waec_ocr_result = verify_waec_document(waec_raw_text, applicant['full_name'])
 
             create_uploaded_document(
                 applicant_id=applicant_id,
-                document_type='O_LEVEL_RESULT',
-                file_path=olevel_doc_path,
-                ocr_extracted_text=olevel_text,
-                is_verified=olevel_ver['verified']
+                document_type='WAEC_RESULT',
+                file_path=waec_doc_path,
+                ocr_extracted_text=waec_raw_text,
+                is_verified=waec_ocr_result['verified']
             )
-            if not olevel_ver['verified']:
-                olevel_ocr_flags = olevel_ver.get('missing_keywords', [])
+            if not waec_ocr_result['verified']:
+                waec_ocr_flags = [waec_ocr_result.get('reason', '')]
 
-    # ── Section 3: Save JAMB document record ─────────────────────────────────
+    # ── Section 3: NECO Document (Optional if WAEC provided) ─────────────────
+    neco_doc_path    = None
+    neco_raw_text    = None
+    neco_ocr_result  = {'verified': False, 'reason': 'Not provided.'}
+    neco_ocr_flags   = []
+
+    if 'neco_document' in request.files:
+        neco_file = request.files['neco_document']
+        if neco_file and neco_file.filename and allowed_file(neco_file.filename):
+            neco_doc_path  = save_upload(neco_file, f"neco_{applicant_id}")
+            neco_raw_text  = extract_text_from_image(neco_doc_path)
+            neco_ocr_result = verify_neco_document(neco_raw_text, applicant['full_name'])
+
+            create_uploaded_document(
+                applicant_id=applicant_id,
+                document_type='NECO_RESULT',
+                file_path=neco_doc_path,
+                ocr_extracted_text=neco_raw_text,
+                is_verified=neco_ocr_result['verified']
+            )
+            if not neco_ocr_result['verified']:
+                neco_ocr_flags = [neco_ocr_result.get('reason', '')]
+
+    # At least one O'Level document is required
+    if not waec_doc_path and not neco_doc_path:
+        return jsonify({'error': 'At least one O\'Level result (WAEC or NECO) is required.'}), 400
+
+    # Determine O'Level type
+    if waec_doc_path and neco_doc_path:
+        olevel_type = 'BOTH'
+    elif waec_doc_path:
+        olevel_type = 'WAEC'
+    else:
+        olevel_type = 'NECO'
+
+    # ── Section 4: Save JAMB document record ─────────────────────────────────
     if jamb_doc_path:
         create_uploaded_document(
             applicant_id=applicant_id,
@@ -269,15 +357,26 @@ def apply(current_applicant_id):
             is_verified=jamb_ocr_result['verified']
         )
 
-    # ── Section 4: Academic Record ────────────────────────────────────────────
+    # ── Section 5: Academic Record ────────────────────────────────────────────
+    jamb_year = data.get('jamb_year', '')
+
     create_academic_record(
         applicant_id=applicant_id,
+        application_ref=application_ref,
         course_applied=data.get('course_applied'),
+        jamb_year=jamb_year,
         utme_score=utme_score,
         utme_score_claimed=utme_score_claimed,
         jamb_doc_path=jamb_doc_path,
         jamb_ocr_verified=jamb_ocr_result['verified'],
         jamb_ocr_raw_text=jamb_raw_text,
+        score_discrepancy_flagged=score_discrepancy_flagged,
+        score_discrepancy_delta=discrepancy.get('delta'),
+        olevel_type=olevel_type,
+        waec_doc_path=waec_doc_path,
+        waec_ocr_verified=waec_ocr_result['verified'],
+        neco_doc_path=neco_doc_path,
+        neco_ocr_verified=neco_ocr_result['verified'],
         o_level_math=data.get('o_level_math', ''),
         o_level_english=data.get('o_level_english', ''),
         o_level_subject_1=data.get('o_level_subject_1', ''),
@@ -288,48 +387,56 @@ def apply(current_applicant_id):
         o_level_grade_3=data.get('o_level_grade_3', ''),
     )
 
-    # ── Section 5: Rule-Based Screening ──────────────────────────────────────
+    # ── Section 6: Rule-Based Screening ──────────────────────────────────────
     grades = [
         data.get('o_level_math'), data.get('o_level_english'),
         data.get('o_level_grade_1'), data.get('o_level_grade_2'), data.get('o_level_grade_3')
     ]
+
     applicant_data = {
-        'utme_score':    utme_score or 0,
-        'course_applied': data.get('course_applied'),
-        'o_level_grades': grades,
-        'has_math':      is_credit_pass(data.get('o_level_math', '')),
-        'has_english':   is_credit_pass(data.get('o_level_english', '')),
-        'jamb_verified': jamb_ocr_result['verified']
+        'utme_score':               utme_score or 0,
+        'course_applied':           data.get('course_applied'),
+        'o_level_grades':           grades,
+        'has_math':                 is_credit_pass(data.get('o_level_math', '')),
+        'has_english':              is_credit_pass(data.get('o_level_english', '')),
+        'jamb_verified':            jamb_ocr_result['verified'],
+        'jamb_year':                jamb_year,
+        'olevel_sitting_count':     2 if olevel_type == 'BOTH' else 1,
+        'score_discrepancy_flagged': score_discrepancy_flagged,
     }
     screening_outcome = screen_applicant(applicant_data)
+    jamb_year_warning = screening_outcome.get('jamb_year_warning', False)
 
     create_screening_result(
         applicant_id=applicant_id,
         passed_institutional=screening_outcome['passed_institutional'],
         passed_departmental=screening_outcome['passed_departmental'],
         recommended_alternative=screening_outcome.get('recommended_alternative'),
-        status=screening_outcome['status']
+        status=screening_outcome['status'],
+        jamb_year_warning=jamb_year_warning
     )
 
-    # ── Section 6: ML Evaluation ──────────────────────────────────────────────
+    # ── Section 7: ML Evaluation ──────────────────────────────────────────────
     ml_pred = None
     ml_conf = None
     if screening_outcome['status'] != 'REJECTED' and bundle is not None:
         avg_olevel = calculate_olevel_average(grades)
-        # Encode course for the model
         try:
             course_encoded = bundle['feature_encoder'].transform([data.get('course_applied', '')])[0]
         except Exception:
             course_encoded = 0
-        # Use departmental cutoff lookup or default
+        # Align with the standard course names and cut-offs configured in the rule engine
         dept_cutoffs = {
-            'Computer Science': 200, 'Medicine and Surgery': 280,
-            'Law': 220, 'Accounting': 200, 'Civil Engineering': 210,
-            'Nursing Science': 200, 'Mass Communication': 180,
-            'Business Administration': 180, 'Economics': 190, 'Architecture': 200
+            'Medicine':            220,
+            'Anatomy':             200,
+            'Nursing':             180,
+            'Law':                 200,
+            'Computer Science':    180,
+            'Information Technology': 170,
+            'Business Admin':      170,
+            'Accounting':          170
         }
-        dept_cutoff = dept_cutoffs.get(data.get('course_applied', ''), 180)
-
+        dept_cutoff = dept_cutoffs.get(data.get('course_applied', ''), 160)
         features = [[utme_score or 0, avg_olevel, course_encoded, dept_cutoff]]
         clf      = bundle['model']
         le       = bundle['label_encoder']
@@ -344,7 +451,7 @@ def apply(current_applicant_id):
             confidence_score=ml_conf
         )
 
-    # ── Audit logs ────────────────────────────────────────────────────────────
+    # ── Audit Logs ────────────────────────────────────────────────────────────
     mlog.log_ocr_report(
         applicant_id=applicant_id,
         document_type='JAMB_RESULT',
@@ -371,16 +478,24 @@ def apply(current_applicant_id):
     )
 
     return jsonify({
-        'message':         'Application submitted successfully',
-        'screening_status': screening_outcome['status'],
-        'reason':          screening_outcome['reason'],
-        'jamb_ocr_score':  utme_score,
-        'jamb_verified':   jamb_ocr_result['verified'],
-        'jamb_ocr_reason': jamb_ocr_result.get('reason', ''),
-        'ml_prediction':   ml_pred,
-        'ml_confidence':   round(ml_conf * 100, 2) if ml_conf else None,
-        'olevel_flags':    olevel_ocr_flags,
-        'applicant_id':    applicant_id
+        'message':                  'Application submitted successfully',
+        'application_ref':          application_ref,
+        'screening_status':         screening_outcome['status'],
+        'reason':                   screening_outcome['reason'],
+        'jamb_year':                jamb_year,
+        'jamb_year_warning':        jamb_year_warning,
+        'jamb_ocr_score':           utme_score,
+        'jamb_verified':            jamb_ocr_result['verified'],
+        'jamb_ocr_reason':          jamb_ocr_result.get('reason', ''),
+        'score_discrepancy_flagged': score_discrepancy_flagged,
+        'score_discrepancy_reason': discrepancy.get('reason', ''),
+        'olevel_type':              olevel_type,
+        'waec_verified':            waec_ocr_result.get('verified', False),
+        'neco_verified':            neco_ocr_result.get('verified', False),
+        'ml_prediction':            ml_pred,
+        'ml_confidence':            round(ml_conf * 100, 2) if ml_conf else None,
+        'olevel_flags':             waec_ocr_flags + neco_ocr_flags,
+        'applicant_id':             applicant_id
     }), 201
 
 
@@ -402,16 +517,25 @@ def get_status(current_applicant_id):
     adm = find_admin_approval(applicant_id)
 
     return jsonify({
-        'full_name':        applicant['full_name'],
-        'jamb_reg_number':  applicant['jamb_reg_number'],
-        'course_applied':   ar['course_applied'] if ar else None,
-        'utme_score':       ar['utme_score'] if ar else None,
-        'jamb_ocr_verified': ar['jamb_ocr_verified'] if ar else False,
-        'screening_status': sr['status'] if sr else 'NOT_SUBMITTED',
-        'ml_prediction':    ml['predicted_outcome'] if ml else None,
-        'ml_confidence':    round(ml['confidence_score'] * 100, 2) if ml else None,
-        'admin_decision':   adm['decision'] if adm else 'PENDING_APPROVAL',
-        'admin_remarks':    adm['remarks'] if adm else ''
+        'full_name':                 applicant['full_name'],
+        'jamb_reg_number':           applicant['jamb_reg_number'],
+        'application_ref':           ar['application_ref']  if ar else None,
+        'course_applied':            ar['course_applied']   if ar else None,
+        'jamb_year':                 ar['jamb_year']        if ar else None,
+        'jamb_year_warning':         ar.get('jamb_year_warning', False) if ar else False,
+        'utme_score':                ar['utme_score']       if ar else None,
+        'jamb_ocr_verified':         ar['jamb_ocr_verified']if ar else False,
+        'score_discrepancy_flagged': ar.get('score_discrepancy_flagged', False) if ar else False,
+        'olevel_type':               ar.get('olevel_type', 'N/A') if ar else 'N/A',
+        'waec_ocr_verified':         ar.get('waec_ocr_verified', False) if ar else False,
+        'neco_ocr_verified':         ar.get('neco_ocr_verified', False) if ar else False,
+        'screening_status':          sr['status']           if sr else 'NOT_SUBMITTED',
+        'jamb_year_warning_screen':  sr.get('jamb_year_warning', False) if sr else False,
+        'ml_prediction':             ml['predicted_outcome']if ml else None,
+        'ml_confidence':             round(ml['confidence_score'] * 100, 2) if ml else None,
+        'admin_decision':            adm['decision']        if adm else 'PENDING_APPROVAL',
+        'admin_remarks':             adm['remarks']         if adm else '',
+        'admin_decision_date':       adm['decision_date'].isoformat() if adm and adm.get('decision_date') else None
     })
 
 
@@ -432,17 +556,29 @@ def get_applications():
         adm = find_admin_approval(applicant_id)
 
         results.append({
-            'id':              applicant_id,
-            'full_name':       a['full_name'],
-            'jamb_reg_number': a['jamb_reg_number'],
-            'email':           a['email'],
-            'course_applied':  ar['course_applied'] if ar else 'N/A',
-            'utme_score':      ar['utme_score'] if ar else None,
-            'jamb_ocr_verified': ar['jamb_ocr_verified'] if ar else False,
-            'screening_status': sr['status'] if sr else 'NOT_SUBMITTED',
-            'ml_prediction':   ml['predicted_outcome'] if ml else 'N/A',
-            'ml_confidence':   round(ml['confidence_score'] * 100, 2) if ml else 0.0,
-            'admin_status':    adm['decision'] if adm else 'PENDING_APPROVAL'
+            'id':                        applicant_id,
+            'full_name':                 a['full_name'],
+            'jamb_reg_number':           a['jamb_reg_number'],
+            'email':                     a['email'],
+            'application_ref':           ar.get('application_ref', 'N/A') if ar else 'N/A',
+            'course_applied':            ar['course_applied']    if ar else 'N/A',
+            'jamb_year':                 ar.get('jamb_year', 'N/A') if ar else 'N/A',
+            'jamb_year_warning':         ar.get('jamb_year_warning', False) if ar else False,
+            'utme_score':                ar['utme_score']        if ar else None,
+            'utme_score_claimed':        ar.get('utme_score_claimed') if ar else None,
+            'jamb_ocr_verified':         ar['jamb_ocr_verified'] if ar else False,
+            'score_discrepancy_flagged': ar.get('score_discrepancy_flagged', False) if ar else False,
+            'score_discrepancy_delta':   ar.get('score_discrepancy_delta') if ar else None,
+            'olevel_type':               ar.get('olevel_type', 'N/A') if ar else 'N/A',
+            'waec_ocr_verified':         ar.get('waec_ocr_verified', False) if ar else False,
+            'neco_ocr_verified':         ar.get('neco_ocr_verified', False) if ar else False,
+            'screening_status':          sr['status']            if sr else 'NOT_SUBMITTED',
+            'jamb_year_warning_screen':  sr.get('jamb_year_warning', False) if sr else False,
+            'ml_prediction':             ml['predicted_outcome'] if ml else 'N/A',
+            'ml_confidence':             round(ml['confidence_score'] * 100, 2) if ml else 0.0,
+            'admin_status':              adm['decision']         if adm else 'PENDING_APPROVAL',
+            'admin_remarks':             adm.get('remarks', '')  if adm else '',
+            'admin_decision_date':       adm['decision_date'].isoformat() if adm and adm.get('decision_date') else None
         })
     return jsonify(results)
 
@@ -454,24 +590,29 @@ def get_applications():
 @api.route('/admin/approve/<applicant_id>', methods=['POST'])
 @admin_required
 def approve_application(applicant_id):
-    data     = request.json
+    data     = request.json or {}
     decision = data.get('decision')
+    remarks  = data.get('remarks', '').strip()
 
     if decision not in ['APPROVED', 'REJECTED']:
         return jsonify({'error': 'Invalid decision value. Must be APPROVED or REJECTED'}), 400
+
+    # Remarks are mandatory for REJECTED decisions per accountability policy
+    if decision == 'REJECTED' and not remarks:
+        return jsonify({'error': 'Remarks / justification are required when rejecting an application.'}), 400
 
     upsert_admin_approval(
         applicant_id=applicant_id,
         admin_id='admin',
         decision=decision,
-        remarks=data.get('remarks', '')
+        remarks=remarks or f'Approved by Admin on {datetime.now().strftime("%Y-%m-%d %H:%M")}'
     )
 
     mlog.log_admin_action(
         admin_id='admin',
         applicant_id=applicant_id,
         decision=decision,
-        remarks=data.get('remarks', ''),
+        remarks=remarks,
         ip=request.remote_addr
     )
     return jsonify({'message': f'Application {decision} successfully'})

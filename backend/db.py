@@ -16,7 +16,7 @@ Collections:
 
 import os
 from pymongo import MongoClient, ASCENDING
-from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError
+from pymongo.errors import ConnectionFailure, ServerSelectionTimeoutError, ConfigurationError
 from dotenv import load_dotenv
 import certifi
 
@@ -38,19 +38,33 @@ def get_db():
     global _client, _db
     if _db is not None:
         return _db
-    try:
-        _client = MongoClient(
-            MONGO_URI,
-            serverSelectionTimeoutMS=5000,
-            tlsCAFile=certifi.where() if MONGO_URI.startswith('mongodb+srv') else None
-        )
-        _client.admin.command('ping')
-        _db = _client[DB_NAME]
-        _ensure_indexes(_db)
-        print(f"[MongoDB] Connected to operational DB '{DB_NAME}'")
-        return _db
-    except (ConnectionFailure, ServerSelectionTimeoutError) as e:
-        raise RuntimeError(f"[MongoDB] Cannot connect to database: {e}")
+    
+    import time
+    from pymongo.read_preferences import ReadPreference
+    
+    last_error = None
+    for attempt in range(3):
+        try:
+            _client = MongoClient(
+                MONGO_URI,
+                serverSelectionTimeoutMS=5000,
+                connectTimeoutMS=5000,
+                socketTimeoutMS=5000,
+                tlsCAFile=certifi.where() if MONGO_URI.startswith('mongodb+srv') else None
+            )
+            # Use PRIMARY_PREFERRED read preference so ping succeeds during replica set primary elections
+            _client.admin.command('ping', read_preference=ReadPreference.PRIMARY_PREFERRED)
+            _db = _client[DB_NAME]
+            _ensure_indexes(_db)
+            print(f"[MongoDB] Connected to operational DB '{DB_NAME}'")
+            return _db
+        except (ConnectionFailure, ServerSelectionTimeoutError, ConfigurationError, Exception) as e:
+            last_error = e
+            if attempt < 2:
+                time.sleep(1)
+                continue
+    
+    raise RuntimeError(f"[MongoDB] Cannot connect to database: {last_error}")
 
 
 def _ensure_indexes(db):

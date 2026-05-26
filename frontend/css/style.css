@@ -43,6 +43,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+body {
+    color: var(--gray-800);
+    background-color: var(--gray-100);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* =============================================
    AUTH / LANDING PAGE STYLES
    ============================================= */
@@ -785,3 +791,172 @@ tr:hover td { background: var(--off-white); }
 .action-btn:hover { opacity: 0.85; }
 .btn-approve { background: var(--success); color: white; }
 .btn-reject { background: var(--danger); color: white; }
+
+/* =============================================
+   DARK THEME SYSTEM
+   ============================================= */
+
+body.dark-theme {
+    --navy: #1e293b;
+    --navy-dark: #0f172a;
+    --navy-mid: #334155;
+    --gold: #d97706;
+    --gold-light: #fbbf24;
+    --gold-muted: rgba(217, 119, 6, 0.25);
+
+    /* Neutral Palette */
+    --white: #1e293b;
+    --off-white: #0f172a;
+    --gray-100: #020617;
+    --gray-200: #334155;
+    --gray-400: #64748b;
+    --gray-600: #cbd5e1;
+    --gray-800: #f8fafc;
+
+    /* Semantic Colors */
+    --success: #22c55e;
+    --success-bg: rgba(34, 197, 94, 0.15);
+    --danger: #ef4444;
+    --danger-bg: rgba(239, 68, 68, 0.15);
+    --warning: #f59e0b;
+    --warning-bg: rgba(245, 158, 11, 0.15);
+    --info: #3b82f6;
+    --info-bg: rgba(59, 130, 246, 0.15);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.6);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,0.8);
+}
+
+/* Specific Dark Mode Enhancements */
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme textarea {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+body.dark-theme input:focus,
+body.dark-theme select:focus {
+    border-color: var(--gold-light);
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.15);
+}
+
+body.dark-theme input::placeholder {
+    color: #475569;
+}
+
+body.dark-theme .uni-header {
+    background: linear-gradient(135deg, #020617 0%, #0f172a 60%, #1e293b 100%);
+    border-bottom-color: var(--gold);
+}
+
+body.dark-theme .auth-form .form-intro {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+body.dark-theme .nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-theme th {
+    background: #0f172a;
+    color: var(--gold-light);
+}
+
+body.dark-theme tr:hover td {
+    background: #1e293b;
+}
+
+/* =============================================
+   THEME TOGGLE FLOATING BUTTON
+   ============================================= */
+
+.theme-toggle-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid var(--gold);
+    color: #ffffff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1) rotate(30deg);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+/* =============================================
+   PREMIUM SPINNER & TRANSITIONS
+   ============================================= */
+
+.premium-loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: var(--navy);
+    animation: fadeIn 0.4s ease-out;
+}
+
+body.dark-theme .premium-loading-container {
+    color: var(--gold-light);
+}
+
+.premium-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(0, 33, 71, 0.1);
+    border-top: 4px solid var(--gold);
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 4px 10px rgba(0, 33, 71, 0.05);
+}
+
+body.dark-theme .premium-spinner {
+    border: 4px solid rgba(251, 191, 36, 0.15);
+    border-top-color: var(--gold-light);
+}
+
+.loading-text {
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--gray-600);
+}
+
+body.dark-theme .loading-text {
+    color: var(--gray-400);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

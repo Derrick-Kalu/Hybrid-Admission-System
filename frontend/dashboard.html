@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Applicant Dashboard — Bingham University Admission Portal</title>
+    <meta name="description" content="Submit your 2025/2026 academic application to Bingham University. Upload JAMB, WAEC and NECO results for AI-powered pre-screening.">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dashboard-bg">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+    </script>
 
 <div class="dashboard-layout">
     <!-- SIDEBAR -->
@@ -26,7 +33,7 @@
                 <span class="nav-icon">🔍</span> Screening Status
             </a>
             <div class="nav-section-label" style="margin-top:1rem;">Information</div>
-            <a href="#" class="nav-item"><span class="nav-icon">📖</span> Guidelines</a>
+            <a href="requirements.html" class="nav-item"><span class="nav-icon">📖</span> Guidelines</a>
             <a href="#" class="nav-item"><span class="nav-icon">❓</span> Help & Support</a>
         </nav>
         <div class="sidebar-footer">
@@ -84,7 +91,7 @@
                         <!-- SECTION A: Programme -->
                         <div class="form-section">
                             <div class="section-label">Section A: Programme Selection</div>
-                            <p class="section-desc">Select the programme you wish to be considered for. Departmental cut-off marks apply in addition to the institutional minimum.</p>
+                            <p class="section-desc">Select the programme you wish to be considered for. Departmental cut-off marks apply in addition to the institutional minimum of 160.</p>
                             <div class="input-group">
                                 <label for="courseApplied">Programme / Course Applied For <span style="color:var(--danger)">*</span></label>
                                 <select id="courseApplied" name="course_applied" required>
@@ -115,23 +122,33 @@
                             <div style="background:var(--info-bg); border:1px solid #b8d4f0; border-left:4px solid var(--info); border-radius:8px; padding:1rem 1.25rem; margin-bottom:1.25rem;">
                                 <p style="font-size:0.83rem; color:var(--info); font-weight:600; margin-bottom:0.4rem;">🛡️ AI-Powered JAMB Score Verification</p>
                                 <p style="font-size:0.82rem; color:var(--gray-600); line-height:1.6;">
-                                    To prevent falsification, your UTME score will <strong>not</strong> be manually entered.
-                                    Upload a clear, legible scan of your official JAMB result slip.
-                                    Our AI will automatically extract and verify your score using Optical Character Recognition (OCR).
+                                    Upload your official JAMB result slip. The AI system will extract and verify your UTME score automatically using OCR.
+                                    Accepted formats: <strong>JPG, PNG, PDF, BMP, TIFF, WEBP</strong> · Max 5MB.
                                     <br><br>
-                                    <strong>Note:</strong> In future versions, this score will be auto-verified directly from the JAMB CBT portal using your registration number.
+                                    <strong>Note:</strong> Per JAMB guidelines, UTME results are valid for <strong>3 academic sessions</strong> from the year of examination.
                                 </p>
                             </div>
+
+                            <!-- JAMB Year -->
+                            <div class="input-group" style="max-width:200px; margin-bottom:1.25rem;">
+                                <label for="jamb_year">JAMB Examination Year <span style="color:var(--danger)">*</span></label>
+                                <span class="field-hint">The year you sat the UTME (e.g. 2024)</span>
+                                <input type="number" id="jamb_year" name="jamb_year" required
+                                    min="2018" max="2026" placeholder="e.g. 2024"
+                                    style="max-width:160px;">
+                            </div>
+
                             <div class="file-upload-area" id="jambDropZone">
                                 <span class="upload-icon">📄</span>
                                 <label class="upload-label" for="jamb_document">Upload JAMB Result Slip</label>
-                                <p class="upload-hint">Official JAMB print-out or e-result · JPG or PNG · Max 5MB</p>
-                                <input type="file" id="jamb_document" name="jamb_document" accept="image/jpeg,image/png" required>
+                                <p class="upload-hint">Official JAMB print-out or e-result · JPG, PNG, PDF, BMP, TIFF, WEBP · Max 5MB</p>
+                                <input type="file" id="jamb_document" name="jamb_document"
+                                    accept="image/*,.pdf,.bmp,.tiff,.tif,.webp" required>
                                 <span id="jambFileDisplay"></span>
                             </div>
                             <div class="input-group" style="margin-top:1rem; max-width:280px;">
                                 <label for="utme_score_declared">Declared UTME Score (for cross-reference) <span style="color:var(--danger)">*</span></label>
-                                <span class="field-hint">This will be compared against the OCR-extracted score. Discrepancies will be flagged.</span>
+                                <span class="field-hint">Will be compared to OCR-extracted score. Discrepancies >5 marks are flagged.</span>
                                 <input type="number" id="utme_score_declared" name="utme_score_declared" required min="100" max="400" placeholder="e.g. 235">
                             </div>
                         </div>
@@ -140,9 +157,9 @@
                         <div class="form-section">
                             <div class="section-label">Section C: O'Level Academic Records</div>
                             <p class="section-desc">
-                                Select your WAEC/NECO grades from the dropdown for each subject. 
-                                Only grades <strong>A1 to C6</strong> are considered credit passes. 
-                                A minimum of 5 credit passes including Mathematics and English Language is required.
+                                Enter your WAEC/NECO grades. Per JAMB guidelines, results from a maximum of
+                                <strong>2 sittings (WAEC + NECO)</strong> may be combined to meet the 5-credit requirement.
+                                Only grades <strong>A1 to C6</strong> count as credit passes.
                             </p>
 
                             <div style="margin-bottom:1.25rem;">
@@ -150,7 +167,7 @@
                                 <div class="grades-grid">
                                     <div class="input-group">
                                         <label>Mathematics <span style="color:var(--danger)">*</span></label>
-                                        <select name="o_level_math" required>
+                                        <select name="o_level_math" id="o_level_math" required>
                                             <option value="">— Grade —</option>
                                             <option value="A1">A1 — Excellent</option>
                                             <option value="B2">B2 — Very Good</option>
@@ -165,7 +182,7 @@
                                     </div>
                                     <div class="input-group">
                                         <label>English Language <span style="color:var(--danger)">*</span></label>
-                                        <select name="o_level_english" required>
+                                        <select name="o_level_english" id="o_level_english" required>
                                             <option value="">— Grade —</option>
                                             <option value="A1">A1 — Excellent</option>
                                             <option value="B2">B2 — Very Good</option>
@@ -242,20 +259,47 @@
                             </div>
                         </div>
 
-                        <!-- SECTION D: O'LEVEL DOCUMENT UPLOAD -->
+                        <!-- SECTION D: O'LEVEL DOCUMENT UPLOAD (WAEC + NECO) -->
                         <div class="form-section">
                             <div class="section-label">Section D: O'Level Result Upload</div>
                             <p class="section-desc">
-                                Upload a clear scan or photograph of your WAEC/NECO O'Level result. 
-                                The system will use OCR to verify that your name appears on the document 
-                                and cross-check submitted grades for consistency.
+                                Upload your WAEC and/or NECO O'Level result document.
+                                <strong>At least one is required.</strong> You may upload both if you sat two sittings —
+                                the system will automatically combine them per JAMB's two-sitting policy.
+                                Accepted: <strong>JPG, PNG, PDF, BMP, TIFF, WEBP</strong> · Max 5MB each.
                             </p>
-                            <div class="file-upload-area" id="olevelDropZone">
-                                <span class="upload-icon">📑</span>
-                                <label class="upload-label" for="olevel_document">Upload O'Level Result (WAEC/NECO)</label>
-                                <p class="upload-hint">JPG or PNG · Maximum 5MB · Ensure name is clearly visible</p>
-                                <input type="file" id="olevel_document" name="olevel_document" accept="image/jpeg,image/png" required>
-                                <span id="olevelFileDisplay"></span>
+
+                            <!-- WAEC Upload -->
+                            <div style="margin-bottom:1.25rem;">
+                                <p style="font-size:0.82rem; font-weight:700; color:var(--navy); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">
+                                    WAEC Result <span style="color:var(--gray-400); font-weight:400; text-transform:none;">(Optional if NECO provided)</span>
+                                </p>
+                                <div class="file-upload-area" id="waecDropZone">
+                                    <span class="upload-icon">📑</span>
+                                    <label class="upload-label" for="waec_document">Upload WAEC SSCE/WASSCE Result</label>
+                                    <p class="upload-hint">JPG, PNG, PDF, BMP, TIFF, WEBP · Max 5MB · Ensure your name is clearly visible</p>
+                                    <input type="file" id="waec_document" name="waec_document"
+                                        accept="image/*,.pdf,.bmp,.tiff,.tif,.webp">
+                                    <span id="waecFileDisplay"></span>
+                                </div>
+                            </div>
+
+                            <!-- NECO Upload -->
+                            <div>
+                                <p style="font-size:0.82rem; font-weight:700; color:var(--navy); margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.5px;">
+                                    NECO Result <span style="color:var(--gray-400); font-weight:400; text-transform:none;">(Optional if WAEC provided)</span>
+                                </p>
+                                <div class="file-upload-area" id="necoDropZone">
+                                    <span class="upload-icon">📋</span>
+                                    <label class="upload-label" for="neco_document">Upload NECO SSCE Result</label>
+                                    <p class="upload-hint">JPG, PNG, PDF, BMP, TIFF, WEBP · Max 5MB · Ensure your name is clearly visible</p>
+                                    <input type="file" id="neco_document" name="neco_document"
+                                        accept="image/*,.pdf,.bmp,.tiff,.tif,.webp">
+                                    <span id="necoFileDisplay"></span>
+                                </div>
+                                <div id="olevelValidationMsg" style="display:none; margin-top:0.6rem; padding:0.6rem 1rem; background:var(--danger-bg, #fef2f2); border:1px solid var(--danger); border-radius:6px; font-size:0.82rem; color:var(--danger);">
+                                    ⚠️ Please upload at least one O'Level result (WAEC or NECO).
+                                </div>
                             </div>
                         </div>
 
@@ -264,7 +308,8 @@
                             <div class="section-label" style="color:var(--danger);">Applicant Declaration</div>
                             <p style="font-size:0.83rem; color:var(--gray-600); line-height:1.7; margin-bottom:1rem;">
                                 I hereby solemnly declare that all information and documents submitted in this application are authentic, true, and accurate to the best of my knowledge.
-                                I understand that any misrepresentation, falsification, or submission of forged documents is a criminal offence and will result in automatic disqualification, cancellation of admission, and possible prosecution under Nigerian law.
+                                I understand that any misrepresentation, falsification, or submission of forged documents is a criminal offence and will result in automatic disqualification,
+                                cancellation of admission, and possible prosecution under Nigerian law.
                             </p>
                             <div class="input-group" style="flex-direction:row; align-items:flex-start; gap:0.75rem;">
                                 <input type="checkbox" id="declarationCheck" required style="width:18px; height:18px; margin-top:2px; flex-shrink:0;">
@@ -291,15 +336,45 @@
 
 <!-- Result Modal -->
 <div id="resultModal" class="modal hidden">
-    <div class="formal-modal">
+    <div class="formal-modal" style="max-width:560px;">
         <div id="modalIcon" style="font-size:3rem; margin-bottom:1rem;">📋</div>
         <h2 id="modalTitle">Screening Result</h2>
         <p id="modalMessage"></p>
-        <div id="modalStatusBadge" style="margin-bottom:1.5rem;"></div>
+        <div id="modalStatusBadge" style="margin-bottom:1rem;"></div>
+
+        <!-- Application Reference -->
+        <div id="appRefBlock" style="background:var(--off-white); border:1px solid var(--gray-200); border-radius:8px; padding:0.75rem 1rem; margin-bottom:1rem; text-align:left; display:none;">
+            <p style="font-size:0.75rem; color:var(--gray-500); margin-bottom:0.25rem; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Application Reference Number</p>
+            <p id="appRefNumber" style="font-size:1.1rem; font-weight:700; color:var(--navy); font-family:monospace;"></p>
+            <p style="font-size:0.75rem; color:var(--gray-500); margin-top:0.25rem;">Keep this reference number for all future correspondence with the Admissions Office.</p>
+        </div>
+
+        <!-- Score Discrepancy Warning -->
+        <div id="discrepancyWarning" style="background:#fff7ed; border:1px solid #f59e0b; border-left:4px solid #f59e0b; border-radius:6px; padding:0.75rem 1rem; margin-bottom:1rem; font-size:0.8rem; color:#92400e; text-align:left; display:none;">
+            <strong>⚠️ Score Discrepancy Flagged</strong><br>
+            <span id="discrepancyText"></span>
+        </div>
+
+        <!-- JAMB Year Warning -->
+        <div id="jambYearWarning" style="background:#fffbeb; border:1px solid #fbbf24; border-left:4px solid #fbbf24; border-radius:6px; padding:0.75rem 1rem; margin-bottom:1rem; font-size:0.8rem; color:#78350f; text-align:left; display:none;">
+            ⏰ <strong>JAMB Result Age Notice:</strong> Your JAMB result is approaching the 3-year validity limit. Please confirm with the Admissions Office.
+        </div>
+
+        <!-- JAMB OCR Info -->
         <div id="jambOcrInfo" style="background:var(--info-bg); border-radius:6px; padding:0.75rem 1rem; font-size:0.8rem; color:var(--info); margin-bottom:1.25rem; text-align:left; display:none;"></div>
-        <button id="closeModal" class="primary-btn" style="max-width:200px; margin:0 auto;">Acknowledge</button>
+
+        <!-- O'Level Verification Info -->
+        <div id="olevelVerifyInfo" style="background:var(--off-white); border:1px solid var(--gray-200); border-radius:6px; padding:0.75rem 1rem; font-size:0.8rem; color:var(--gray-600); margin-bottom:1.25rem; text-align:left; display:none;"></div>
+
+        <div style="display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap;">
+            <button id="closeModal" class="primary-btn" style="max-width:200px;">Acknowledge</button>
+            <button id="printReceiptBtn" class="primary-btn" style="max-width:200px; background:var(--gray-700);">🖨️ Print Receipt</button>
+        </div>
     </div>
 </div>
+
+    <!-- Theme Toggle Floating Button -->
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme">🌓</button>
 
 <script src="js/dashboard.js"></script>
 </body>

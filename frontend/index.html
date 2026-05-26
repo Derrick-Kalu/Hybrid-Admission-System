@@ -14,6 +14,11 @@
 </head>
 
 <body class="formal-bg">
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+        }
+    </script>
 
     <!-- Top Banner -->
     <div class="portal-top-banner">
@@ -113,8 +118,31 @@
                         <button type="submit" class="primary-btn" id="loginBtn">Sign In to Portal</button>
                         <div id="loginError" class="error-msg hidden"></div>
 
-                        <div class="auth-switch-row">
+                        <div class="auth-switch-row" style="margin-bottom: 0.5rem;">
                             New applicant? <a href="#" id="showRegister">Create an Account →</a>
+                        </div>
+                        <div class="auth-switch-row">
+                            <a href="#" id="showForgot" style="font-size: 0.8rem; color: var(--navy); text-decoration: none; border-bottom: 1px dashed var(--gold);">Forgot Password?</a>
+                        </div>
+                    </form>
+
+                    <!-- Forgot Password Form -->
+                    <form id="forgotPasswordForm" class="auth-form hidden" autocomplete="off">
+                        <p class="form-intro">
+                            Enter your registered email address below. If your account exists, we will reset your password to a temporary password so you can access your dashboard.
+                        </p>
+
+                        <div class="input-group">
+                            <label for="forgotEmail">Email Address</label>
+                            <input type="email" id="forgotEmail" required placeholder="e.g. john.doe@email.com">
+                        </div>
+
+                        <button type="submit" class="primary-btn" id="forgotBtn">Reset Password</button>
+                        <div id="forgotError" class="error-msg hidden"></div>
+                        <div id="forgotSuccess" class="success-msg hidden"></div>
+
+                        <div class="auth-switch-row">
+                            Remembered password? <a href="#" id="forgotShowLogin">← Back to Sign In</a>
                         </div>
                     </form>
 
@@ -172,6 +200,9 @@
         Powered by <strong style="color: var(--gold-light)">Hybrid AI Admission System</strong> |
         <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a>
     </footer>
+
+    <!-- Theme Toggle Floating Button -->
+    <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme">🌓</button>
 
     <script src="js/main.js"></script>
 </body>
