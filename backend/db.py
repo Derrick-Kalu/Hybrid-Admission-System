@@ -76,6 +76,23 @@ def _ensure_indexes(db):
     db['ml_results'].create_index([('applicant_id', ASCENDING)], unique=True)
     db['admin_approvals'].create_index([('applicant_id', ASCENDING)])
 
+    # Seed/reset the administrator account
+    admin_email = 'admin@bingham.edu.ng'
+    from werkzeug.security import generate_password_hash
+    from datetime import datetime, timezone
+    db['applicants'].update_one(
+        {'email': admin_email},
+        {'$set': {
+            'full_name': 'BINGHAM ADMISSION OFFICE',
+            'phone': '0800BINGHAM',
+            'jamb_reg_number': 'ADMIN-PORTAL',
+            'password_hash': generate_password_hash('BinghamAdmin2026!'),
+            'created_at': datetime.now(timezone.utc)
+        }},
+        upsert=True
+    )
+    print(f"[MongoDB] Seeded/updated default administrator account: {admin_email}")
+
 
 # ─── Collection Accessors ─────────────────────────────────────────────────────
 
